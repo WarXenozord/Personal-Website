@@ -25,7 +25,7 @@ const animation = { duration: 40000, easing: (t) => t }
 //---Welcome Func---//
 function Welcome(){ 
     //---Theme and lang props---//
-    const {langMode,lang} = useContext(LanguageContext)
+    const {lang} = useContext(LanguageContext)
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
     const lProps = langPropsHome(lang)

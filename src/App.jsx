@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/heading.jsx'
 import Home from './pages/home/home.jsx'
-import {ColorModeContext, useMode, tokens} from './util/theme.js'
+import {ColorModeContext, useMode} from './util/theme.js'
 import {CssBaseline, ThemeProvider} from '@mui/material'
 import { LanguageContext, useLang } from './util/lang.js'
 
