@@ -15,144 +15,146 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
 import { layoutStyles } from '../util/styles.js'
 
 function Header(){
+    //---Theme and lang props---//
     const colorMode = useContext(ColorModeContext)
     const {langMode,lang} = useContext(LanguageContext)
     const theme = useTheme()
-
     const colors = tokens(theme.palette.mode)
     const lProps = langPropsHeader(lang)
-
     const isDark = theme.palette.mode === 'dark'
     const isEn = lang === 'en'
 
     // common style
     const headerBox = {display: 'flex'}
 
-
     return (
-    <AppBar position="sticky">
-        <Box sx={{display: 'flex',
-            alignContent: 'center',
-            justifyContent: 'space-between',
-            margin: '0',
-            padding: '5px',
-            height: '50px',
-            backgroundColor: colors.secondary[500],
-            position: 'relative'
-        }}>
-            <Box sx={headerBox}>
-                <Box sx={[{
-                    borderRadius: '50%',
-                    position: 'relative',
-                    top: '-40px',
-                    right: '25px',
-                    height: '82px',
-                    width: '82px'
-                }, layoutStyles.gradEffect]}>
-                    <Button onClick={() => {}} sx={{
+        <AppBar position="sticky">
+            <Box sx={{display: 'flex',
+                alignContent: 'center',
+                justifyContent: 'space-between',
+                margin: '0',
+                padding: '5px',
+                height: '50px',
+                backgroundColor: colors.secondary[500],
+                position: 'relative'
+            }}>
+                {/*---Logo Button & Name---*/}
+                <Box sx={headerBox}>
+                    <Box sx={[{
                         borderRadius: '50%',
-                        height: '80px',
-                        width: '80px',
                         position: 'relative',
-                        backgroundColor: colors.grey[100],
-                        '&:hover':{backgroundColor:colors.secondary[500]}
-                    }}>
-                        <Box
-                        component="img"
-                        src={isDark ? logoDark : logoLight}
-                        alt="Logo"
-                        sx={{
-                            width: '40px',
-                            height: '40px',
-                            padding: '3px 0 0 5px',
+                        top: '-40px',
+                        right: '25px',
+                        height: '82px',
+                        width: '82px'
+                    }, layoutStyles.gradEffect]}>
+                        <Button onClick={() => {}} sx={{
+                            borderRadius: '50%',
+                            height: '80px',
+                            width: '80px',
                             position: 'relative',
-                            top: '16px',
-                            left: '3px'
-                        }}/>    
-                    </Button>
-                </Box>
-                <Box sx={{
-                    display: 'inline',
-                    margin: '0',
-                    position: 'relative',
-                    right: '20px'
-                }}>
-                    <Typography variant="h2" sx={{
-                        fontFamily: '"Inknut Antiqua", serif',
-                        fontWeight: 'bold',
-                        fontSize: '1.2rem',
-                        margin:'0 0 0 3px',
-                        padding:'0',
-                    }}>Juan Libonatti</Typography >
-                    <Typography variant="body1" sx={{
-                       fontSize: '0.8rem',
-                       fontWeight: 'bold',
-                       margin:'0',
-                       padding:'0 0 0 5px',
-                       textAlign: 'left',
-                       color: colors.grey[500]
-                    }}>{lProps.profession}</Typography >
-                </Box>
-            </Box>
-            <Box sx={[headerBox,{alignItems: 'center'}]}>
-                <List sx={{
-                    display: 'flex',
-                    alignContent: 'center',
-                    listStyle: 'none',
-                    '& .MuiListItemButton-root':{
-                        borderRadius:'35px',
-                        color: colors.grey[500],
-                        padding:'8px',
-                        height:'35px'
-                    },
-                    '& .MuiListItemButton-root:hover':{
-                        color: colors.grey[900],
-                        background: 'none'
-                    }
-                }}>
-                    <ListItem disablePadding>
-                        <ListItemButton component="a" href="">
-                            <ListItemText primary={lProps.competences} />
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton component="a" href="">
-                            <ListItemText primary={lProps.portifolio} />
-                        </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemButton component="a" href="">
-                            <ListItemText primary={lProps.contact} />
-                        </ListItemButton>
-                    </ListItem>
-                </List>
-                <Tooltip title={lProps.langTooltip}>
-                    <Button onClick={langMode.toggleLanguage} 
-                    color="inherit" 
-                    sx={{
-                        borderRadius:'50%',
-                        height:'45px',
-                        width:'45px',
-                        minWidth:'45px',
-                        padding:'0',
-                        margin:'0'
+                            backgroundColor: colors.grey[100],
+                            '&:hover':{backgroundColor:colors.secondary[500]}
+                        }}>
+                            <Box
+                            component="img"
+                            src={isDark ? logoDark : logoLight}
+                            alt="Logo"
+                            sx={{
+                                width: '40px',
+                                height: '40px',
+                                padding: '3px 0 0 5px',
+                                position: 'relative',
+                                top: '16px',
+                                left: '3px'
+                            }}/>    
+                        </Button>
+                    </Box>
+                    <Box sx={{
+                        display: 'inline',
+                        margin: '0',
+                        position: 'relative',
+                        right: '20px'
                     }}>
-                        <Box
-                        component="img"
-                        src={isEn ? BRFlag : USFlag}
-                        alt={isEn ? 'pt-br' : 'en-us'}
-                        height={'15px'}
-                        p={'0'}
-                        m={'0'}/>
-                    </Button>
-                </Tooltip>
-                <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-                    {isDark ? <LightModeOutlinedIcon /> : <DarkModeOutlinedIcon />}
-                </IconButton>
+                        <Typography variant="h2" sx={{
+                            fontFamily: '"Inknut Antiqua", serif',
+                            fontWeight: 'bold',
+                            fontSize: '1.2rem',
+                            margin:'0 0 0 3px',
+                            padding:'0',
+                        }}>Juan Libonatti</Typography >
+                        <Typography variant="body1" sx={{
+                        fontSize: '0.8rem',
+                        fontWeight: 'bold',
+                        margin:'0',
+                        padding:'0 0 0 5px',
+                        textAlign: 'left',
+                        color: colors.grey[500]
+                        }}>{lProps.profession}</Typography >
+                    </Box>
+                </Box>
+                {/*---Buttons---*/}
+                <Box sx={[headerBox,{alignItems: 'center'}]}>
+                    <List sx={{
+                        display: 'flex',
+                        alignContent: 'center',
+                        listStyle: 'none',
+                        '& .MuiListItemButton-root':{
+                            borderRadius:'35px',
+                            color: colors.grey[500],
+                            padding:'8px',
+                            height:'35px'
+                        },
+                        '& .MuiListItemButton-root:hover':{
+                            color: colors.grey[900],
+                            background: 'none'
+                        }
+                    }}>
+                        <ListItem disablePadding>
+                            <ListItemButton component="a" href="">
+                                <ListItemText primary={lProps.competences} />
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton component="a" href="">
+                                <ListItemText primary={lProps.portifolio} />
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton component="a" href="">
+                                <ListItemText primary={lProps.contact} />
+                            </ListItemButton>
+                        </ListItem>
+                    </List>
+                    <Tooltip title={lProps.langTooltip}>
+                        <Button onClick={langMode.toggleLanguage} 
+                        color="inherit" 
+                        sx={{
+                            borderRadius:'50%',
+                            height:'45px',
+                            width:'45px',
+                            minWidth:'45px',
+                            padding:'0',
+                            margin:'0'
+                        }}>
+                            <Box
+                            component="img"
+                            src={isEn ? BRFlag : USFlag}
+                            alt={isEn ? 'pt-br' : 'en-us'}
+                            height={'15px'}
+                            p={'0'}
+                            m={'0'}/>
+                        </Button>
+                    </Tooltip>
+                    <IconButton onClick={colorMode.toggleColorMode} color="inherit">
+                        {isDark ? <LightModeOutlinedIcon /> : <DarkModeOutlinedIcon />}
+                    </IconButton>
+                </Box>
             </Box>
-        </Box>
-        <Box sx={[layoutStyles.gradEffect,layoutStyles.line]}></Box>
-    </AppBar>
-);}
+            {/*---Grad Line---*/}
+            <Box sx={[layoutStyles.gradEffect,layoutStyles.line]}></Box>
+        </AppBar>
+    );
+}
 
 export default Header

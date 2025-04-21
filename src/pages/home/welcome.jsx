@@ -22,6 +22,9 @@ const links = [
 ];
 const animation = { duration: 40000, easing: (t) => t }
 
+//common style
+//TODO: refactor styles
+
 //---Welcome Func---//
 function Welcome(){ 
     //---Theme and lang props---//
@@ -147,6 +150,7 @@ function Welcome(){
     //---Welcome Component---//
     return (
         <>
+            {/*---Background Video---*/}
             <Box
             sx={{
                 width: '100%',
@@ -171,6 +175,7 @@ function Welcome(){
                     Your browser does not support the video tag.
                 </video>
             </Box>
+            {/*---Main welcome page---*/}
             <Box
             sx={{
                 width: '100%',
@@ -238,7 +243,7 @@ function Welcome(){
                                     <CardMedia
                                         component="img"
                                             height="180px"
-                                            image={"/images/" + num + ".webp"} // or imported image
+                                            image={"/images/" + num + ".webp"}
                                             alt="Project Thumbnail"
                                     />
                                     <Box
@@ -289,7 +294,10 @@ function Welcome(){
                 </Box>
                 <Box sx={[layoutStyles.gradEffect,layoutStyles.line]}></Box>
             </Box>
-            <Box height='100px' backgroundColor={colors.secondary[500]} ref={seekRef}>
+            {/*---Starting of next section with ghost header---*/}
+            <Box height='100px' 
+            backgroundColor={colors.secondary[500]} 
+            ref={seekRef}>
                 <Typography variant='h3' 
                 ref={headerRef}
                 color='#ffffff'
