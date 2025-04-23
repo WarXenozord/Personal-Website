@@ -1,11 +1,11 @@
 import Entry from './welcome.jsx'
-import {Box} from '@mui/material'
+import About from './about.jsx'
 
 function Home(){ 
     return (
         <>
           <Entry/>
-          <Box height='1080px'></Box>
+          <About/>
         </>
 )}
 

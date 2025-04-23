@@ -106,7 +106,6 @@ function Welcome(){
         if (initialOffset == null) return;
   
         const scrollY = window.scrollY;
-        console.log(scrollY);
   
         if (scrollY < initialOffset - 95) {
             setPosition('normal');
@@ -149,7 +148,7 @@ function Welcome(){
       
     //---Welcome Component---//
     return (
-        <>
+        <Box component='section'>
             {/*---Background Video---*/}
             <Box
             sx={{
@@ -309,7 +308,7 @@ function Welcome(){
                     "AD ASTRA PER ASPERA"
                 </Typography>
             </Box>
-        </>
+        </Box>
 )}
 
 export default Welcome

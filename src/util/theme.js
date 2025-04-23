@@ -128,7 +128,8 @@ export const themeSettings = (mode) => {
                 fontSize: '1.5rem',
             },
             h4:{
-
+                fontSize: '1.3rem',
+                fontWeight: 'normal'
             },
             h5:{
 
@@ -137,10 +138,13 @@ export const themeSettings = (mode) => {
 
             },
             body1:{
-                fontSize: '1rem',
+                fontSize: '0.95rem',
+                fontFamily: '"Inter", sans-serif',
+                fontWeight: 'bold'
             },
             body2:{
-                fontSize: '0.8rem',
+                fontSize: '0.95rem',
+                fontFamily: '"Inter", sans-serif'
             }
         }
     }
