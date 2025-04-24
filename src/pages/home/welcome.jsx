@@ -271,6 +271,7 @@ function Welcome(){
                                             width: '100%',
                                             fontWeight: 'bold',
                                             color: colors.grey[100],
+                                            fontFamily: '"Chau Philomene One", sans-serif',
                                             fontSize: '1.4rem',
                                             WebkitTextStroke: '0.5px' + colors.grey[900],
                                             display: 'flex',
