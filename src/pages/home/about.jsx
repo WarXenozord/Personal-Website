@@ -54,14 +54,15 @@ function About(){
     }
 
     return (
-        <Box component='section'>
-            <Box height='65vh' sx={{
+        <Box component='section'
+        height='65vh' 
+        sx={{
                 backgroundColor: colors.secondary[500],
                 display: 'flex',
                 justifyContent: 'space-around',
                 paddingTop: '5px'
-            }}>
-                <Box width='45%' justifyItems='center'>
+        }}>
+            <Box width='45%' justifyItems='center'>
                     <Typography variant='h4'>
                         {lProps.aboutTitle}
                     </Typography>
@@ -75,8 +76,8 @@ function About(){
                     }]}>
                         {lProps.aboutButton}
                     </Button>
-                </Box>
-                <Box width='45%' justifyItems='center'>
+            </Box>
+            <Box width='45%' justifyItems='center'>
                     <Box display='flex' justifyContent='center'>
                         <Box justifyItems='center'>
                             {field === 'Competences' ? (
@@ -128,9 +129,7 @@ function About(){
                     }]}>
                         {lProps.competenceButton}
                     </Button>
-                </Box>
             </Box>
-            <Box height='100vh'></Box>
         </Box>
     )
 }
