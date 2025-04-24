@@ -56,7 +56,7 @@ export const langPropsAbout = (lang) => ({
         experienceTitle: "Experience",
         experienceText: "Aye aye",
         aboutButton: "Even more",
-        competenceButton: "See my full résumé",
+        competencesButton: "See my full résumé",
         experienceButton: "See my portifolio",
     }:{
         aboutTitle: "Sobre mim",
@@ -66,7 +66,7 @@ export const langPropsAbout = (lang) => ({
         experienceTitle: "Experiência",
         experienceText: "Aye aye",
         aboutButton: "Ainda mais",
-        competenceButton: "Ver curriculum completo",
+        competencesButton: "Ver curriculum completo",
         experienceButton: "Veja meu portifólio",
     })
 })

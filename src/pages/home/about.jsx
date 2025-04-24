@@ -127,7 +127,8 @@ function About(){
                         color: colors.red[500],
                         borderColor: colors.red[500]
                     }]}>
-                        {lProps.competenceButton}
+                        {field === 'Competences' ? 
+                        lProps.competencesButton : lProps.experienceButton}
                     </Button>
             </Box>
         </Box>
