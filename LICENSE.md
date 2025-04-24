@@ -4,7 +4,7 @@ All images under `public/images` directory are licensed under CC-BY 4.0.
 
 # Logos
 
-The Logos files `public/Logo.svg`, `src/assets/LogoDark.svg`, `src/assets/LogoLight.svg` are copyrighted to Juan Libonatti. All rights reserved.
+The Logo files `public/Logo.svg`, `src/assets/LogoDark.svg`, `src/assets/LogoLight.svg` are copyrighted to Juan Libonatti. All rights reserved.
 
 Any other logos are copyrighted to their respective parties.
 

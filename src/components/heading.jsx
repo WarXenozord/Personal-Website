@@ -103,12 +103,13 @@ function Header(){
                             borderRadius:'35px',
                             color: colors.grey[500],
                             padding:'8px',
-                            height:'35px'
+                            height:'35px',
+                            fontWeight: 'bold'
                         },
                         '& .MuiListItemButton-root:hover':{
                             color: colors.grey[900],
                             background: 'none'
-                        }
+                        },
                     }}>
                         <ListItem disablePadding>
                             <ListItemButton component="a" href="">
