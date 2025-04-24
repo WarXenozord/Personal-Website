@@ -70,3 +70,25 @@ export const langPropsAbout = (lang) => ({
         experienceButton: "Veja meu portifólio",
     })
 })
+
+export const langPropsCapabilities = (lang) => ({
+    ...(lang === 'en' ? {
+        title: 'I can do...',
+        boxTitle: ['Sofware', 'Hardware', 'Rockets', 'And More!'],
+        boxText:[
+            'aye aye',
+            'aye aye aye',
+            'xy',
+            'aaaaaaaa'
+        ]
+    }:{
+        title: 'Eu posso fazer...',
+        boxTitle: ['Sofware', 'Hardware', 'Foguetes', 'E Mais!'],
+        boxText:[
+            'aye aye',
+            'aye aye aye',
+            'xy',
+            'aaaaaaaa'
+        ]
+    })
+})
