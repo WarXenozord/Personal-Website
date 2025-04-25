@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, Button } from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
@@ -60,12 +60,33 @@ function Capabilities(){
                         <Typography variant='body2'
                         sx={{
                             textAlign: 'center',
-                            marginTop: '10px'
+                            marginTop: '10px',
+                            whiteSpace: 'pre-line'
                         }}>
                             {lProps.boxText[num]}
                         </Typography>
                     </Box>
                 ))}
+            </Box>
+            <Box sx={{
+                marginTop: '45px', 
+                display:'flex',
+                justifyContent:'center',
+
+            }}>
+                <Button sx = {{
+                    borderRadius: '30px',
+                    fontSize: '1.2rem',
+                    padding: '0 25px',
+                    textTransform:'none' ,
+                    backgroundColor:colors.grey[900],
+                    color:colors.grey[100],
+                    '&:hover':{
+                        backgroundColor:colors.grey[600]
+                    },
+                }}>
+                    {lProps.call}
+                </Button>
             </Box>
         </Box>
 )}

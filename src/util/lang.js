@@ -76,19 +76,21 @@ export const langPropsCapabilities = (lang) => ({
         title: 'I can do...',
         boxTitle: ['Sofware', 'Hardware', 'Rockets', 'And More!'],
         boxText:[
-            'aye aye',
-            'aye aye aye',
-            'xy',
-            'aaaaaaaa'
-        ]
+            "HTML/CSS/JS\nNode.js/React\nPostgree/SQL\nPython/C++\nMatlab",
+            'Arduino/Raspberry\nSTM32/ESP32\nTI and Bosch sensors\nLoRa Radios\nPCB Design',
+            'Rocket Engines\nCentrifugal Pumps\nData Aquisition\nValidation and verification\nManufacturing methods',
+            'Vídeos Editing\n3D Modeling\nUnity Game Creation\n3D Printing'
+        ],
+        call: "Let's Work Together!"
     }:{
         title: 'Eu posso fazer...',
         boxTitle: ['Sofware', 'Hardware', 'Foguetes', 'E Mais!'],
         boxText:[
-            'aye aye',
-            'aye aye aye',
-            'xy',
-            'aaaaaaaa'
-        ]
+            "HTML/CSS/JS\nNode.js/React\nPostgree/SQL\nPython/C++\nMatlab",
+            'Arduino/Raspberry\nSTM32/ESP32\nSensores TI e Bosch\nComunicação LoRa\nProjeto de PCB',
+            'Motores Foguetes\nBombas Centrifugas\nAquisição de Dados\nVerificação e Validação\nMétodos de fabricação',
+            'Edição de Vídeos\nModelagem 3D\nCriação de Jogos Unity\nImpressão 3D'
+        ],
+        call: "Vamos Trabalhar Juntos!"
     })
 })
