@@ -82,7 +82,7 @@ function Capabilities(){
                     backgroundColor:colors.grey[900],
                     color:colors.grey[100],
                     '&:hover':{
-                        backgroundColor:colors.grey[600]
+                        backgroundColor:colors.grey[600] + 'd0'
                     },
                 }}>
                     {lProps.call}
