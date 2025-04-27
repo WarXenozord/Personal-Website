@@ -44,10 +44,13 @@ function Standout(){
                     }}>
                             <Box
                                 component="img"
+                                alt={lProps.alt[i]}
                                 src={path}
                                 sx={{ height: '30%', 
                                     aspectRatio: '1',
                                     borderRadius: '50%' ,
+                                    textAlign: 'center',
+                                    alignContent: 'center',
                                     mt: '25px',
                                     border:"solid 2px "+colors.grey[900],
                             }}/>

@@ -104,6 +104,11 @@ export const langPropsStandout = (lang) => ({
             "blablablabalbalbalablabllba",
             "blablablabalbalbalablabllba",
             "blablablabalbalbalablabllba",
+        ],
+        alt:[
+            '3d island city',
+            'CAD Part',
+            'Dashboard',
         ]
     }:{
         title: 'Veja alguns dos meus projetos',
@@ -113,6 +118,11 @@ export const langPropsStandout = (lang) => ({
             "blablablabalbalbalablabllba",
             "blablablabalbalbalablabllba",
             "blablablabalbalbalablabllba",
+        ],
+        alt:[
+            'cidade-ilha 3d',
+            'peça CAD',
+            'Dashboard',
         ]
     })
 })
