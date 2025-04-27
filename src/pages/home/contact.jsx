@@ -55,7 +55,7 @@ function Contact(){
                     fullWidth
                     multiline
                     sx={inputSx}
-                    rows={6}
+                    rows={4}
                 />
                 <Button 
                 variant="contained" 
@@ -65,7 +65,7 @@ function Contact(){
                     color: colors.grey[100],
                     backgroundColor: colors.grey[900],
                     borderRadius: '50px',
-                    m: '10px 0 20px 0'
+                    m: '0 0 20px 0'
                 }}
                 type="submit">
                     {lProps.send}

@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/heading.jsx'
 import Home from './pages/home/home.jsx'
+import Footer from './components/footer.jsx'
 import {ColorModeContext, useMode} from './util/theme.js'
 import {CssBaseline, ThemeProvider} from '@mui/material'
 import { LanguageContext, useLang } from './util/lang.js'
@@ -16,6 +17,7 @@ function App() {
         <LanguageContext.Provider value={{langMode,lang}}>
           <Header />
           <Home />
+          <Footer />
         </LanguageContext.Provider>
       </ThemeProvider>
     </ColorModeContext.Provider>
