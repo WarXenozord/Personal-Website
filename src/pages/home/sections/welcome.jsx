@@ -2,9 +2,9 @@ import { useContext, useRef, useEffect, useState } from 'react'
 import { Card, Link, CardMedia, Box, Typography, Button} from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
-import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsHome} from '../../util/lang.js'
-import { layoutStyles } from '../../util/styles.js'
+import { tokens } from '../../../util/theme.js'
+import { LanguageContext, langPropsHome} from '../../../util/lang.js'
+import { layoutStyles } from '../../../util/styles.js'
 
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'

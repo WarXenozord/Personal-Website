@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import Entry from './welcome.jsx'
-import About from './about.jsx'
-import Capabilities from './capabilities.jsx'
-import Standout from './standout.jsx'
-import Contact from './contact.jsx'
+import Entry from './sections/welcome.jsx'
+import About from './sections/about.jsx'
+import Capabilities from './sections/capabilities.jsx'
+import Standout from './sections/standout.jsx'
+import Contact from './sections/contact.jsx'
 
 function Home(){ 
     const { search } = useLocation(); 

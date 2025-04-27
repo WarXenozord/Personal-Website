@@ -2,8 +2,8 @@ import { useContext } from 'react'
 import { Box, Typography, Button } from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
-import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsStandout} from '../../util/lang.js'
+import { tokens } from '../../../util/theme.js'
+import { LanguageContext, langPropsStandout} from '../../../util/lang.js'
 
 const images = ['images/1.webp',
     'images/2.webp',

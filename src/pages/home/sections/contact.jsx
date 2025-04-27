@@ -2,8 +2,8 @@ import { useContext } from 'react'
 import { Box, Typography, Button, TextField } from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
-import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsContact} from '../../util/lang.js'
+import { tokens } from '../../../util/theme.js'
+import { LanguageContext, langPropsContact} from '../../../util/lang.js'
 
 function Contact(){ 
 

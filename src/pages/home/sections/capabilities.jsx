@@ -2,8 +2,8 @@ import { useContext } from 'react'
 import { Box, Typography, Button } from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
-import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsCapabilities} from '../../util/lang.js'
+import { tokens } from '../../../util/theme.js'
+import { LanguageContext, langPropsCapabilities} from '../../../util/lang.js'
 
 import CodeIcon from '@mui/icons-material/Code';
 import MemoryIcon from '@mui/icons-material/Memory';

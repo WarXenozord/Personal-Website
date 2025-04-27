@@ -2,8 +2,8 @@ import { useContext, useState } from 'react'
 import { Box, Typography, Button } from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
-import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsAbout} from '../../util/lang.js'
+import { tokens } from '../../../util/theme.js'
+import { LanguageContext, langPropsAbout} from '../../../util/lang.js'
 
 function About(){
     //---Buttons state---//
