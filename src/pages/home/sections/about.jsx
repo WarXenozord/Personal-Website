@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react'
 import { Box, Typography, Button } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
@@ -52,6 +53,9 @@ function About(){
     const titleSelected = {
         '&:hover':{cursor:'pointer'}
     }
+
+    // router dom links
+    const navigate = useNavigate();
 
     return (
         <Box component='section'
@@ -127,7 +131,9 @@ function About(){
                     <Button sx={[outlineButton,{
                         color: colors.red[500],
                         borderColor: colors.red[500]
-                    }]}>
+                    }]} onClick={() => {
+                        navigate(field === 'Competences' ? '/resume' : '/portifolio')
+                    }}>
                         {field === 'Competences' ? 
                         lProps.competencesButton : lProps.experienceButton}
                     </Button>

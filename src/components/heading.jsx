@@ -2,17 +2,20 @@ import logoDark from '../assets/LogoDark.svg'
 import logoLight from '../assets/LogoLight.svg'
 import BRFlag from '../assets/Flag_of_Brazil.svg'
 import USFlag from '../assets/Flag_of_the_United_States.svg'
+
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+
 import { ColorModeContext, tokens } from '../util/theme.js'
 import { LanguageContext, langPropsHeader } from '../util/lang.js'
-import { IconButton, Button, Box, List, Tooltip,
-    ListItem, ListItemText, ListItemButton, Typography, 
-    AppBar} 
+
+import { IconButton, Button, Box, List, Tooltip, ListItem, 
+    ListItemText, ListItemButton, Typography, AppBar} 
     from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
+
 import { layoutStyles } from '../util/styles.js'
 
 const useScrollToSection = () => {
@@ -48,6 +51,9 @@ function Header(){
     // common style
     const headerBox = {display: 'flex'}
 
+    // router dom links
+    const navigate = useNavigate();
+    
     return (
         <AppBar position="sticky">
             <Box sx={{display: 'flex',
@@ -95,8 +101,11 @@ function Header(){
                         display: 'inline',
                         margin: '0',
                         position: 'relative',
-                        right: '20px'
-                    }}>
+                        right: '20px',
+                        '&:hover':{
+                            cursor: 'pointer',
+                        }
+                    }} onClick={() => scrollToSection('welcome', -55)}>
                         <Typography variant="h2" sx={{
                             fontFamily: '"Inknut Antiqua", serif',
                             fontWeight: 'bold',
@@ -139,7 +148,7 @@ function Header(){
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                            <ListItemButton component="a" href="">
+                            <ListItemButton component="a" onClick={() => navigate("/portifolio")}>
                                 <ListItemText primary={lProps.portifolio} />
                             </ListItemButton>
                         </ListItem>

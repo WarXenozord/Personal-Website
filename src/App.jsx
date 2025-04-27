@@ -1,9 +1,10 @@
-import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import './App.css'
 
 import Header from './components/heading.jsx'
 import Home from './pages/home/home.jsx'
+import Portifolio from './pages/portifolio/portifolio.jsx'
 import Footer from './components/footer.jsx'
 
 import {ColorModeContext, useMode} from './util/theme.js'
@@ -15,18 +16,21 @@ function App() {
   const [langMode,lang] = useLang();
 
   return (
-    <BrowserRouter>
+    <Router>
       <ColorModeContext.Provider value ={colorMode}>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
           <LanguageContext.Provider value={{langMode,lang}}>
+            <CssBaseline />
             <Header />
-            <Home />
+            <Routes>
+              <Route path = "/" element={<Home />}/>
+              <Route path = "/portifolio" element={<Portifolio />}/>
+            </Routes>
             <Footer />
           </LanguageContext.Provider>
         </ThemeProvider>
       </ColorModeContext.Provider>
-    </BrowserRouter>
+    </Router>
   )
 }
 
