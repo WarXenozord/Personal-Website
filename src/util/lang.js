@@ -116,3 +116,17 @@ export const langPropsStandout = (lang) => ({
         ]
     })
 })
+
+export const langPropsContact = (lang) => ({
+    ...(lang === 'en' ? {
+        title: "Let's talk, send me a message!",
+        name: 'Name',
+        message: 'Message',
+        send: 'Send'
+    }:{
+        title: "Vamos conversar, me mande uma mensagem!",
+        name: 'Nome',
+        message: 'Mensagem',
+        send: 'Enviar'
+    })
+})
