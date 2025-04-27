@@ -19,7 +19,7 @@ function Contact(){
     }
 
     return(
-        <Box component='section'>
+        <Box component='section' id='contact'>
             <Typography variant='h2'
             textAlign='center'
             m='25px 0'>
@@ -60,12 +60,18 @@ function Contact(){
                 <Button 
                 variant="contained" 
                 sx={{
-                    width:'100px',
-                    alignSelf:'center',
-                    color: colors.grey[100],
-                    backgroundColor: colors.grey[900],
-                    borderRadius: '50px',
-                    m: '0 0 20px 0'
+                    borderRadius: '30px',
+                    fontSize: '1.2rem',
+                    padding: '0 15px',
+                    width: '20%',
+                    alignSelf: 'center',
+                    m:'5px 0 20px 0',
+                    textTransform:'none' ,
+                    backgroundColor:colors.grey[900],
+                    color:colors.grey[100],
+                    '&:hover':{
+                        backgroundColor:colors.grey[600] + 'd0'
+                    },
                 }}
                 type="submit">
                     {lProps.send}

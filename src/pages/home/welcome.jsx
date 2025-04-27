@@ -148,7 +148,7 @@ function Welcome(){
       
     //---Welcome Component---//
     return (
-        <Box component='section'>
+        <Box component='section' id='welcome'>
             {/*---Background Video---*/}
             <Box
             sx={{

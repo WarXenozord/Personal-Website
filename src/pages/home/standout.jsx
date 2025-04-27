@@ -19,7 +19,9 @@ function Standout(){
     const lProps = langPropsStandout(lang) 
     
     return(
-        <Box component="section" backgroundColor={colors.secondary[500]}>
+        <Box component="section" 
+        id='standout'
+        backgroundColor={colors.secondary[500]}>
             <Typography variant='h2'
             padding='15px 0 0 0'
             textAlign='center'>

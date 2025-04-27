@@ -30,6 +30,7 @@ function Capabilities(){
 
     return(
         <Box component='section' 
+        id='capabilities'
         height='80vh'>
             <Typography variant='h2'
             sx={{
@@ -84,7 +85,9 @@ function Capabilities(){
                     '&:hover':{
                         backgroundColor:colors.grey[600] + 'd0'
                     },
-                }}>
+                }}
+                href='#contact'
+                >
                     {lProps.call}
                 </Button>
             </Box>

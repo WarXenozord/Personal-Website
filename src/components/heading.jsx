@@ -3,6 +3,7 @@ import logoLight from '../assets/LogoLight.svg'
 import BRFlag from '../assets/Flag_of_Brazil.svg'
 import USFlag from '../assets/Flag_of_the_United_States.svg'
 import { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { ColorModeContext, tokens } from '../util/theme.js'
 import { LanguageContext, langPropsHeader } from '../util/lang.js'
 import { IconButton, Button, Box, List, Tooltip,
@@ -14,7 +15,27 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
 import { layoutStyles } from '../util/styles.js'
 
+const useScrollToSection = () => {
+    const navigate = useNavigate();
+  
+    const scrollToSection = (id, offset = 0) => {
+      const element = document.getElementById(id);
+      if (element) {
+        // If already on the page with the element
+        const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      } else {
+        // Navigate to homepage and pass scroll target
+        navigate(`/?scrollTo=${id}&offset=${offset}`);
+      }
+    };
+  
+    return scrollToSection;
+};
+
 function Header(){
+    const scrollToSection = useScrollToSection()
+
     //---Theme and lang props---//
     const colorMode = useContext(ColorModeContext)
     const {langMode,lang} = useContext(LanguageContext)
@@ -112,7 +133,8 @@ function Header(){
                         },
                     }}>
                         <ListItem disablePadding>
-                            <ListItemButton component="a" href="">
+                            <ListItemButton component="a" 
+                            onClick={() => {scrollToSection('about', -150)}}>
                                 <ListItemText primary={lProps.competences} />
                             </ListItemButton>
                         </ListItem>
@@ -122,7 +144,8 @@ function Header(){
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
-                            <ListItemButton component="a" href="">
+                            <ListItemButton component="a" 
+                            onClick={() => {scrollToSection('contact', 0)}}>
                                 <ListItemText primary={lProps.contact} />
                             </ListItemButton>
                         </ListItem>

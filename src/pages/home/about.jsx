@@ -55,6 +55,7 @@ function About(){
 
     return (
         <Box component='section'
+        id='about'
         height='65vh' 
         sx={{
                 backgroundColor: colors.secondary[500],
