@@ -94,3 +94,25 @@ export const langPropsCapabilities = (lang) => ({
         call: "Vamos Trabalhar Juntos!"
     })
 })
+
+export const langPropsStandout = (lang) => ({
+    ...(lang === 'en' ? {
+        title: 'See some of my projects',
+        projTitle: ['Geopredict', 'Test Bench', 'SRR'],
+        projSubtitle: ['Educational Software', 'Test Equipment', 'IoT Project'],
+        projDesc:[
+            "blablablabalbalbalablabllba",
+            "blablablabalbalbalablabllba",
+            "blablablabalbalbalablabllba",
+        ]
+    }:{
+        title: 'Veja alguns dos meus projetos',
+        projTitle: ['Geopredict', 'Test Bench', 'SRR'],
+        projSubtitle: ['Software Educacional', 'Equipamento de Teste', 'Projeto IoT'],
+        projDesc:[
+            "blablablabalbalbalablabllba",
+            "blablablabalbalbalablabllba",
+            "blablablabalbalbalablabllba",
+        ]
+    })
+})
