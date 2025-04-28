@@ -145,6 +145,10 @@ export const themeSettings = (mode) => {
             body2:{
                 fontSize: '1.2rem',
                 fontFamily: '"Inter", sans-serif'
+            },
+            body3:{
+                fontSize: '1.3rem',
+                fontFamily: '"Inter", sans-serif'
             }
         }
     }

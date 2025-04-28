@@ -40,13 +40,13 @@ function Footer() {
                 src={isDark ? logoDark : logoLight}
                 alt="Logo"
                 sx={{
-                    width: '85px',
-                    height: '85px',
+                    width: '15%',
+                    height: '15%',
                 }}/>    
                 <Typography variant="h2" sx={{
                     fontFamily: '"Inknut Antiqua", serif',
                     fontWeight: 'bold',
-                    fontSize: '1.8rem',
+                    fontSize: '2.5rem',
                     margin:'0 0 0 20px',
                     padding:'0',
                 }}>
@@ -61,9 +61,9 @@ function Footer() {
                     rel="noopener noreferrer"
                     sx={{'&:hover':{color: colors.grey[900]}}}
                     >
-                        <GitHubIcon />
+                        <GitHubIcon sx={{fontSize: '2.2rem'}}/>
                     </Link>
-                    <Typography variant='body2' mt='2px' ml='5px'>
+                    <Typography variant='body3' mt='2px' ml='5px'>
                         /WarXenozord
                     </Typography>
                 </Box>
@@ -74,9 +74,9 @@ function Footer() {
                     rel="noopener noreferrer"
                     sx={{'&:hover':{color: colors.grey[900]}}}
                     >
-                        <LinkedInIcon/>
+                        <LinkedInIcon sx={{fontSize: '2.2rem'}}/>
                     </Link>
-                    <Typography variant='body2' mt='2px' ml='5px'>
+                    <Typography variant='body3' mt='2px' ml='5px'>
                         /Juan-Libonatti
                     </Typography>
                 </Box>
@@ -87,16 +87,16 @@ function Footer() {
                     rel="noopener noreferrer"
                     sx={{'&:hover':{color: colors.grey[900]}}}
                     >
-                        <MailOutlineIcon/>
+                        <MailOutlineIcon sx={{fontSize: '2.2rem'}}/>
                     </Link>
-                    <Typography variant='body2' mt='2px' ml='5px'>
+                    <Typography variant='body3' mt='2px' ml='5px'>
                         libonatti@hotmail
                     </Typography>
                 </Box>
             </Box>
         </Box>
         <Typography variant='body2' 
-        fontSize='0.6rem'
+        fontSize='0.8rem'
         textAlign='center'>
             © 2025 Juan Libonatti.
         </Typography>
