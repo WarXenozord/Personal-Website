@@ -38,6 +38,7 @@ const useScrollToSection = () => {
 
 function Header(){
     const scrollToSection = useScrollToSection()
+    const navigate = useNavigate();
 
     //---Theme and lang props---//
     const colorMode = useContext(ColorModeContext)
