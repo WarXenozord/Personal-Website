@@ -31,7 +31,7 @@ function Capabilities(){
     return(
         <Box component='section' 
         id='capabilities'
-        height='80vh'>
+        height='85vh'>
             <Typography variant='h2'
             sx={{
                 textAlign: 'center',
@@ -40,6 +40,7 @@ function Capabilities(){
                 {lProps.title}
             </Typography>
             <Box sx={{
+                height:'76%',
                 display: 'flex',
                 justifyContent: 'space-around'
             }}>
@@ -48,21 +49,22 @@ function Capabilities(){
                         <Typography variant='h3'
                         sx={{
                             textAlign: 'center',
-                            margin: '20px 0'
+                            margin: '8vh 0 2vh 0'
                         }}>
                             {lProps.boxTitle[num]}
                         </Typography>
                         <Box>
                             <Icon sx={{
-                                fontSize: '7rem',
+                                fontSize: '14rem',
                                 color: num % 2 === 0 ? colors.red[500]:colors.blue[500]
                             }}/>
                         </Box>
                         <Typography variant='body2'
                         sx={{
+                            fontSize: '1.2rem',
                             textAlign: 'center',
-                            marginTop: '10px',
-                            whiteSpace: 'pre-line'
+                            marginTop: '2vh',
+                            whiteSpace: 'pre-line',
                         }}>
                             {lProps.boxText[num]}
                         </Typography>
@@ -77,7 +79,7 @@ function Capabilities(){
             }}>
                 <Button sx = {{
                     borderRadius: '30px',
-                    fontSize: '1.2rem',
+                    fontSize: '1.6rem',
                     padding: '0 25px',
                     textTransform:'none' ,
                     backgroundColor:colors.grey[900],

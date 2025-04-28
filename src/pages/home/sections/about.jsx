@@ -26,12 +26,13 @@ function About(){
     const textPar = {
         textAlign:'justify', 
         m:'10px 0 0 0',
-        height:'260px'
+        height:'80%'
     }
     const outlineButton = {
         border: 'solid 1px',
         borderRadius: '30px',
         textTransform: 'none',
+        fontSize: '1.2rem',
         padding: '2.5px 25px',
         marginTop: '10px',
         transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out',
@@ -60,7 +61,7 @@ function About(){
     return (
         <Box component='section'
         id='about'
-        height='65vh' 
+        height='75vh' 
         sx={{
                 backgroundColor: colors.secondary[500],
                 display: 'flex',

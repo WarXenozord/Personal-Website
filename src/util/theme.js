@@ -119,16 +119,16 @@ export const themeSettings = (mode) => {
         }, typography: {
             fontFamily: '"Chau Philomene One", sans-serif',
             h1:{
-                fontSize: '4rem',
+                fontSize: '6rem',
             },
             h2:{
-                fontSize: '2rem',
+                fontSize: '2.5rem',
             },
             h3:{
-                fontSize: '1.5rem',
+                fontSize: '2rem',
             },
             h4:{
-                fontSize: '1.3rem',
+                fontSize: '1.8rem',
                 fontWeight: 'normal'
             },
             h5:{
@@ -138,12 +138,12 @@ export const themeSettings = (mode) => {
 
             },
             body1:{
-                fontSize: '0.95rem',
+                fontSize: '1.1rem',
                 fontFamily: '"Inter", sans-serif',
                 fontWeight: 'bold'
             },
             body2:{
-                fontSize: '0.95rem',
+                fontSize: '1.2rem',
                 fontFamily: '"Inter", sans-serif'
             }
         }

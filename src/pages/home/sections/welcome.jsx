@@ -107,7 +107,7 @@ function Welcome(){
   
         const scrollY = window.scrollY;
   
-        if (scrollY < initialOffset - 95) {
+        if (scrollY < initialOffset - 105) {
             setPosition('normal');
         }
         else if (scrollY < initialOffset - 10) {
@@ -141,7 +141,7 @@ function Welcome(){
         default:
           return {
             position: 'relative',
-            top: '-35px',
+            top: '-50px',
           }; // normal flow
       }
     };
@@ -153,7 +153,7 @@ function Welcome(){
             <Box
             sx={{
                 width: '100%',
-                height: '91vh',
+                height: '94vh',
                 overflow: 'hidden',
             }}
             >
@@ -178,29 +178,29 @@ function Welcome(){
             <Box
             sx={{
                 width: '100%',
-                height: '91vh',
+                height: '94vh',
                 overflow: 'hidden',
                 position: 'absolute',
-                top: '50px',
+                top: '6vh',
                 margin: '0',
                 padding: '10px 0',
                 textAlign: 'center',
             }}>
-                <Typography variant='h2' m='20px 0 0 0' 
+                <Typography variant='h2' m='6vh 0 0 0' 
                 color={colors.blue[500]} 
                 sx={{
                     WebkitTextStroke: '0.5px black',
                 }}>
                     {lProps.intro[0]}
                 </Typography>
-                <Typography variant='h1' m='5px 0 0 0' 
+                <Typography variant='h1' m='1vh 0 0 0' 
                 color='#ffffff' 
                 sx={{
                     WebkitTextStroke: '0.5px black',
                 }}>
                     Juan Libonatti
                 </Typography>
-                <Typography variant='h2' m='5px 0 10px 0' 
+                <Typography variant='h2' m='1vh 0 5vh 0' 
                 color={colors.red[500]} 
                 sx={{
                     WebkitTextStroke: '0.5px black',
@@ -211,8 +211,8 @@ function Welcome(){
                     borderRadius: '30px',
                     border: 'solid',
                     borderColor: colors.grey[900],
-                    margin: '5px 0 10px 0',
-                    fontSize: '1.2rem',
+                    marginBottom: '6vh',
+                    fontSize: '1.6rem',
                     fontWeight: 'bold',
                     color: colors.grey[900],
                     padding: '0 20px',
@@ -225,30 +225,29 @@ function Welcome(){
                     {lProps.button}
                 </Button>
                 <Box sx={[layoutStyles.gradEffect,layoutStyles.line]}></Box>
-                <Box height='200px' sx={{
+                <Box height='35vh' sx={{
                     backgroundColor: colors.primary[500] + "80"
                 }}>
                     <div ref={sliderRef} className="keen-slider">
                         {cards.map((num) => (
                             <div className="keen-slider__slide" key={num} style={{
-                                 height: "200px", 
                                  minWidth: '200px'
                             }}>
                                 <Card sx={{ 
-                                        height: "180px", 
+                                        height: "33vh", 
                                         margin: '10px 10px',
                                         border: '2px solid rgba(255,255,255,0.3)',
                                 }}>
                                     <CardMedia
                                         component="img"
-                                            height="180px"
+                                            height="100%"
                                             image={"/images/" + num + ".webp"}
                                             alt="Project Thumbnail"
                                     />
                                     <Box
                                         sx={{
                                         position: 'relative',
-                                        top: -180,
+                                        top: '-100%',
                                         left: 0,
                                         width: '100%',
                                         height: '100%',

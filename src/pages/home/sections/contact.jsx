@@ -19,10 +19,12 @@ function Contact(){
     }
 
     return(
-        <Box component='section' id='contact'>
+        <Box component='section' 
+        id='contact'
+        height='72vh'>
             <Typography variant='h2'
             textAlign='center'
-            m='25px 0'>
+            m='25px 0 4vh 0'>
                 {lProps.title}
             </Typography>
             <Box
@@ -30,7 +32,7 @@ function Contact(){
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                gap: 2, // space between fields
+                gap: 3, // space between fields
                 width: '50%',
                 margin: '0 auto', // center on page
             }}
@@ -55,17 +57,17 @@ function Contact(){
                     fullWidth
                     multiline
                     sx={inputSx}
-                    rows={4}
+                    rows={11}
                 />
                 <Button 
                 variant="contained" 
                 sx={{
                     borderRadius: '30px',
-                    fontSize: '1.2rem',
+                    fontSize: '1.6rem',
                     padding: '0 15px',
                     width: '20%',
                     alignSelf: 'center',
-                    m:'5px 0 20px 0',
+                    m:'1vh 0 20px 0',
                     textTransform:'none' ,
                     backgroundColor:colors.grey[900],
                     color:colors.grey[100],

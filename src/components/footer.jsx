@@ -24,7 +24,7 @@ function Footer() {
 
     return (
     <Box component="footer"
-    height='120px'
+    height='20vh'
     backgroundColor={isDark ? colors.grey[100]:
     colors.secondary[500]}
     padding='0 10px'

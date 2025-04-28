@@ -50,9 +50,6 @@ function Header(){
 
     // common style
     const headerBox = {display: 'flex'}
-
-    // router dom links
-    const navigate = useNavigate();
     
     return (
         <AppBar position="sticky">
@@ -61,7 +58,7 @@ function Header(){
                 justifyContent: 'space-between',
                 margin: '0',
                 padding: '5px',
-                height: '50px',
+                height: '6vh',
                 backgroundColor: colors.secondary[500],
                 position: 'relative'
             }}>
@@ -72,13 +69,13 @@ function Header(){
                         position: 'relative',
                         top: '-40px',
                         right: '25px',
-                        height: '82px',
-                        width: '82px'
+                        height: '87px',
+                        width: '87px'
                     }, layoutStyles.gradEffect]}>
                         <Button onClick={() => {}} sx={{
                             borderRadius: '50%',
-                            height: '80px',
-                            width: '80px',
+                            height: '85px',
+                            width: '85px',
                             position: 'relative',
                             backgroundColor: colors.grey[100],
                             '&:hover':{backgroundColor:colors.secondary[500]}
@@ -88,8 +85,8 @@ function Header(){
                             src={isDark ? logoDark : logoLight}
                             alt="Logo"
                             sx={{
-                                width: '40px',
-                                height: '40px',
+                                width: '70%',
+                                height: '70%',
                                 padding: '3px 0 0 5px',
                                 position: 'relative',
                                 top: '16px',
@@ -109,12 +106,12 @@ function Header(){
                         <Typography variant="h2" sx={{
                             fontFamily: '"Inknut Antiqua", serif',
                             fontWeight: 'bold',
-                            fontSize: '1.2rem',
+                            fontSize: '1.5rem',
                             margin:'0 0 0 3px',
                             padding:'0',
                         }}>Juan Libonatti</Typography >
                         <Typography variant="body1" sx={{
-                        fontSize: '0.8rem',
+                        fontSize: '0.9rem',
                         fontWeight: 'bold',
                         margin:'0',
                         padding:'0 0 0 5px',

@@ -62,7 +62,9 @@ function Standout(){
                             >
                                 {lProps.projTitle[i]}
                             </Typography>
-                            <Typography variant='body2' mt='2px'>
+                            <Typography variant='body2' 
+                            mt='2px'
+                            fontSize='1.4rem'>
                                 {lProps.projSubtitle[i]}
                             </Typography>
                             <Box sx={{
@@ -75,8 +77,7 @@ function Standout(){
                             }}/>
                             <Typography 
                             variant='body2' 
-                            mt='7px'
-                            fontSize='0.8rem'>
+                            mt='7px'>
                                 {lProps.projDesc[i]}
                             </Typography>
                     </Box>
