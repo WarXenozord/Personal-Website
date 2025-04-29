@@ -36,7 +36,7 @@ const useScrollToSection = () => {
     return scrollToSection;
 };
 
-function Header(){
+function Header({ open, toggleSidebar }){
     const scrollToSection = useScrollToSection()
     const navigate = useNavigate();
 
@@ -73,7 +73,7 @@ function Header(){
                         height: '87px',
                         width: '87px'
                     }, layoutStyles.gradEffect]}>
-                        <Button onClick={() => {}} sx={{
+                        <Button onClick={toggleSidebar} sx={{
                             borderRadius: '50%',
                             height: '85px',
                             width: '85px',
