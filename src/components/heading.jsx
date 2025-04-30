@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { ColorModeContext, tokens } from '../util/theme.js'
 import { LanguageContext, langPropsHeader } from '../util/lang.js'
+import { useSidebar } from './sidebar.jsx'
 
 import { IconButton, Button, Box, List, Tooltip, ListItem, 
     ListItemText, ListItemButton, Typography, AppBar} 
@@ -36,7 +37,9 @@ const useScrollToSection = () => {
     return scrollToSection;
 };
 
-function Header({ open, toggleSidebar }){
+function Header(){
+    const { open, toggleSidebar } = useSidebar();
+
     const scrollToSection = useScrollToSection()
     const navigate = useNavigate();
 

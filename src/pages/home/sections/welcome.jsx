@@ -45,21 +45,27 @@ function Welcome(){
             spacing: 0,
         },
         breakpoints: {
+            '(max-width: 1500px)': {
+                slides: {
+                  perView: 4,
+                  spacing: 2,
+                },
+              },
             '(max-width: 1200px)': {
               slides: {
-                perView: 4,
+                perView: 3,
                 spacing: 2,
               },
             },
             '(max-width: 900px)': {
                 slides: {
-                  perView: 3,
+                  perView: 2,
                   spacing: 2,
                 },
             },
             '(max-width: 600px)': {
               slides: {
-                perView: 2,
+                perView: 1,
                 spacing: 0,
               },
             },

@@ -1,6 +1,26 @@
 import { Box } from '@mui/material';
+import { createContext, useContext, useState } from 'react';
 
-export default function Sidebar({ open }) {
+
+const SidebarContext = createContext();
+
+export function SidebarProvider({ children }) {
+  const [open, setOpen] = useState(false);
+  const toggleSidebar = () => setOpen(prev => !prev);
+  return (
+    <SidebarContext.Provider value={{ open, toggleSidebar }}>
+      {children}
+    </SidebarContext.Provider>
+  );
+}
+
+export function useSidebar() {
+    return useContext(SidebarContext);
+}
+
+export function Sidebar() {
+  const { open } = useSidebar();
+
   return (
     <Box
       sx={{
