@@ -8,7 +8,7 @@ function ViewPort({children}){
         <Box sx={{
             width: open ? '85vw': '100vw',
             ml: open ? '15vw': '0', 
-            transition: 'all 0.3s ease'
+            transition: 'margin 0.3s ease'
         }}>
             {children}
         </Box>

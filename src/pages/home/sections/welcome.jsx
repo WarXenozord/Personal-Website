@@ -162,7 +162,7 @@ function Welcome(){
             <Box
             sx={{
                 width: '100%',
-                height: '94vh',
+                height: 'max(94vh,800px)',
                 overflow: 'hidden',
             }}
             >
@@ -187,29 +187,29 @@ function Welcome(){
             <Box
             sx={{
                 width: '100%',
-                height: '94vh',
+                height: 'max(94vh,800px)',
                 overflow: 'hidden',
                 position: 'absolute',
-                top: '6vh',
+                top: '60px',
                 margin: '0',
                 padding: '10px 0',
                 textAlign: 'center',
             }}>
-                <Typography variant='h2' m='6vh 0 0 0' 
+                <Typography variant='h2' m='60px 0 0 0' 
                 color={colors.blue[500]} 
                 sx={{
                     WebkitTextStroke: '0.5px black',
                 }}>
                     {lProps.intro[0]}
                 </Typography>
-                <Typography variant='h1' m='1vh 0 0 0' 
+                <Typography variant='h1' m='10px 0 0 0' 
                 color='#ffffff' 
                 sx={{
                     WebkitTextStroke: '0.5px black',
                 }}>
                     Juan Libonatti
                 </Typography>
-                <Typography variant='h2' m='1vh 0 5vh 0' 
+                <Typography variant='h2' m='10px 0 50px 0' 
                 color={colors.red[500]} 
                 sx={{
                     WebkitTextStroke: '0.5px black',
@@ -220,7 +220,7 @@ function Welcome(){
                     borderRadius: '30px',
                     border: 'solid',
                     borderColor: colors.grey[900],
-                    marginBottom: '6vh',
+                    marginBottom: '50px',
                     fontSize: '1.6rem',
                     fontWeight: 'bold',
                     color: colors.grey[900],
@@ -234,7 +234,7 @@ function Welcome(){
                     {lProps.button}
                 </Button>
                 <Box sx={[layoutStyles.gradEffect,layoutStyles.line]}></Box>
-                <Box height='35vh' sx={{
+                <Box height='max(35vh,280px)' sx={{
                     backgroundColor: colors.primary[500] + "80"
                 }}>
                     <div ref={sliderRef} className="keen-slider">
@@ -243,7 +243,7 @@ function Welcome(){
                                  minWidth: '200px'
                             }}>
                                 <Card sx={{ 
-                                        height: "33vh", 
+                                        height: "max(33vh,264px)", 
                                         margin: '10px 10px',
                                         border: '2px solid rgba(255,255,255,0.3)',
                                 }}>

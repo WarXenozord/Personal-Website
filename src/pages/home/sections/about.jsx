@@ -20,8 +20,11 @@ function About(){
     const shortLine = {
         marginTop: '10px',
         height: '1px',
-        width: '130px',
+        width: '150px',
         transition:  'background-color 0.3s ease-in-out'
+    }
+    const txtWidth = {
+        xs: '90%', sm:'90%', md: '45%'
     }
     const textPar = {
         textAlign:'justify', 
@@ -32,9 +35,10 @@ function About(){
         border: 'solid 1px',
         borderRadius: '30px',
         textTransform: 'none',
-        fontSize: '1.2rem',
+        fontSize: {xs: '1.6rem',sm:'1.5rem',md:'1.2rem'},
         padding: '2.5px 25px',
-        marginTop: '10px',
+        marginTop: {xs:'20px', sm:'20px', md:'10px'},
+        marginBottom: {xs:'30px', sm:'25px', md:'10px'},
         transition: 'color 0.2s ease-in-out, border-color 0.2s ease-in-out',
         '&:hover':{
             backgroundColor: colors.grey[100] + '20',
@@ -61,14 +65,17 @@ function About(){
     return (
         <Box component='section'
         id='about'
-        height='75vh' 
+        height={{xs: 'auto', sm:'auto', md: 'max(75vh,500px)'}}
         sx={{
                 backgroundColor: colors.secondary[500],
                 display: 'flex',
+                gap: {xs: '10px', sm: '10px', md:'0'},
+                flexDirection: {xs: 'column', sm:'column', md: 'row'},
                 justifyContent: 'space-around',
+                alignItems: 'center',
                 paddingTop: '5px'
         }}>
-            <Box width='45%' justifyItems='center'>
+            <Box width={txtWidth} justifyItems='center'>
                     <Typography variant='h4'>
                         {lProps.aboutTitle}
                     </Typography>
@@ -83,7 +90,7 @@ function About(){
                         {lProps.aboutButton}
                     </Button>
             </Box>
-            <Box width='45%' justifyItems='center'>
+            <Box width={txtWidth} justifyItems='center'>
                     <Box display='flex' justifyContent='center'>
                         <Box justifyItems='center'>
                             {field === 'Competences' ? (

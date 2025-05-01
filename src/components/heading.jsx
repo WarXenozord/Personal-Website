@@ -66,7 +66,7 @@ function Header(){
                 justifyContent: 'space-between',
                 margin: '0',
                 padding: '5px',
-                height: '6vh',
+                height: '60px',
                 backgroundColor: colors.secondary[500],
                 position: 'relative'
             }}>
