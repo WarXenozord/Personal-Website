@@ -5,6 +5,7 @@ import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
 import { LanguageContext, langPropsHome} from '../../../util/lang.js'
 import { layoutStyles } from '../../../util/styles.js'
+import { useSidebar } from '../../../components/sidebar.jsx'
 
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
@@ -98,6 +99,7 @@ function Welcome(){
     const headerRef = useRef(null);
     const [position, setPosition] = useState('static');
     const [initialOffset, setInitialOffset] = useState(null);
+    const {open} = useSidebar();
 
     useEffect(() => {
         const header = headerRef.current;
@@ -134,7 +136,8 @@ function Welcome(){
         case 'fixed':
           return {
             position: 'fixed',
-            left: '50%',
+            left: open ? '57.5vw':'50vw',
+            width: '90vw',
             transform: 'translateX(-50%)',
             top: '95px',
             zIndex: 1000,

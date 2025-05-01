@@ -14,6 +14,7 @@ import { IconButton, Button, Box, List, Tooltip, ListItem,
     ListItemText, ListItemButton, Typography, AppBar} 
     from '@mui/material'
 import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
 
@@ -53,7 +54,10 @@ function Header(){
     const isEn = lang === 'en'
 
     // common style
-    const headerBox = {display: 'flex'}
+    const listSlotProps = {primary: {fontSize: {sm: '0.9rem', md: '1.1rem'}}}
+
+    // display conditionals
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     
     return (
         <AppBar position="sticky">
@@ -67,7 +71,7 @@ function Header(){
                 position: 'relative'
             }}>
                 {/*---Logo Button & Name---*/}
-                <Box sx={headerBox}>
+                <Box sx={{display: 'flex'}}>
                     <Box sx={[{
                         borderRadius: '50%',
                         position: 'relative',
@@ -99,7 +103,9 @@ function Header(){
                         </Button>
                     </Box>
                     <Box sx={{
-                        display: 'inline',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
                         margin: '0',
                         position: 'relative',
                         right: '20px',
@@ -110,12 +116,12 @@ function Header(){
                         <Typography variant="h2" sx={{
                             fontFamily: '"Inknut Antiqua", serif',
                             fontWeight: 'bold',
-                            fontSize: '1.5rem',
+                            fontSize: {xs: '1.5rem', sm: '1.35rem', md:'1.5rem'},
                             margin:'0 0 0 3px',
                             padding:'0',
                         }}>Juan Libonatti</Typography >
                         <Typography variant="body1" sx={{
-                        fontSize: '0.9rem',
+                        fontSize: {xs: '0.9rem', sm: '0.8rem', md:'0.9rem'},
                         fontWeight: 'bold',
                         margin:'0',
                         padding:'0 0 0 5px',
@@ -125,17 +131,16 @@ function Header(){
                     </Box>
                 </Box>
                 {/*---Buttons---*/}
-                <Box sx={[headerBox,{alignItems: 'center'}]}>
-                    <List sx={{
+                <Box sx={{display: 'flex', alignItems: 'center'}}>
+                    {!isMobile && <List sx={{
                         display: 'flex',
                         alignContent: 'center',
                         listStyle: 'none',
                         '& .MuiListItemButton-root':{
                             borderRadius:'35px',
                             color: colors.grey[500],
-                            padding:'8px',
+                            padding: '8px',
                             height:'35px',
-                            fontWeight: 'bold'
                         },
                         '& .MuiListItemButton-root:hover':{
                             color: colors.grey[900],
@@ -145,21 +150,24 @@ function Header(){
                         <ListItem disablePadding>
                             <ListItemButton component="a" 
                             onClick={() => {scrollToSection('about', -150)}}>
-                                <ListItemText primary={lProps.competences} />
+                                <ListItemText primary={lProps.competences}  
+                                slotProps={listSlotProps}/>
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
                             <ListItemButton component="a" onClick={() => navigate("/portifolio")}>
-                                <ListItemText primary={lProps.portifolio} />
+                                <ListItemText primary={lProps.portifolio} 
+                                slotProps={listSlotProps}/>
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
                             <ListItemButton component="a" 
                             onClick={() => {scrollToSection('contact', 0)}}>
-                                <ListItemText primary={lProps.contact} />
+                                <ListItemText primary={lProps.contact} 
+                                slotProps={listSlotProps}/>
                             </ListItemButton>
                         </ListItem>
-                    </List>
+                    </List>}
                     <Tooltip title={lProps.langTooltip}>
                         <Button onClick={langMode.toggleLanguage} 
                         color="inherit" 
