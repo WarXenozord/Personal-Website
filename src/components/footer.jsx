@@ -24,7 +24,7 @@ function Footer() {
 
     return (
     <Box component="footer"
-    height='20vh'
+    height={{xs: '300px',sm:'max(20vh,200px)'}}
     backgroundColor={isDark ? colors.grey[100]:
     colors.secondary[500]}
     padding='0 10px'
@@ -32,22 +32,25 @@ function Footer() {
         <Box display='flex'
         height='90%'
         alignItems='center'
-        justifyContent='space-between'>
+        justifyContent={{xs:'space-evenly',sm:'space-between'}}
+        flexDirection={{xs: 'column', sm:'row'}}>
             <Box display='flex'
+            justifyContent={{xs: 'center', sm:'start'}}
+            width={{xs:'90%', sm: '60%'}}
             alignItems='center'>
                 <Box
                 component="img"
                 src={isDark ? logoDark : logoLight}
                 alt="Logo"
+                ml='10px'
                 sx={{
-                    width: '15%',
-                    height: '15%',
+                    height: {xs:'80px', sm:'70px', md:'120px'},
                 }}/>    
                 <Typography variant="h2" sx={{
                     fontFamily: '"Inknut Antiqua", serif',
                     fontWeight: 'bold',
-                    fontSize: '2.5rem',
-                    margin:'0 0 0 20px',
+                    fontSize: {xs:'2rem', sm: '2rem', md:'2.5rem'},
+                    marginLeft: '20px',
                     padding:'0',
                 }}>
                     Juan Libonatti
