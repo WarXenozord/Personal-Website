@@ -4,6 +4,7 @@ import { Box, Typography, Button } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
 import { LanguageContext, langPropsStandout} from '../../../util/lang.js'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 const images = ['images/1.webp',
     'images/2.webp',
@@ -17,6 +18,11 @@ function Standout(){
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
     const lProps = langPropsStandout(lang) 
+
+    //---breakpoints---//
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+    const isTablet = useMediaQuery(theme.breakpoints.down('md'));
+    const num = isTablet ? (isMobile ? 1 : 2) : 3;
     
     return(
         <Box component="section" 
@@ -33,10 +39,10 @@ function Standout(){
                 display:'flex',
                 justifyContent: 'space-around'
             }}>
-                {images.map((path, i) => (
+                {images.map((path, i) => ( (i < num) &&
                     <Box key={i} sx={{
-                        height:"74vh",
-                        width: "30%",
+                        height:"max(74vh,700px)",
+                        width: {xs: "90%", sm: '45%', md: '30%'},
                         border:"solid 1px "+colors.grey[900],
                         borderRadius: '10px',
                         boxShadow: '2px 2px 5px black',
