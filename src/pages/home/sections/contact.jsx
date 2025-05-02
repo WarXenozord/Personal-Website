@@ -21,7 +21,7 @@ function Contact(){
     return(
         <Box component='section' 
         id='contact'
-        height='72vh'>
+        height='max(72vh, 600px)'>
             <Typography variant='h2'
             textAlign='center'
             m='25px 0 4vh 0'>
@@ -33,7 +33,7 @@ function Contact(){
                 display: 'flex',
                 flexDirection: 'column',
                 gap: 3, // space between fields
-                width: '50%',
+                width: {xs:'90%', sm: '80%', md: '70%', lg: '50%'},
                 margin: '0 auto', // center on page
             }}
             noValidate
