@@ -35,6 +35,7 @@ function Welcome(){
     const lProps = langPropsHome(lang)
     const isDark = theme.palette.mode === 'dark'
 
+
     //---Video Source---//
     const vidSrc = "/videos/" + (isDark ? "darkVid" : "lightVid")
 
@@ -186,7 +187,7 @@ function Welcome(){
             {/*---Main welcome page---*/}
             <Box
             sx={{
-                width: '100%',
+                width: open ? '85%':'100%',
                 height: 'max(94vh,800px)',
                 overflow: 'hidden',
                 position: 'absolute',
@@ -234,7 +235,7 @@ function Welcome(){
                     {lProps.button}
                 </Button>
                 <Box sx={[layoutStyles.gradEffect,layoutStyles.line]}></Box>
-                <Box height='max(35vh,280px)' sx={{
+                <Box height='max(35vh,280px)' width='100%' sx={{
                     backgroundColor: colors.primary[500] + "80"
                 }}>
                     <div ref={sliderRef} className="keen-slider">

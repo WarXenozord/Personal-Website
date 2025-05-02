@@ -27,7 +27,6 @@ function Footer() {
     height={{xs: '300px',sm:'max(20vh,200px)'}}
     backgroundColor={isDark ? colors.grey[100]:
     colors.secondary[500]}
-    padding='0 10px'
     >
         <Box display='flex'
         height='90%'
@@ -36,7 +35,6 @@ function Footer() {
         flexDirection={{xs: 'column', sm:'row'}}>
             <Box display='flex'
             justifyContent={{xs: 'center', sm:'start'}}
-            width={{xs:'90%', sm: '60%'}}
             alignItems='center'>
                 <Box
                 component="img"
@@ -56,7 +54,7 @@ function Footer() {
                     Juan Libonatti
                 </Typography>
             </Box>
-            <Box mr='10px'>
+            <Box mr='30px'>
                 <Box display='flex' alignContent='center'>
                     <Link color={colors.red[500]}
                     href={profileLinks.gitHub}

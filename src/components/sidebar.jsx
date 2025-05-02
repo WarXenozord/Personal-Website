@@ -25,11 +25,11 @@ export function Sidebar() {
     <Box
       sx={{
         position: 'fixed',
-        top: '5vh',
+        top: '50px',
         zIndex:'1',
         left: 0,
         height: '100vh',
-        width: open ? '15vw' : 0,
+        width: open ? '15%' : 0,
         transition: 'width 0.3s ease',
         overflow: 'hidden',
         backgroundColor: '#1976d2',
