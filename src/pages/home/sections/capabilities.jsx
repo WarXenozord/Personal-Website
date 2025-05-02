@@ -31,7 +31,8 @@ function Capabilities(){
     return(
         <Box component='section' 
         id='capabilities'
-        height='85vh'>
+        height={{xs: 'auto',sm: 'auto',md:'max(85vh, 620px)'}}
+        pb='10px'>
             <Typography variant='h2'
             sx={{
                 textAlign: 'center',
@@ -41,7 +42,13 @@ function Capabilities(){
             </Typography>
             <Box sx={{
                 height:'76%',
-                display: 'flex',
+                display: 'grid',
+                marginBottom: '40px',
+                gridTemplateColumns: {
+                    xs: 'repeat(2, 1fr)',
+                    sm: 'repeat(2, 1fr)',
+                    md: 'repeat(4, 1fr)',
+                },
                 justifyContent: 'space-around'
             }}>
                 {boxes.map(({num, icon: Icon}) =>(
@@ -49,7 +56,7 @@ function Capabilities(){
                         <Typography variant='h3'
                         sx={{
                             textAlign: 'center',
-                            margin: '8vh 0 2vh 0'
+                            margin: '60px 0 20px 0'
                         }}>
                             {lProps.boxTitle[num]}
                         </Typography>
@@ -63,7 +70,7 @@ function Capabilities(){
                         sx={{
                             fontSize: '1.2rem',
                             textAlign: 'center',
-                            marginTop: '2vh',
+                            marginTop: '20px',
                             whiteSpace: 'pre-line',
                         }}>
                             {lProps.boxText[num]}
@@ -72,14 +79,12 @@ function Capabilities(){
                 ))}
             </Box>
             <Box sx={{
-                marginTop: '45px', 
                 display:'flex',
                 justifyContent:'center',
-
             }}>
                 <Button sx = {{
                     borderRadius: '30px',
-                    fontSize: '1.6rem',
+                    fontSize: {xs: '2.0rem', sm:'1.8rem', md:'1.6rem'},
                     padding: '0 25px',
                     textTransform:'none' ,
                     backgroundColor:colors.grey[900],
