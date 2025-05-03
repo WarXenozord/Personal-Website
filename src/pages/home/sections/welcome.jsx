@@ -98,55 +98,19 @@ function Welcome(){
     };
 
     //---ghost Header---//
-    const headerRef = useRef(null);
-    const [position, setPosition] = useState('static');
-    const [initialOffset, setInitialOffset] = useState(null);
-
-    useEffect(() => {
-        const header = headerRef.current;
-        if (!header) return;
-    
-        const offsetTop = header.getBoundingClientRect().top + window.scrollY;
-        setInitialOffset(offsetTop);
-    }, []);
+    const [showHeader, setShowHeader] = useState(false);
   
     useEffect(() => {
       const handleScroll = () => {
-        if (initialOffset == null) return;
-  
         const scrollY = window.scrollY;
-  
-        if (scrollY < initialOffset - 105) {
-            setPosition('normal');
-        }
-        else if (scrollY < initialOffset - 10) {
-            setPosition('fixed');
-        }
-        else {
-            setPosition('locked');
-        }
-
+        console.log(scrollY);
+        setShowHeader(scrollY > 300);
       };
   
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
-    }, [initialOffset]);
+    }, []);
     
-    const getStyle = () => {
-      switch (position) {
-        case 'locked':
-          return {
-            position: 'relative',
-            top: '50px',
-          };
-        default:
-          return {
-            position: 'relative',
-            top: '-50px',
-          }; // normal flow
-      }
-    };
-
     //---Sidebar Conditionals---//
     const { open, isSidebarOver } = useSidebar();
 
@@ -302,13 +266,15 @@ function Welcome(){
             backgroundColor={colors.secondary[500]} 
             ref={seekRef}>
                 <Typography variant='h3' 
-                ref={headerRef}
                 color='#ffffff'
                 m = '0'
-                sx={[getStyle(), {
+                sx={{
+                    position: 'relative',
+                    top:  showHeader ? '50px' : '-50px',
                     WebkitTextStroke: '0.5px black',
-                    textAlign: 'center'}
-                ]}>
+                    textAlign: 'center',
+                    transition: 'top 0.4s ease-in-out',
+                }}>
                     "AD ASTRA PER ASPERA"
                 </Typography>
             </Box>
