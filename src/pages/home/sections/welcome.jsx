@@ -145,6 +145,7 @@ function Welcome(){
             <Box
             sx={{
                 width: (open && !isSidebarOver) ? 'calc(100% - 250px)':'100%',
+                transition: 'width 0.3s ease-in-out',
                 height: 'max(94vh,800px)',
                 overflow: 'hidden',
                 position: 'absolute',
