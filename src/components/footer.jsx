@@ -8,7 +8,6 @@ import logoLight from '../assets/LogoLight.svg';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import { GitHub } from '@mui/icons-material';
 
 const profileLinks = {
     gitHub: "https://www.github.com/WarXenozord",

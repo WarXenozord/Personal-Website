@@ -6,7 +6,6 @@ import { tokens } from '../../../util/theme.js'
 import { LanguageContext, langPropsHome} from '../../../util/lang.js'
 import { layoutStyles } from '../../../util/styles.js'
 import { useSidebar } from '../../../components/sidebar.jsx'
-import useMediaQuery from '@mui/material/useMediaQuery'
 
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
