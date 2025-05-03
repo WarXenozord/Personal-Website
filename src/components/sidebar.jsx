@@ -1,4 +1,5 @@
-import { Box, List, ListItem, ListItemText } from '@mui/material';
+import { Box, List, ListItem, ListItemText, Typography} from '@mui/material';
+import Fade from '@mui/material/Fade';
 import useMediaQuery from '@mui/material/useMediaQuery'
 
 import { useTheme } from '@mui/material/styles'
@@ -12,6 +13,12 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import WidgetsOutlinedIcon from '@mui/icons-material/WidgetsOutlined';
+
+import RocketOutlinedIcon from '@mui/icons-material/RocketOutlined';
+import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
+import SatelliteAltOutlinedIcon from '@mui/icons-material/SatelliteAltOutlined';
+import ScaleOutlinedIcon from '@mui/icons-material/ScaleOutlined';
+import MemoryOutlinedIcon from '@mui/icons-material/MemoryOutlined';
 
 const SidebarContext = createContext();
 
@@ -30,17 +37,25 @@ export function useSidebar() {
     return useContext(SidebarContext);
 }
 
-const bButton = (name, url, IconTag) => {
+const createButton = (name, url, IconTag) => {
   const icon = <IconTag sx = {{fontSize: 
     {xs: '2.0rem', sm: '1.8rem', md:'1.4rem'}}}/>
   return {name: name, url: url, icon:icon}
 }
 const basicButtons = [
-  bButton('home','/', HomeOutlinedIcon),
-  bButton('about','/about', PersonOutlineIcon),
-  bButton('resume','/resume', WorkOutlineIcon),
-  bButton('portifolio','/portifolio', WidgetsOutlinedIcon),
+  createButton('home','/', HomeOutlinedIcon),
+  createButton('about','/about', PersonOutlineIcon),
+  createButton('resume','/resume', WorkOutlineIcon),
+  createButton('portifolio','/portifolio', WidgetsOutlinedIcon),
 ]
+const projButtons = [
+  createButton('CurieSat','/portifolio/CurieSat', SatelliteAltOutlinedIcon),
+  createButton('ANA','/portifolio/ANA', MemoryOutlinedIcon),
+  createButton('TestBench','/portifolio/TestBench', ScaleOutlinedIcon),
+  createButton('Mina','/portifolio/MInA', AccountBalanceWalletOutlinedIcon),
+  createButton('RDX & MTN-II','/portifolio/CurieSat', RocketOutlinedIcon),
+]
+
 
 export function Sidebar() {
   const theme = useTheme();
@@ -49,20 +64,35 @@ export function Sidebar() {
   const lProps = langPropsSidebar(lang)
   const { open, isSidebarOver } = useSidebar();
 
+  //common styles
   const listSlotProps = {primary: {
     fontSize: isSidebarOver ? 
     {xs: '2.2rem', sm: '2rem', md:'1.8rem'} : '1.4rem',
     marginLeft: '5px',
   }}
+  const listProps = {
+    height: '100%',
+    listStyle: 'none',
+    '& .MuiListItem-root':{
+        color: colors.grey[500],
+        padding: '5px',
+        height:'35px',
+        marginBottom: isSidebarOver ? {xs: '30px', sm: '20px', md: '15px'} : '0.5rem',
+    },
+    '& .MuiListItem-root:hover':{
+        color: colors.grey[900],
+        background: 'none'
+    },
+  }
 
   return (
     <Box
       sx={{
         position: 'fixed',
-        top: '50px',
+        top: '60px',
         zIndex:'1',
         left: 0,
-        height: '100vh',
+        height: 'calc(100vh - 60px)',
         width: open ? (isSidebarOver  ? '400px' : '250px') : 0,
         backgroundColor: colors.secondary[500] + (isSidebarOver ?  'f8' : 'ff'),
         transition: 'width 0.3s ease',
@@ -73,39 +103,53 @@ export function Sidebar() {
       }}
     >
       <Box sx={{
-        borderRight:'1px solid ' + colors.grey[900],
-        height:'100%',
         paddingLeft:'10px',
-        paddingTop: isSidebarOver ? {xs: '30px', sm: '25px', md: '20px'}: '1.5rem',
+        paddingTop: isSidebarOver ? {xs: '20px', sm: '15px', md: '10px'}: '0.2rem',
+        height: '100%',
+        borderRight:'1px solid ' + colors.grey[900],
+        overflowY: 'auto' 
       }}>
-        <List sx={{
-            height: '100%',
-            listStyle: 'none',
-            display: open ? 'inline':'none',
-            '& .MuiListItem-root':{
-                color: colors.grey[500],
-                padding: '5px',
-                height:'35px',
-                marginBottom: isSidebarOver ? {xs: '30px', sm: '20px', md: '15px'} : '0.5rem',
-            },
-            '& .MuiListItem-root:hover':{
-                color: colors.grey[900],
-                background: 'none'
-            },
-        }}>
-          {basicButtons.map((key, url) => (
-            <ListItem disablePadding key={key.name}
-            component={RouterLink} to={key.url}>
-              {key.icon}
-              <ListItemText primary={lProps[key.name]}  
-              slotProps={listSlotProps}/>
-            </ListItem>
-          ))}
-        </List>
-        <Box sx={{backgroundColor: colors.grey[500], 
-          height: '1px',
-          width: '90%',
-        }}/>
+        <Fade in={open} timeout={800}>
+        <Box sx={{display: open ? 'flex':'none', flexDirection:'column'}}>
+          <List sx={listProps}>
+            {basicButtons.map((key, url) => (
+              <ListItem disablePadding key={key.name}
+              component={RouterLink} to={key.url}>
+                {key.icon}
+                <ListItemText primary={lProps[key.name]}  
+                slotProps={listSlotProps}/>
+              </ListItem>
+            ))}
+          </List>
+          <Box sx={{backgroundColor: colors.grey[500], 
+            height: '1px',
+            width: '90%',
+          }}/>
+          <Typography variant='body2' sx={{
+            fontSize: isSidebarOver ? 
+            {xs: '2.2rem', sm: '2rem', md:'1.8rem'} : '1.4rem',
+            margin: '10px 0 0 5px',
+            fontWeight: 'bolder',
+            color: colors.grey[400],
+          }}>
+            Projects
+          </Typography>
+          <List sx={listProps}>
+            {projButtons.map((key, url) => (
+              <ListItem disablePadding key={key.name}
+              component={RouterLink} to={key.url}>
+                {key.icon}
+                <ListItemText primary={key.name}  
+                slotProps={listSlotProps}/>
+              </ListItem>
+            ))}
+          </List>
+          <Box sx={{backgroundColor: colors.grey[500], 
+            height: '1px',
+            width: '90%',
+          }}/>
+        </Box>
+        </Fade>
       </Box>
     </Box>
   );

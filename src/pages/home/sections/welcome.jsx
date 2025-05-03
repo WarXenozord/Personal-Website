@@ -102,7 +102,6 @@ function Welcome(){
     useEffect(() => {
       const handleScroll = () => {
         const scrollY = window.scrollY;
-        console.log(scrollY);
         setShowHeader(scrollY > 300);
       };
   
