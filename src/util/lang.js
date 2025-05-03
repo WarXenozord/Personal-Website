@@ -146,3 +146,17 @@ export const langPropsContact = (lang) => ({
         send: 'Enviar'
     })
 })
+
+export const langPropsSidebar = (lang) => ({
+    ...(lang === 'en' ? {  
+        home: 'Home',
+        about: 'About',
+        resume: 'Résumé',
+        portifolio: 'Portifolio',
+      }:{  
+        home: 'Início',
+        about: 'Sobre',
+        resume: 'Curriculum',
+        portifolio: "Portifólio",
+        })
+})
