@@ -6,6 +6,7 @@ import { tokens } from '../../../util/theme.js'
 import { LanguageContext, langPropsHome} from '../../../util/lang.js'
 import { layoutStyles } from '../../../util/styles.js'
 import { useSidebar } from '../../../components/sidebar.jsx'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
@@ -100,7 +101,6 @@ function Welcome(){
     const headerRef = useRef(null);
     const [position, setPosition] = useState('static');
     const [initialOffset, setInitialOffset] = useState(null);
-    const {open} = useSidebar();
 
     useEffect(() => {
         const header = headerRef.current;
@@ -134,15 +134,6 @@ function Welcome(){
     
     const getStyle = () => {
       switch (position) {
-        case 'fixed':
-          return {
-            position: 'fixed',
-            left: open ? '57.5vw':'50vw',
-            width: '90vw',
-            transform: 'translateX(-50%)',
-            top: '95px',
-            zIndex: 1000,
-          };
         case 'locked':
           return {
             position: 'relative',
@@ -155,7 +146,10 @@ function Welcome(){
           }; // normal flow
       }
     };
-      
+
+    //---Sidebar Conditionals---//
+    const { open, isSidebarOver } = useSidebar();
+
     //---Welcome Component---//
     return (
         <Box component='section' id='welcome'>
@@ -187,7 +181,7 @@ function Welcome(){
             {/*---Main welcome page---*/}
             <Box
             sx={{
-                width: open ? '85%':'100%',
+                width: (open && !isSidebarOver) ? 'calc(100% - 250px)':'100%',
                 height: 'max(94vh,800px)',
                 overflow: 'hidden',
                 position: 'absolute',
