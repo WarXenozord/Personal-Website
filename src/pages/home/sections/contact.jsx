@@ -40,18 +40,21 @@ function Contact(){
             autoComplete="off"
             >
                 <TextField
+                    name='name'
                     placeholder={lProps.name}
                     variant="outlined"
                     fullWidth
                     sx={inputSx}
                 />
                 <TextField
+                    name='email'
                     placeholder="Email"
                     variant="outlined"
                     fullWidth
                     sx={inputSx}
                 />
                 <TextField
+                    name='message'
                     placeholder={lProps.message}
                     variant="outlined"
                     fullWidth
