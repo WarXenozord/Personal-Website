@@ -86,7 +86,7 @@ function About(){
                     <Button sx={[outlineButton,{
                         color: colors.blue[500],
                         borderColor: colors.blue[500]
-                    }]}>
+                    }]} onClick={()=> {navigate('/about')}}>
                         {lProps.aboutButton}
                     </Button>
             </Box>
