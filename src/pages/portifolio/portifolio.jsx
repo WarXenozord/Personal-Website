@@ -41,12 +41,11 @@ function Portifolio(){
                 padding: '20px 20px',
                 backgroundColor: colors.primary[500],
             }}>
-                <Grid container sx={{
-                }}
+                <Grid container 
                 columns={{ xs: 2, sm: 4, md: 6, lg:12, xl:10 }}>
                     {projects.map((proj, idx) => (
                         <Grid item key={idx} size={{ xs: 2, sm: 2, md: 2, lg:3, xl:2 }}>
-                            <ProjectCard {...proj} />
+                            <ProjectCard {...proj} lang={lang}/>
                         </Grid>
                     ))}
                 </Grid>

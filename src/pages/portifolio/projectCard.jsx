@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
 import { useNavigate } from 'react-router-dom';
 
-export default function ProjectCard({ title, image, description, tech = [], links = {} }) {
+export default function ProjectCard({ title, image, description = {}, tech = [], links = {}, lang }) {
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
     const navigate = useNavigate()
@@ -48,7 +48,7 @@ export default function ProjectCard({ title, image, description, tech = [], link
             <CardContent sx={{ flexGrow: 1 }}>
                 <Typography variant="h6">{title}</Typography>
                 <Typography variant="body2" color="text.secondary" mt={1}>
-                    {description}
+                    {description[lang]}
                 </Typography>
                 {tech.length > 0 && (
                     <Box mt={2} display="flex" flexWrap="wrap" gap={1}>
