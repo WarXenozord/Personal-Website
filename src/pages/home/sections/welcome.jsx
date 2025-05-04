@@ -143,7 +143,8 @@ function Welcome(){
             {/*---Main welcome page---*/}
             <Box
             sx={{
-                width: (open && !isSidebarOver) ? 'calc(100% - 250px)':'100%',
+                 // yes, must be calc(100%-0px) because 'CSS interpolation'
+                width: (open && !isSidebarOver) ? 'calc(100% - 250px)':'calc(100% - 0px)',
                 transition: 'width 0.3s ease-in-out',
                 height: 'max(94vh,800px)',
                 overflow: 'hidden',

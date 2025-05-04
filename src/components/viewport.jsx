@@ -12,9 +12,11 @@ function ViewPort({children}){
 
     return(              
         <Box sx={{
-            width: (open && ! isSidebarOver) ? 'calc(100%-250px)': '100%',
+            // yes, must be calc(100%-0px) because 'CSS interpolation'
+            width: (open && ! isSidebarOver) ? 'calc(100%-250px)': 'calc(100%-0px)',
             ml: (open && ! isSidebarOver) ? '250px': '0', 
-            transition: 'margin 0.3s ease',
+
+            transition: 'margin 0.3s ease, width 0.3s ease',
         }}>
             {children}
         </Box>
