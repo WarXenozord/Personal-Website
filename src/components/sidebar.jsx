@@ -5,6 +5,7 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../util/theme.js'
 import { LanguageContext, langPropsSidebar } from '../util/lang.js'
+import projects from '../data/projects.js'
 
 import { createContext, useContext, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
@@ -14,7 +15,6 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import WidgetsOutlinedIcon from '@mui/icons-material/WidgetsOutlined';
 
-import RocketOutlinedIcon from '@mui/icons-material/RocketOutlined';
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import SatelliteAltOutlinedIcon from '@mui/icons-material/SatelliteAltOutlined';
 import ScaleOutlinedIcon from '@mui/icons-material/ScaleOutlined';
@@ -37,23 +37,29 @@ export function useSidebar() {
     return useContext(SidebarContext);
 }
 
-const createButton = (name, url, IconTag) => {
+const createButton = (name, IconTag, url=null) => {
+  if(!url){
+    const proj = projects.find(project => project.title === name);
+    if(proj)
+      url = proj.links.page;
+    else
+      url = '/error';
+  } 
   const icon = <IconTag sx = {{fontSize: 
     {xs: '2.0rem', sm: '1.8rem', md:'1.4rem'}}}/>
   return {name: name, url: url, icon:icon}
 }
 const basicButtons = [
-  createButton('home','/', HomeOutlinedIcon),
-  createButton('about','/about', PersonOutlineIcon),
-  createButton('resume','/resume', WorkOutlineIcon),
-  createButton('portifolio','/portifolio', WidgetsOutlinedIcon),
+  createButton('home', HomeOutlinedIcon,'/'),
+  createButton('about', PersonOutlineIcon,'/about'),
+  createButton('resume', WorkOutlineIcon,'/resume'),
+  createButton('portifolio', WidgetsOutlinedIcon,'/portifolio'),
 ]
 const projButtons = [
-  createButton('CurieSat','/portifolio/CurieSat', SatelliteAltOutlinedIcon),
-  createButton('ANA','/portifolio/ANA', MemoryOutlinedIcon),
-  createButton('TestBench','/portifolio/TestBench', ScaleOutlinedIcon),
-  createButton('Mina','/portifolio/MInA', AccountBalanceWalletOutlinedIcon),
-  createButton('RDX & MTN-II','/portifolio/CurieSat', RocketOutlinedIcon),
+  createButton('CurieSat', SatelliteAltOutlinedIcon),
+  createButton('ANA', MemoryOutlinedIcon),
+  createButton('Test Bench',ScaleOutlinedIcon),
+  createButton('Mina', AccountBalanceWalletOutlinedIcon),
 ]
 
 
@@ -132,7 +138,7 @@ export function Sidebar() {
             fontWeight: 'bolder',
             color: colors.grey[400],
           }}>
-            Projects
+            Top Projects
           </Typography>
           <List sx={listProps}>
             {projButtons.map((key, url) => (
