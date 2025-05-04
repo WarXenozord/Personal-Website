@@ -2,11 +2,13 @@ import { Card, CardMedia, CardContent, Typography, Box, Button } from '@mui/mate
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
 import { useNavigate } from 'react-router-dom';
+import { langPropsPortifolio } from '../../util/lang.js'
 
 export default function ProjectCard({ title, image, description = {}, tech = [], links = {}, lang }) {
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
     const navigate = useNavigate()
+    const lProps = langPropsPortifolio(lang)
 
     const buttonSX = {
         borderRadius: '30px',
@@ -66,14 +68,14 @@ export default function ProjectCard({ title, image, description = {}, tech = [],
                     <Button size="small" href={links.repo} 
                     target="_blank" rel="noopener noreferrer"
                     sx={buttonSX}>
-                        Source Code
+                        {lProps.srcButton}
                     </Button>
                 )}
                 {links.demo && (
                     <Button size="small" href={links.demo} 
                     target="_blank" rel="noopener noreferrer"
                     sx={buttonSX}>
-                        Live Demo
+                        {lProps.demoButton}
                     </Button>
                 )}
             </Box>

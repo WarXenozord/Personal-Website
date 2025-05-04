@@ -165,8 +165,12 @@ export const langPropsPortifolio = (lang) => ({
     ...(lang === 'en' ? {  
         title: 'This is my full portifolio!',
         subtitle: 'Many projects, many teams, always learning!',
+        srcButton: 'Source Code',
+        demoButton: 'Live Demo',
       }:{  
         title:'Este é todo o meu portifólio!',
         subtitle:'Varios projetos, varias equipes, sempre aprendendo!',
+        srcButton: 'Código Fonte',
+        demoButton: 'Demonstração',
         })
 })
