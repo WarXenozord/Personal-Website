@@ -1,4 +1,5 @@
 import { useContext, useRef, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Card, Link, CardMedia, Box, Typography, Button} from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
@@ -10,17 +11,9 @@ import { useSidebar } from '../../../components/sidebar.jsx'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 
+import projects from '../../../data/projects.js'
+
 //---Slider---// 
-//TODO: better it up and add links
-const cards = [1, 2, 3, 4, 5, 6];
-const links = [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-];
 const animation = { duration: 40000, easing: (t) => t }
 
 //common style
@@ -28,6 +21,8 @@ const animation = { duration: 40000, easing: (t) => t }
 
 //---Welcome Func---//
 function Welcome(){ 
+    const navigate=useNavigate()
+
     //---Theme and lang props---//
     const {lang} = useContext(LanguageContext)
     const theme = useTheme()
@@ -197,8 +192,8 @@ function Welcome(){
                     backgroundColor: colors.primary[500] + "80"
                 }}>
                     <div ref={sliderRef} className="keen-slider">
-                        {cards.map((num) => (
-                            <div className="keen-slider__slide" key={num} style={{
+                        {projects.map((proj, idx) => (
+                            <div className="keen-slider__slide" key={idx} style={{
                                  minWidth: '200px'
                             }}>
                                 <Card sx={{ 
@@ -209,7 +204,7 @@ function Welcome(){
                                     <CardMedia
                                         component="img"
                                             height="100%"
-                                            image={"/images/" + num + ".webp"}
+                                            image={proj.image}
                                             alt="Project Thumbnail"
                                     />
                                     <Box
@@ -231,9 +226,10 @@ function Welcome(){
                                         }}
                                     >
                                         <Link
-                                        href={links[num]}
+                                        onClick = {() => {navigate(proj.links.page)}}
                                         underline="none"
                                         sx={{
+                                            cursor: 'pointer',
                                             height: '100%',
                                             width: '100%',
                                             fontWeight: 'bold',
@@ -251,7 +247,7 @@ function Welcome(){
                                             }
                                         }}
                                         >
-                                        {lProps.cardText}
+                                            {lProps.cardText}
                                         </Link>
                                     </Box>
                                 </Card>

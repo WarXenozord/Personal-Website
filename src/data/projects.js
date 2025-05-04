@@ -4,7 +4,7 @@ const projects = [{
         tech: ['Unity', 'C#', 'React'],
         image: '/images/1.webp',
         links: {
-            page: '/Geopredict',
+            page: 'portifolio/geopredict',
             demo: null,
             repo: 'https://github.com/NarayaneRM/geopredict'
         },
@@ -14,7 +14,7 @@ const projects = [{
         tech: ['C++', 'ESP32', 'Python', 'FreeCAD'],
         image: '/images/2.webp',
         links: {
-            page: '/TestBench',
+            page: 'portifolio/testbench',
             demo: null,
             repo: null,
         },
@@ -24,7 +24,7 @@ const projects = [{
         tech: ['C++', 'ESP32', 'React', 'MongoDB'],
         image: '/images/3.webp',
         links: {
-            page: '/TestBench',
+            page: 'portifolio/srr',
             demo: null,
             repo: null,
         },
@@ -34,7 +34,7 @@ const projects = [{
         tech: ['C++', 'ESP32', 'STM32', 'Python', 'Raspberry Pi', 'EasyEDA'],
         image: '/images/4.webp',
         links: {
-            page: '/TestBench',
+            page: 'portifolio/casimiro',
             demo: null,
             repo: null,
         },
@@ -44,12 +44,21 @@ const projects = [{
         tech: ['C++', 'STM32', 'EasyEDA'],
         image: '/images/6.webp',
         links: {
-            page: '/TestBench',
+            page: 'portifolio/tesla',
+            demo: null,
+            repo: null,
+        },
+    },{
+        title: 'Placeholder',
+        description: 'Placeholder',
+        tech: ['C++', 'STM32', 'EasyEDA'],
+        image: '/images/5.webp',
+        links: {
+            page: 'portifolio/aaa',
             demo: null,
             repo: null,
         },
     }
-    
 ];
 
 projects.sort((a, b) => a.title.localeCompare(b.title));
