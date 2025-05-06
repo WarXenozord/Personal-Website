@@ -13,6 +13,7 @@ import {Sidebar, SidebarProvider} from './components/sidebar.jsx';
 import {ColorModeContext, useMode} from './util/theme.js'
 import {CssBaseline, ThemeProvider} from '@mui/material'
 import { LanguageContext, useLang } from './util/lang.js'
+import ScrollToTop from './util/scrollToTop.jsx'
 
 function App() {
   const [theme,colorMode] = useMode();
@@ -25,6 +26,7 @@ function App() {
           <LanguageContext.Provider value={{langMode,lang}}>
             <SidebarProvider>
               <CssBaseline />
+              <ScrollToTop />
               <Header/>
               <Sidebar/>
               <ViewPort>
