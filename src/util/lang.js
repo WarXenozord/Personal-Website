@@ -1,3 +1,4 @@
+import { Description } from "@mui/icons-material";
 import { createContext,useState,useMemo } from "react";
 
 export const LanguageContext = createContext({
@@ -173,4 +174,35 @@ export const langPropsPortifolio = (lang) => ({
         srcButton: 'Código Fonte',
         demoButton: 'Demonstração',
         })
+})
+
+export const langPropsAboutMe = (lang) => ({
+    ...(lang === 'en' ? {
+        title: 'About me',
+        description: "I'm a Brazilian aerospace engineer who enjoys bending both code and physics to my will. Whether it's launching simulations or debugging stubborn frontends, I like when stuff *works*.",
+        statusTitle: "What I'm up to",
+        status: 'Currently building this very site, diving into full-stack tools like React, Vite, Express, and MongoDB.',
+        funFactsTitle: 'Fun facts',
+        funFacts: ["Strategy gamer addicted to XCOM-like games.",
+            "Loves aerospace — especially satellites and scramjets.",
+            "Enjoys building tools and debugging cursed side-projects.",
+            "Powered by caffeine and curiosity."],
+        contactTitle: "Let’s talk",
+        contact: "Reach out if you want to collaborate or just geek out over rockets and render loops. You can also check out my portfolio or drop me a message.",
+        timeline: ['2025 - Built this site',
+            '2024 - Started frontend seriously',
+            '2024 - Graduated Aerospace Engineering'],
+    } : {
+        title: 'Sobre mim',
+        description: '',
+        statusTitle: "O que eu estou fazendo",
+        status: '',
+        funFactsTitle: 'Fatos Aleatórios',
+        funFacts: ['','','',''],
+        contactTitle: '',
+        contact: '',
+        timeline: ['',
+            '',
+            ''],
+    })
 })
