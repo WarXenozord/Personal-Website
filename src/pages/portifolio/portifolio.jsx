@@ -27,11 +27,11 @@ function Portifolio(){
                 gap: '15px',
                 textAlign:'center',
             }}>
-                <Typography variant="h1" fontSize={{xs: '3rem', sm: '4rem', md: '5rem'}}>
+                <Typography variant="h2" fontSize={{xs: '2.5rem', sm: '2.7rem', md: '3rem'}}>
                     {lProps.title}
                 </Typography>
                 <Box height='2px' width='40%' backgroundColor={colors.grey[500]} />
-                <Typography variant="h4" fontSize={{xs: '1.3rem', sm: '1.8rem', md: '2.2em'}}>
+                <Typography variant="h4" fontSize={{xs: '1.2rem', sm: '1.3rem', md: '1.4em'}}>
                     {lProps.subtitle}
                 </Typography>
             </Box>

@@ -6,6 +6,7 @@ import './App.css'
 import Header from './components/heading.jsx'
 import Home from './pages/home/home.jsx'
 import Portifolio from './pages/portifolio/portifolio.jsx'
+import About from './pages/about/about.jsx'
 import Footer from './components/footer.jsx'
 import ViewPort from './components/viewport.jsx'
 import {Sidebar, SidebarProvider} from './components/sidebar.jsx';
@@ -33,6 +34,7 @@ function App() {
                 <Routes>
                   <Route path = "/" element={<Home />}/>
                   <Route path = "/portifolio" element={<Portifolio />}/>
+                  <Route path = "/about" element={<About />}/>
                 </Routes>
                 <Footer />
               </ViewPort>
