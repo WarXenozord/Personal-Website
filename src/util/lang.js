@@ -189,9 +189,16 @@ export const langPropsAboutMe = (lang) => ({
             "Powered by caffeine and curiosity."],
         contactTitle: "Let’s talk",
         contact: "Reach out if you want to collaborate or just geek out over rockets and render loops. You can also check out my portfolio or drop me a message.",
-        timeline: ['2025 - Built this site',
-            '2024 - Started frontend seriously',
-            '2024 - Graduated Aerospace Engineering'],
+        timeline: [
+            {date: 'JUN 2025', event: 'My precious', desc:'Built this site'},
+            {date: 'JAN 2025', event: 'First Job!', desc:'Started working at IAE'},
+            {date: 'DEC 2024', event: 'Graduated!', desc:'Aerospace Engineering, ITA'},
+            {date: 'OCT 2024', event: 'Papers, please', desc:'Presented at CONTECC'},
+            {date: 'NOV 2023', event: 'Go CurieSat!', desc:'Participated in OBSat'},
+            {date: 'AUG 2023', event: 'Rocket Launch!', desc:'Participated in a launch at CLBI'},
+            {date: 'JUN 2023', event: 'Partners', desc:'Cofounded ITACube'},
+            {date: 'FEB 2023', event: 'Mr. President', desc:'President at ITA Rocket Design'},
+        ],
     } : {
         title: 'Sobre mim',
         description: '',
@@ -201,8 +208,15 @@ export const langPropsAboutMe = (lang) => ({
         funFacts: ['','','',''],
         contactTitle: '',
         contact: '',
-        timeline: ['',
-            '',
-            ''],
+        timeline: [
+            {date: 'JUN 2025', event: 'My precious', desc:'Built this site'},
+            {date: 'JAN 2025', event: 'First Job!', desc:'Started working at IAE'},
+            {date: 'DEC 2024', event: 'Graduated!', desc:'Aerospace Engineering, ITA'},
+            {date: 'OCT 2024', event: 'Papers, please', desc:'Presented at CONTECC'},
+            {date: 'NOV 2023', event: 'Go CurieSat!', desc:'Participated in OBSat'},
+            {date: 'AUG 2023', event: 'Rocket Launch!', desc:'Participated in a launch at CLBI'},
+            {date: 'JUN 2023', event: 'Partners', desc:'Cofounded ITACube'},
+            {date: 'FEB 2023', event: 'Mr. President', desc:'President at ITA Rocket Design'},
+        ],
     })
 })
