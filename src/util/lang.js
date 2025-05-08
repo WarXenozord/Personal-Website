@@ -220,3 +220,129 @@ export const langPropsAboutMe = (lang) => ({
         ],
     })
 })
+
+export const langPropsResume = (lang) => ({    
+    ...(lang === 'en' ? {
+        title:'My Résumé',
+        subtitle:"Here's a detailed overview of my professional background, skills, and education. You can also download a PDF version below.",
+        downBut: 'Download PDF',
+        printBut: 'Print Résumé',
+        tabs: [
+            {title: 'Education',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Work Experience',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Skills',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Certifications',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Languages',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Tools & Technologies',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            }
+        ]
+    }:{
+        title:'My Résumé',
+        subtitle:"Here's a detailed overview of my professional background, skills, and education. You can also download a PDF version below.",
+        downBut: 'Download PDF',
+        printBut: 'Print Résumé',
+        tabs: [
+            {title: 'Education',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Work Experience',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Skills',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Certifications',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Languages',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            },
+            {title: 'Tools & Technologies',
+                items:[
+                    {title: 'Aerospace Engineering',
+                        place: 'Instituto Tecnológico de Aeronáutica',
+                        period: '2024',
+                        desc: 'aaaa'
+                    }
+                ]
+            }
+        ]
+    })
+})
