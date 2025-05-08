@@ -93,7 +93,10 @@ function Capabilities(){
                         backgroundColor:colors.grey[600] + 'd0'
                     },
                 }}
-                href='#contact'
+                    onClick={  ()=> {
+                        const element = document.getElementById('contact');
+                        if (element) element.scrollIntoView({ behavior: 'smooth' });
+                    }}
                 >
                     {lProps.call}
                 </Button>
