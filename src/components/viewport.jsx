@@ -1,14 +1,12 @@
 import { Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles'
-import { useSidebar } from './sidebar.jsx'
-
-
-
+import { useContext } from 'react';
+import { SidebarContext } from './sidebar';
 
 function ViewPort({children}){
     const theme = useTheme();
 
-    const {open, isSidebarOver } = useSidebar();
+    const {open, isSidebarOver } = useContext(SidebarContext);
 
     return(              
         <Box sx={{

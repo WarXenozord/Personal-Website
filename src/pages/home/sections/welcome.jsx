@@ -5,8 +5,8 @@ import { Card, Link, CardMedia, Box, Typography, Button} from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
 import { LanguageContext, langPropsHome} from '../../../util/lang.js'
+import { SidebarContext } from '../../../components/sidebar.jsx';
 import { layoutStyles } from '../../../util/styles.js'
-import { useSidebar } from '../../../components/sidebar.jsx'
 
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
@@ -105,7 +105,7 @@ function Welcome(){
     }, []);
     
     //---Sidebar Conditionals---//
-    const { open, isSidebarOver } = useSidebar();
+    const { open, isSidebarOver } = useContext(SidebarContext);
 
     //---Welcome Component---//
     return (

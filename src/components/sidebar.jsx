@@ -20,7 +20,7 @@ import SatelliteAltOutlinedIcon from '@mui/icons-material/SatelliteAltOutlined';
 import ScaleOutlinedIcon from '@mui/icons-material/ScaleOutlined';
 import MemoryOutlinedIcon from '@mui/icons-material/MemoryOutlined';
 
-const SidebarContext = createContext();
+export const SidebarContext = createContext();
 
 export function SidebarProvider({ children }) {
   const [open, setOpen] = useState(false);
@@ -31,10 +31,6 @@ export function SidebarProvider({ children }) {
       {children}
     </SidebarContext.Provider>
   );
-}
-
-export function useSidebar() {
-    return useContext(SidebarContext);
 }
 
 const createButton = (name, IconTag, url=null) => {
@@ -68,7 +64,7 @@ export function Sidebar() {
   const {lang} = useContext(LanguageContext)
   const colors = tokens(theme.palette.mode)
   const lProps = langPropsSidebar(lang)
-  const { open, isSidebarOver } = useSidebar();
+  const { open, isSidebarOver } = useContext(SidebarContext);
 
   //common styles
   const listSlotProps = {primary: {

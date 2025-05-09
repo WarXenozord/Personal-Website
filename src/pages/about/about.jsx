@@ -15,7 +15,7 @@ import { LanguageContext, langPropsAboutMe} from '../../util/lang.js'
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import CodeIcon from '@mui/icons-material/Code';
-import CoffeeIcon from '@mui/icons-material/Coffee';
+import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import SchoolIcon from '@mui/icons-material/School';
 import WebIcon from '@mui/icons-material/Web';
 import WorkIcon from '@mui/icons-material/Work';
@@ -81,7 +81,7 @@ export default function About() {
               <ListItemText primary={lProps.funFacts[2]} />
             </ListItem>
             <ListItem>
-              <ListItemIcon><CoffeeIcon sx={{color:colors.red[500]}}/></ListItemIcon>
+              <ListItemIcon><TheaterComedyIcon sx={{color:colors.red[500]}}/></ListItemIcon>
               <ListItemText primary={lProps.funFacts[3]} />
             </ListItem>
           </List>
