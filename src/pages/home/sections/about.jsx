@@ -67,7 +67,7 @@ function About(){
     return (
         <Box component='section'
         id='about'
-        height={{xs: 'auto', sm:'auto', md: 'max(75vh,500px)'}}
+        height={{xs: 'auto', lg: 'max(75vh,700px)'}}
         sx={{
                 backgroundColor: colors.secondary[500],
                 display: 'flex',
