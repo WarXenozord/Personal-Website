@@ -28,8 +28,10 @@ function About(){
     }
     const textPar = {
         textAlign:'justify', 
+        fontSize: '1.4rem',
         m:'10px 0 0 0',
-        height:'80%'
+        height:'80%',
+        whiteSpace: 'pre-line'
     }
     const outlineButton = {
         border: 'solid 1px',
@@ -132,7 +134,7 @@ function About(){
                             ]}></Box>
                         </Box>
                     </Box>
-                    <Typography variant='body2' sx={textPar}>
+                    <Typography variant='body2' sx={[textPar]}>
                         {field === 'Competences' ? 
                         lProps.competencesText : lProps.experienceText}
                     </Typography>
