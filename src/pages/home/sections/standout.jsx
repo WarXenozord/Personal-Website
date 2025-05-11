@@ -6,9 +6,9 @@ import { tokens } from '../../../util/theme.js'
 import { LanguageContext, langPropsStandout} from '../../../util/lang.js'
 import useMediaQuery from '@mui/material/useMediaQuery'
 
-const images = ['images/1.webp',
-    'images/2.webp',
-    'images/3.webp'
+const images = ['images/7.webp',
+    'images/1.webp',
+    'images/8.webp'
 ]
 
 function Standout(){ 
@@ -34,14 +34,15 @@ function Standout(){
                 {lProps.title}
             </Typography>
             <Box sx={{
-                marginTop: '30px',
-                paddingBottom: '20px',
+                marginTop: '40px',
+                paddingBottom: '50px',
                 display:'flex',
                 justifyContent: 'space-around'
             }}>
                 {images.map((path, i) => ( (i < num) &&
                     <Box key={i} sx={{
-                        height:"max(74vh,700px)",
+                        padding:'0 20px',
+                        height:"max(50vh,650px)",
                         width: {xs: "90%", sm: '45%', md: '30%'},
                         border:"solid 1px "+colors.grey[900],
                         borderRadius: '10px',
@@ -54,7 +55,8 @@ function Standout(){
                                 component="img"
                                 alt={lProps.alt[i]}
                                 src={path}
-                                sx={{ height: '30%', 
+                                sx={{ 
+                                    height: {xs: '40%', sm: '30%',md:'calc(100px + 10vw)'}, 
                                     aspectRatio: '1',
                                     borderRadius: '50%' ,
                                     textAlign: 'center',
@@ -82,8 +84,9 @@ function Standout(){
                                 colors.blue[500],
                             }}/>
                             <Typography 
+                            textAlign='justify'
                             variant='body2' 
-                            mt='7px'>
+                            mt='15px'>
                                 {lProps.projDesc[i]}
                             </Typography>
                     </Box>

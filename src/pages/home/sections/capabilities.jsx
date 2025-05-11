@@ -31,8 +31,8 @@ function Capabilities(){
     return(
         <Box component='section' 
         id='capabilities'
-        height={{xs: 'auto',sm: 'auto',md:'max(85vh, 620px)'}}
-        pb='10px'>
+        height={{xs: 'auto',sm: 'auto',md:'max(70vh, 600px)'}}
+        pb='20px'>
             <Typography variant='h2'
             sx={{
                 textAlign: 'center',
@@ -56,7 +56,7 @@ function Capabilities(){
                         <Typography variant='h3'
                         sx={{
                             textAlign: 'center',
-                            margin: '60px 0 20px 0'
+                            margin: '30px 0 20px 0'
                         }}>
                             {lProps.boxTitle[num]}
                         </Typography>

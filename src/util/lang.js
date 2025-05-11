@@ -57,20 +57,18 @@ export const langPropsHome = (lang) => ({
 export const langPropsAbout = (lang) => ({
     ...(lang === 'en' ? {
         aboutTitle: "About me",
-        aboutText: "Hello there! I am Juan Libonatti, a braziliam aerospacial \
-        engineer and developer passionate about bringing projects to life. \
-        Don't let the specifcs of my degree fool you - I enjoy working with \
-        code, eletronics just as much as I do with rockets.\
+        aboutText: "Hello there! I'm Juan Libonatti, a Brazilian aerospace engineer and developer \
+        passionate about bringing projects to life. Don’t let the specifics of my degree fool you \
+        — I enjoy working with code and electronics just as much as I do with rockets.\
         \n\n\
-        My journey began at Instituto Tecnológico de Aeronáutica (ITA). During my time there I took\
-        part in many extension grops and participated in many competitions that sparked my interest\
-        in electronics and coding. Ever since I have never passed a oportunity to learn a new skill\
-        be it on my own or with the help of competent and incredible people around me.\
+        My journey began at the Instituto Tecnológico de Aeronáutica (ITA), where I joined several \
+        extension groups and participated in various competitions that sparked my interest in \
+        electronics and programming. Since then, I’ve never missed an opportunity to learn a new \
+        skill — whether on my own or with the help of the talented people around me.\
         \n\n\
-        Outside of work, I am a gamer and also enjoy doing all sort of personal projects,\
-        from unity games to 3D printing. I also like doing video editing, animation and\
-        a bit of 3d modeling, though I am still getting the ropes of blender - but hey, I did model\
-        the donut!",
+        Outside of work, I’m a gamer and love diving into personal projects, from Unity games to 3D \
+        printing. I also enjoy video editing, animation, and a bit of 3D modeling. I'm still getting \
+        the hang of Blender — but hey, I did model the donut!",
         competencesTitle: "Competences",
         competencesText: "\
         • Front-end developing with Node.js / React;\n\
@@ -89,28 +87,44 @@ export const langPropsAbout = (lang) => ({
         experienceTitle: "Experience",
         experienceText: "\
         2025-Now: Instituto de Aeronáutica e Espaço, Propulsion Division.\n\
-        One of the key players in brazil's rocket launchers, the institute\
-        has designed several rockets, notably most of the SONDA family, the\
-        VSB-30 and VLS. I work at the space propulsion branch, as\
-        part of the liquid motors design team.\n\
-        \n\
+        One of the key players in Brazil's rocket launcher development, the institute\
+        has designed several rockets — notably most of the SONDA family, the\
+        VSB-30, and the VLS. I work in the space propulsion branch, as\
+        part of the liquid engine design team.\
+        \n\n\
         2024-2023: ITACube extension group, ITA.\n\
-        Focused on the creation of educational, cubesats launched by weather balloons\
+        Focused on the creation of educational CubeSats launched by weather balloons.\
         As a co-founder, I engaged in a number of activities ranging from\
-        managing members and projects to coding and designing electronics.\n\
-        \n\
+        managing members and projects to coding and electronics design.\
+        \n\n\
         2024-2020: ITA Rocket Design extension group, ITA.\n\
-        I started as a member in the eletronics team, eventually becoming\
-        president in 2023. There I learned a lot embedded eletronics and \
-        sounding rockets. I also participated at a launch of one of the \
-        rockets at Centro de Lançamento da Barreira do Inferno (CLBI).\n\
+        I started as a member of the electronics team, eventually becoming\
+        president in 2023. There I learned a lot about embedded electronics and\
+        sounding rockets. I also participated in the launch of one of our\
+        rockets at the Centro de Lançamento da Barreira do Inferno (CLBI).\
         ",
         aboutButton: "Even more",
         competencesButton: "See my full résumé",
         experienceButton: "See my portifolio",
     }:{
         aboutTitle: "Sobre mim",
-        aboutText: "Aye Aye",
+        aboutText: "\
+        Olá! Eu sou Juan Libonatti, brasileiro, engenheiro aeroespacial \
+        e desenvolvedor, além apaixonado por projetos de engenharia. \
+        Não se deixe enganar pelo foco do meu diploma — gosto tanto de trabalhar com código e \
+        eletrônica quanto com foguetes e ferramentas.\
+        \n\n\
+        Minha jornada começou no Instituto Tecnológico de Aeronáutica (ITA), \
+        onde participei de diversos grupos de extensão e competições que \
+        despertaram meu interesse por eletrônica e programação. Desde então, \
+        estou sempre buscando aprender algo — seja por conta \
+        própria ou com a ajuda de pessoas incríveis e talentosas ao meu redor.\
+        \n\n\
+        Fora do trabalho, sou um gamer e também gosto de me envolver em projetos pessoais, \
+        desde jogos feitos em Unity até impressão 3D. Também curto edição de vídeo, \
+        animação e um pouco de modelagem 3D. Ainda estou pegando o jeito do \
+        Blender — mas veja bem, eu já modelei o famoso donut!\
+        ",
         competencesTitle: "Competências",
         competencesText: "\
         • Desenvolvimento front-end com Node.js / React;\n\
@@ -127,7 +141,24 @@ export const langPropsAbout = (lang) => ({
         • Criação de jogos em Unity.\
         ",
         experienceTitle: "Experiência",
-        experienceText: "Aye aye",
+        experienceText: "\
+        2025-Agora: Instituto de Aeronáutica e Espaço, Divisão de Propulsão.\n\
+        O principal envolvido no desenvolvimento de lançadores espaciais no Brasil,\
+        o instituto foi o local de onde sairam diversos foguetes nacionais — notavelmente a \
+        maior parte da família SONDA, o VSB-30 e o VLS. Trabalho na área de propulsão espacial,\
+        no projeto de motores líquidos.\
+        \n\n\
+        2024-2023: Grupo de extensão ITACube, ITA.\n\
+        Grupo focado na criação de CubeSats educacionais lançados por balões meteorológicos.\
+        Como cofundador, participei de diversas atividades, desde a gestão de membros\
+        e projetos até programação e desenvolvimento de eletrônica.\
+        \n\n\
+        2024-2020: Grupo de extensão ITA Rocket Design, ITA.\n\
+        Comecei como membro da equipe de eletrônica, e eventualmente me tornei\
+        presidente em 2023. Lá aprendi bastante sobre eletrônica embarcada e\
+        foguetes de sondagem. Também participei do lançamento de um dos nossos\
+        foguetes no Centro de Lançamento da Barreira do Inferno (CLBI).\
+        ",
         aboutButton: "Ainda mais",
         competencesButton: "Ver curriculum completo",
         experienceButton: "Veja meu portifólio",
@@ -160,32 +191,44 @@ export const langPropsCapabilities = (lang) => ({
 
 export const langPropsStandout = (lang) => ({
     ...(lang === 'en' ? {
-        title: 'See some of my projects',
-        projTitle: ['Geopredict', 'Test Bench', 'SRR'],
-        projSubtitle: ['Educational Software', 'Test Equipment', 'IoT Project'],
+        title: 'Projects I worked on',
+        projTitle: ['CurieSat', 'Geopredict', 'ANA'],
+        projSubtitle: ['Balloon CubeSat', 'Educational Webapp', 'Rocket Avionics'],
         projDesc:[
-            "blablablabalbalbalablabllba",
-            "blablablabalbalbalablabllba",
-            "blablablabalbalbalablabllba",
+            "Launched by weather balloons, this satellite's original mission was to measure atmospheric levels\
+            of ionizing radiation through its Geiger counter payload. It is controlled by an ESP32, can send\
+            and receive data through a LoRa radio, and is equipped with an array of sensors, including a GPS and a barometer",
+            "An educational website made using React that teaches about human-caused carbon emissions. It features\
+            satellite data fetched from INPE and NASA APIs, along with an interactive game made in Unity. The project\
+            was a global nominee at the 2024 NASA Space Apps Challenge.",
+            "A sounding rocket avionics system designed solely by me. It is capable of determining its altitude and activating\
+            a two-stage recovery system while also recording the flight's data. It uses an STM32 microcontroller to\
+            run its firmware and has a Python client for fast configuration when connected to a computer via USB",
         ],
         alt:[
+            'Educational Satelite',
             '3d island city',
-            'CAD Part',
-            'Dashboard',
+            'Avionics PCB',
         ]
     }:{
-        title: 'Veja alguns dos meus projetos',
-        projTitle: ['Geopredict', 'Test Bench', 'SRR'],
-        projSubtitle: ['Software Educacional', 'Equipamento de Teste', 'Projeto IoT'],
+        title: 'Projetos em que trabalhei',
+        projTitle: ['CurieSat', 'Geopredict', 'ANA'],
+        projSubtitle: ['CubeSat de Balão', 'Webapp Educacional', 'Aviônica de Foguete'],
         projDesc:[
-            "blablablabalbalbalablabllba",
-            "blablablabalbalbalablabllba",
-            "blablablabalbalbalablabllba",
+            "Lançado por balões meteorológicos, a missão deste satélite era medir os níveis atmosféricos\
+            de radiação ionizante, sendo sua carga útil um contador Geiger. Ele é controlado por um ESP32,\
+            pode enviar e receber dados via rádio LoRa e está equipado com uma variedade de sensores, incluindo GPS e barômetro",
+            "Um site educacional feito com React que ensina sobre as emissões de carbono causadas pelo ser humano. Ele apresenta\
+            dados de satélite obtidos das APIs do INPE e da NASA, além de um jogo interativo feito em Unity. O projeto\
+            foi finalista global no hackaton da NASA Space Apps de 2024.",
+            "Um sistema de aviônica para foguete de sondagem projetado por mim. Ele é capaz de determinar sua altitude\
+            e ativar um sistema de recuperação em dois estágios, além de registrar os dados do voo. Utiliza um microcontrolador STM32\
+            para rodar seu firmware e conta com um cliente em Python para configuração por um computador via USB",
         ],
         alt:[
-            'cidade-ilha 3d',
-            'peça CAD',
-            'Dashboard',
+            'Satélite Educacional',
+            'Cidade ilha 3d',
+            'PCB de aviônica',
         ]
     })
 })
@@ -244,7 +287,7 @@ export const langPropsAboutMe = (lang) => ({
             "I love rockets, drones and satellites. However I hate planes - they are boring.",
             "Coding is cool but what coding firmware for my own hardware is even cooler.",
             "I have some inflatable costumes and enjoy wearing them, notably a T-Rex one."],
-        contactTitle: "Let’s talk",
+        contactTitle: "Let's talk",
         contact: "Reach out if you want to collaborate or just geek out over rockets and stuff. Oh, and don't forget take a look at my portifolio too, I have some nice things there!",
         timeline: [
             {date: 'JUN 2025', event: 'My precious', desc:'Built this site'},

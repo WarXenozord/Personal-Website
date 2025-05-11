@@ -81,8 +81,23 @@ const projects = [{
             en: "The very first 1U CubeSat developed by ITACube, designed to measure the ionizing radiation profile in the atmosphere. It was launched via weather balloon in 2023.",
             pt: 'O primeiro CubeSat de 1U desenvolvido pela ITACube, feito para medir o perfil de radiação ionizante na atmosfera. Foi lançado por balão meteorológico em 2023.',
         },
-        tech: ['C++', 'STM32', 'EasyEDA'],
+        tech: ['C++', 'ESP32', 'KiCAD'],
         image: '/images/7.webp',
+        links: {
+            page: 'portifolio/CurieSat',
+            demo: null,
+            repo: null,
+        },
+    },{
+        title: 'ANA',
+        solo: false,
+        star: true,
+        description: {
+            en: "A tiny rocket avionics board, fully designed by me. It records altitude and can trigger a two-stage rocket recovery system. I also developed a lightweight Python client to configure the board via USB.",
+            pt: 'Uma pequena placa de aviônica para foguetes. Ela registra a altitude e pode acionar uma recuperação em dois estágios. Também desenvolvi um app em Python para configurar a placa via USB.',
+        },
+        tech: ['C++', 'STM32', 'Python','EasyEDA'],
+        image: '/images/8.webp',
         links: {
             page: 'portifolio/CurieSat',
             demo: null,
