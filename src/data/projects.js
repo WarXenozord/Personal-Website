@@ -99,7 +99,7 @@ const projects = [{
         tech: ['C++', 'STM32', 'Python','EasyEDA'],
         image: '/images/8.webp',
         links: {
-            page: 'portifolio/CurieSat',
+            page: 'portifolio/ANA',
             demo: null,
             repo: null,
         },

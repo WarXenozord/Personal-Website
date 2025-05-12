@@ -23,16 +23,26 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import SatelliteAltIcon from '@mui/icons-material/SatelliteAlt';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import GroupsIcon from '@mui/icons-material/Groups';
-  
+import RocketIcon from '@mui/icons-material/Rocket';
+import CribIcon from '@mui/icons-material/Crib';
+import ClassIcon from '@mui/icons-material/Class';
+
 const timelineIcons = [
   <WebIcon/>,
   <WorkIcon/>,
   <SchoolIcon/>,
+  <CodeIcon/>,
   <DescriptionIcon/>,
   <SatelliteAltIcon/>,
   <RocketLaunchIcon/>,
+  <RocketLaunchIcon/>,
   <HandshakeIcon/>,
-  <GroupsIcon/>
+  <GroupsIcon/>,
+  <RocketLaunchIcon/>,
+  <SatelliteAltIcon/>,
+  <RocketIcon/>,
+  <ClassIcon/>,
+  <CribIcon/>
 ]
 
 export default function About() {
@@ -49,7 +59,11 @@ export default function About() {
           <Typography variant="h2" gutterBottom>
             {lProps.title}
           </Typography>
-          <Typography variant="body1" sx={{ mb: 4 }}>
+          <Typography variant="body2" sx={{ 
+            mb: 4 ,
+            whiteSpace: 'pre-line',
+            textAlign: 'justify'
+          }}>
             {lProps.description}
           </Typography>
 
@@ -58,7 +72,7 @@ export default function About() {
           <Typography variant="h5" gutterBottom>
             {lProps.statusTitle}
           </Typography>
-          <Typography variant="body1" sx={{ mb: 4 }}>
+          <Typography variant="body2" sx={{ mb: 4 }}>
             {lProps.status}
           </Typography>
 
@@ -91,7 +105,7 @@ export default function About() {
           <Typography variant="h5" gutterBottom>
             {lProps.contactTitle}
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body2">
             {lProps.contact}
           </Typography>
         </Grid>

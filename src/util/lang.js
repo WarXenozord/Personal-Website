@@ -278,7 +278,44 @@ export const langPropsPortifolio = (lang) => ({
 export const langPropsAboutMe = (lang) => ({
     ...(lang === 'en' ? {
         title: 'About me',
-        description: "I'm a Brazilian aerospace engineer who enjoys working with software, electronics and machines. I have a hands-on approach",
+        description: "\
+        I'm Juan Libonatti, a Brazilian aerospace engineer and hands-on developer with\
+        a passion for building things that actually work. Whether it's a liquid-fueled rocket\
+        engine or a tiny embedded system running on an STM32, I'm the kind of person who thrives\
+        on taking ideas off the whiteboard and making them fly — sometimes literally.\
+        \n\n\
+        My academic roots are at the Instituto Tecnológico de Aeronáutica (ITA), where I dove deep\
+        into engineering while getting my hands dirty in several student groups. Along the way,\
+        I built a solid toolkit in embedded systems, PCB design, and programming (Python, C/C++),\
+        and even played around with Unity and 3D printing for side projects.\
+        \n\n\
+        I joined ITA Rocket Design in 2020 as a member of the avionics team, working on sounding\
+        rockets that flew up to 3 km. We designed the boards that collected in-flight data via radio link.\
+        I loved it — so much that I became avionics lead in 2021, then director in 2022, and president in 2023.\
+        Highlights include winning awards at the Latin America Space Challenge (2022 and 2023), and launching\
+        one of our rockets from the Centro de Lançamento da Barreira do Inferno, CLBI.\
+        \n\n\
+        My interest in electronics led me to try another kind of aerospace system — satellites.\
+        I joined a team for the first Olimpíada Brasileira de Satélites (OBSat), a student competition\
+        to build and launch CubeSats via weather balloons. We won an educational CubeSat kit and learned\
+        a ton in the process. That experience inspired me and two teammates to co-found ITACube in 2023 —\
+        an extension group focused on educational balloon-launched CubeSats. As ITACube, we returned to OBSat,\
+        joined the NASA Space Apps Hackathon, and built our own CubeSat: CurieSat.\
+        \n\n\
+        Outside of student groups, I interned at the space propulsion division of Instituto de Aeronáutica e Espaço (IAE)\
+        in 2023 — the institute behind the SONDA family, VSB-30, and the VLS. In 2024, I interned at Centro Espacial ITA,\
+        which developed the ITASAT and SPORT CubeSats. I graduated in late 2024 and now work full-time in IAE’s\
+        space propulsion division, still learning and building every day.\
+        \n\n\
+        I don't just like to learn — I chase it. Every project is a chance to dive deeper, whether it's squeezing\
+        performance out of an old magnetometer at high altitudes or debugging a React web app at 2 AM.\
+        I’ve learned a lot from doing things the hard way, and even more from working alongside brilliant teammates.\
+        \n\n\
+        Outside the lab or the terminal, I’m a big fan of games that make me think — XCOM, Kerbal Space Program,\
+        and Stellaris (please don’t tempt me with the last one). I’ve joined a few Ludum Dare game jams, too.\
+        I like gardening to unwind, and occasionally do video editing or 3D modeling — usually when it helps bring\
+        a project to life.\
+        ",
         statusTitle: "What I'm up to",
         status: 'Currently building this very site, as I always wanted to have my very own personal website to showcase my portifolio\
         and host some of my apps. Creating these pages has been pretty enjoyable while also helping me learn a LOT more about React.',
@@ -286,40 +323,101 @@ export const langPropsAboutMe = (lang) => ({
         funFacts: ["Gamer, addicted to strategy games. I also enjoy building my own games.",
             "I love rockets, drones and satellites. However I hate planes - they are boring.",
             "Coding is cool but what coding firmware for my own hardware is even cooler.",
-            "I have some inflatable costumes and enjoy wearing them, notably a T-Rex one."],
+            "I own some inflatable costumes and love wearing them — especially a T-Rex one."],
         contactTitle: "Let's talk",
-        contact: "Reach out if you want to collaborate or just geek out over rockets and stuff. Oh, and don't forget take a look at my portifolio too, I have some nice things there!",
+        contact: "Thanks for stopping by — if you're curious about anything I've worked on, or just want \
+        to talk rockets, CubeSats, or weird tech experiments, feel free to reach out. Also, check my portifolio!",
         timeline: [
-            {date: 'JUN 2025', event: 'My precious', desc:'Built this site'},
-            {date: 'JAN 2025', event: 'First Job!', desc:'Started working at IAE'},
-            {date: 'DEC 2024', event: 'Graduated!', desc:'Aerospace Engineering, ITA'},
-            {date: 'OCT 2024', event: 'Papers, please', desc:'Presented at CONTECC'},
-            {date: 'NOV 2023', event: 'Go CurieSat!', desc:'Participated in OBSat'},
-            {date: 'AUG 2023', event: 'Rocket Launch!', desc:'Participated in a launch at CLBI'},
-            {date: 'JUN 2023', event: 'Partners', desc:'Cofounded ITACube'},
-            {date: 'FEB 2023', event: 'Mr. President', desc:'President at ITA Rocket Design'},
+            {date: 'JUN 2025', event: 'My precious', desc: 'Built this personal site'},
+            {date: 'JAN 2025', event: 'First job!', desc: 'Started working at IAE'},
+            {date: 'DEC 2024', event: 'Graduated!', desc: 'Aerospace Engineering, ITA'},
+            {date: 'OCT 2024', event: 'Hackathon!', desc: 'Joined NASA Space Apps'},
+            {date: 'OCT 2024', event: 'Papers, please', desc: 'Presented at CONTECC'},
+            {date: 'NOV 2023', event: 'Go CurieSat!', desc: 'Joined the 2nd OBSat'},
+            {date: 'AUG 2023', event: 'More rockets?', desc: 'Participated in LASC 2023'},
+            {date: 'AUG 2023', event: 'Rocket launch!', desc: 'Took part in a launch at CLBI'},
+            {date: 'JUN 2023', event: 'Partners', desc: 'Co-founded ITACube'},
+            {date: 'FEB 2023', event: 'Mr. President', desc: 'President of ITA Rocket Design'},
+            {date: 'AUG 2022', event: 'To the stars', desc: 'Participated in LASC 2022'},
+            {date: 'JUN 2021', event: 'CubeSats', desc: 'Participated in OBSat'},
+            {date: 'MAR 2020', event: 'Here be rockets', desc: 'Joined ITA Rocket Design'},
+            {date: 'JAN 2020', event: 'Engineer to be', desc: 'Admitted to ITA and CPOR'},
+            {date: 'MAR 2000', event: 'The Beginning', desc: 'Born in Rio de Janeiro, Brazil'},
         ],
     } : {
         title: 'Sobre mim',
-        description: 'Eu sou um engenheiro aeroespacial formado no Instituto Tecnológico de Aeronáutica em 2024. Gosto de trabalhar com código,\
-         eletrônicos no geral e motores foguete. Adoro colocar a mão na massa em projetos que me permitam elevar os meus conhecimentos.\
-         Eu gosto de adotar uma abordagem prática e o mais simples o possível na resolução de problemas, tentando sempre usar a ferramenta certa\
-         para a complexidade de cada trabalho. Estou sempre buscando aprender coisas novas por meio de cursos e livros.',
+        description: "\
+        Sou Juan Libonatti, engenheiro aeroespacial brasileiro e desenvolvedor mão-na-massa,\
+        apaixonado por construir coisas que realmente funcionam. Seja um motor-foguete\
+        líquido ou um sistema embarcado rodando num STM32, sou do tipo que gosta de tirar ideias\
+        do papel e fazê-las voar — às vezes literalmente.\
+        \n\n\
+        Me formei no Instituto Tecnológico de Aeronáutica (ITA), onde mergulhei de cabeça na engenharia\
+        enquanto participava ativamente de diversos grupos de extensão. Ao longo do caminho,\
+        desenvolvi uma base sólida em sistemas embarcados, design de PCBs e programação (Python, C/C++),\
+        além de brincar com Unity e impressão 3D em projetos paralelos.\
+        \n\n\
+        Entrei para o ITA Rocket Design em 2020 como membro da equipe de aviônica, trabalhando em foguetes\
+        que chegavam até 3 km de altitude. Projetamos placas para coletar dados de voo em tempo real via rádio.\
+        Curti tanto a experiência que virei líder de aviônica em 2021, diretor em 2022 e presidente em 2023.\
+        Destaques incluem os prêmios conquistados nas edições de 2022 e 2023 do Latin America Space Challenge,\
+        e o lançamento de um dos nossos foguetes a partir do Centro de Lançamento da Barreira do Inferno.\
+        \n\n\
+        Meu interesse por eletrônica me levou a explorar outro tipo de sistema aeroespacial — satélites.\
+        Participei da primeira Olimpíada Brasileira de Satélites (OBSat), uma competição estudantil para construir\
+        CubeSats lançados por balões. Ganhamos um kit educacional e aprendemos muito no processo.\
+        A experiência foi tão boa que eu e dois colegas fundamos a ITACube em 2023 —\
+        um grupo de extensão voltado ao desenvolvimento de CubeSats educacionais lançados por balão.\
+        Como ITACube, voltamos à OBSat, participamos do NASA Space Apps Hackathon e construímos nosso próprio\
+        satélite: o CurieSat.\
+        \n\n\
+        Fora dos grupos de extensão, fiz estágio em 2023 na divisão de propulsão espacial do Instituto de Aeronáutica e Espaço (IAE)\
+        — o instituto responsável pelos foguetes SONDA, VSB-30 e VLS. Em 2024, estagiei no Centro Espacial ITA,\
+        que desenvolveu os CubeSats ITASAT e SPORT. Me formei no final de 2024 e hoje trabalho no IAE, na mesma\
+        divisão de propulsão espacial, onde sigo aprendendo e desenvolvendo todos os dias.\
+        \n\n\
+        Eu não gosto apenas de aprender — eu persigo isso. Cada projeto é uma oportunidade de ir mais fundo,\
+        seja extraindo desempenho de um magnetômetro antigo em grandes altitudes ou\
+        depurando um webapp em React às 2 da manhã. Aprendi muito errando — e ainda mais colaborando com pessoas brilhantes.\
+        \n\n\
+        Fora do laboratório e do terminal, gosto muito de jogos estratégicos, como XCOM, Kerbal Space Program\
+        e Stellaris (mas por favor, não me incentive a jogar o último — eu simplesmente não paro quando começo).\
+        Também participei de algumas edições do Ludum Dare, uma game jam internacional.\
+        Curto jardinagem para relaxar e às vezes edito vídeos ou modelo em 3D — principalmente quando isso ajuda\
+        a dar vida a algum projeto.\
+        ",
         statusTitle: "O que eu estou fazendo",
-        status: '',
+        status: "Atualmente estou fazendo este site — sempre quis ter meu próprio espaço pessoal para mostrar \
+        meu portfólio e hospedar alguns dos meus apps. Criar essas páginas tem sido bem divertido e me fez aprender \
+        MUITO sobre React.",
         funFactsTitle: 'Fatos Aleatórios',
-        funFacts: ['','','',''],
-        contactTitle: '',
-        contact: '',
+        funFacts: [
+            "Gamer — viciado em jogos de estratégia. Também gosto de criar meus próprios jogos.",
+            "Amo foguetes, drones e satélites. Mas odeio aviões — são entediantes.",
+            "Programar é legal, mas programar firmware para o meu próprio hardware é ainda melhor.",
+            "Tenho algumas fantasias infláveis e adoro usá-las — principalmente uma de T-Rex."
+        ],
+        contactTitle: 'Vamos Conversar',
+        contact: "\
+        Valeu por passar por aqui! Se ficou curioso sobre algum dos projetos em que trabalhei, \
+        ou só quiser bater um papo sobre foguetes, CubeSats ou experimentos malucos de tecnologia, \
+        fique à vontade para me chamar. E dá uma olhada no meu portfólio também!",
         timeline: [
-            {date: 'JUN 2025', event: 'O precioso', desc:'Construí esse site'},
-            {date: 'JAN 2025', event: 'Primeiro Emprego!', desc:'Comecei meu trabalho no IAE'},
-            {date: 'DEC 2024', event: 'Formado!', desc:'Engenharia Aeroespacial, ITA'},
-            {date: 'OCT 2024', event: 'Papers, please', desc:'Apresentei no CONTECC'},
-            {date: 'NOV 2023', event: 'Vai CurieSat!', desc:'Participei na OBSat'},
-            {date: 'AUG 2023', event: 'Lançamento!', desc:'Lancei um foguete no CLBI'},
-            {date: 'JUN 2023', event: 'Parceiros', desc:'Cofundador da ITACube'},
-            {date: 'FEB 2023', event: 'Sr. Presidente', desc:'Presidi a ITA Rocket Design'},
+            {date: 'JUN 2025', event: 'Meu precioso', desc: 'Construi este site pessoal'},
+            {date: 'JAN 2025', event: '1º Emprego!', desc: 'Comecei a trabalhar no IAE'},
+            {date: 'DEZ 2024', event: 'Formado!', desc: 'Engenharia Aeroespacial'},
+            {date: 'OUT 2024', event: 'Hackathon!', desc: 'Participei do Space Apps'},
+            {date: 'OUT 2024', event: 'Publicações', desc: 'Apresentei no CONTECC'},
+            {date: 'NOV 2023', event: 'Vai CurieSat!', desc: 'Participei da 2ª OBSat'},
+            {date: 'AGO 2023', event: 'Mais foguetes?', desc: 'Participei da LASC 2023'},
+            {date: 'AGO 2023', event: 'Lançamento!', desc: 'lançamos no CLBI'},
+            {date: 'JUN 2023', event: 'Parceria', desc: 'Cofundei a ITACube'},
+            {date: 'FEV 2023', event: 'Sr. Presidente', desc: 'Presidente, ITA Rocket Design'},
+            {date: 'AGO 2022', event: 'Às estrelas', desc: 'Participei da LASC 2022'},
+            {date: 'JUN 2021', event: 'CubeSats', desc: 'Participei da OBSat'},
+            {date: 'MAR 2020', event: 'Temos foguetes', desc: 'Entrei para o ITA Rocket Design'},
+            {date: 'JAN 2020', event: 'Pré-engenheiro', desc: 'Passei no ITA e no CPOR'},
+            {date: 'MAR 2000', event: 'O começo', desc: 'Nasci no Rio de Janeiro, Brasil'},
         ],
     })
 })
