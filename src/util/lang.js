@@ -434,7 +434,7 @@ export const langPropsResume = (lang) => ({
                     {title: 'Aerospace Engineering',
                         place: 'Instituto Tecnológico de Aeronáutica',
                         period: '2024',
-                        desc: 'aaaa'
+                        desc: 'One of the most prestigious engineering universities in Brazil, ITA is known for having the hardest admission exam in the country.'
                     }
                 ]
             },
@@ -467,19 +467,45 @@ export const langPropsResume = (lang) => ({
             },
             {title: 'Languages',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
-                        period: '2024',
-                        desc: 'aaaa'
+                    {title: 'English',
+                        place: 'Proficient',
+                        period: '',
+                        desc: 'Can write, read and listen about complex topics in english, including technical conversations. Speaks with minimal difficulty.'
+                    },
+                    {title: 'Portuguese',
+                        place: 'Native',
+                        period: '',
+                        desc: 'My native language'
                     }
                 ]
             },
             {title: 'Tools & Technologies',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
-                        period: '2024',
-                        desc: 'aaaa'
+                    {title: 'C',
+                        place: 'Intermediate',
+                        period: '',
+                        desc: 'Understands the language synthax and the standard libraries.'
+                    },{title: 'C++',
+                        place: 'Advanced',
+                        period: '',
+                        desc: 'Has a clear understanding of the language synthax. Frequently codes embeded firmware in this language.'
+                    },{title: 'EasyEDA',
+                        place: 'Advanced',
+                        period: '',
+                        desc: 'Has designed 4 layers, SMD based boards on the tool.'
+                    },{title: 'KiCAD',
+                        place: 'Intermediate',
+                        period: '',
+                        desc: 'Has designed 2 layers, PTH based boards on the tool.'
+                    },{title: 'Python',
+                        place: 'Advanced',
+                        period: '',
+                        desc: 'Has a clear understanding of the language synthax and common packages such as numpy and pandas. Frequently\
+                        codes apps and work routines in this language.'
+                    },{title: 'MATLAB',
+                        place: 'Advanced',
+                        period: '',
+                        desc: 'Has a clear understanding of the language synthax and packages. Can also use tools such as Simulink.'
                     }
                 ]
             }
