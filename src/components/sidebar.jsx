@@ -55,7 +55,7 @@ const projButtons = [
   createButton('CurieSat', SatelliteAltOutlinedIcon),
   createButton('ANA', MemoryOutlinedIcon),
   createButton('Test Bench',ScaleOutlinedIcon),
-  createButton('Mina', AccountBalanceWalletOutlinedIcon),
+  //createButton('Mina', AccountBalanceWalletOutlinedIcon),
 ]
 
 

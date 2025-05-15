@@ -30,19 +30,25 @@ export default function Resume() {
                 </Typography>
                 <Button
                     variant="contained"
-                    color="primary"
+                    sx={{backgroundColor: colors.secondary[500]}}
                     startIcon={<DownloadIcon />}
-                    href="/resume.pdf"
+                    href="documents/resume.pdf"
                     download
                 >
                     {lProps.downBut}
                 </Button>
                 <Button
-                sx={{ml:'15px'}}
+                sx={{ml:'15px',
+                    backgroundColor: colors.blue[500],
+                    color: 'white'
+                }}
                 variant="contained"
-                color="primary"
                 startIcon={<PrintIcon />}
-                onClick={() => window.print()}
+                onClick={() => {
+                    const win = window.open('documents/resume.pdf', '_blank');
+                    win?.focus();
+                    win?.print();
+                }}
                 >
                     {lProps.printBut}
                 </Button>

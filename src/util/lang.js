@@ -104,7 +104,7 @@ export const langPropsAbout = (lang) => ({
         rockets at the Centro de Lançamento da Barreira do Inferno (CLBI).\
         ",
         aboutButton: "Even more",
-        competencesButton: "See my full résumé",
+        competencesButton: "See my full resume",
         experienceButton: "See my portifolio",
     }:{
         aboutTitle: "Sobre mim",
@@ -160,7 +160,7 @@ export const langPropsAbout = (lang) => ({
         foguetes no Centro de Lançamento da Barreira do Inferno (CLBI).\
         ",
         aboutButton: "Ainda mais",
-        competencesButton: "Ver curriculum completo",
+        competencesButton: "Ver currículo completo",
         experienceButton: "Veja meu portifólio",
     })
 })
@@ -251,12 +251,12 @@ export const langPropsSidebar = (lang) => ({
     ...(lang === 'en' ? {  
         home: 'Home',
         about: 'About',
-        resume: 'Résumé',
+        resume: 'Resume',
         portifolio: 'Portifolio',
       }:{  
         home: 'Início',
         about: 'Sobre',
-        resume: 'Curriculum',
+        resume: 'Currículo',
         portifolio: "Portifólio",
         })
 })
@@ -424,10 +424,10 @@ export const langPropsAboutMe = (lang) => ({
 
 export const langPropsResume = (lang) => ({    
     ...(lang === 'en' ? {
-        title:'My Résumé',
+        title:'My Resume',
         subtitle:"Here's a detailed overview of my professional background, skills, and education. You can also download my resume in PDF below.",
         downBut: 'Download PDF',
-        printBut: 'Print Résumé',
+        printBut: 'Print Resume',
         tabs: [
             {title: 'Education',
                 items:[
