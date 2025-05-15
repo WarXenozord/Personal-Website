@@ -425,7 +425,7 @@ export const langPropsAboutMe = (lang) => ({
 export const langPropsResume = (lang) => ({    
     ...(lang === 'en' ? {
         title:'My Résumé',
-        subtitle:"Here's a detailed overview of my professional background, skills, and education. You can also download a PDF version below.",
+        subtitle:"Here's a detailed overview of my professional background, skills, and education. You can also download my resume in PDF below.",
         downBut: 'Download PDF',
         printBut: 'Print Résumé',
         tabs: [
@@ -434,7 +434,8 @@ export const langPropsResume = (lang) => ({
                     {title: 'Aerospace Engineering',
                         place: 'Instituto Tecnológico de Aeronáutica',
                         period: '2024',
-                        desc: 'One of the most prestigious engineering universities in Brazil, ITA is known for having the hardest admission exam in the country.'
+                        desc: 'One of the most prestigious engineering institutions in Brazil, ITA is renowned \
+                        for having the country’s most challenging entrance exam.'
                     }
                 ]
             },
@@ -442,45 +443,56 @@ export const langPropsResume = (lang) => ({
                 items:[
                     {title: 'Liquid Propulsion Engineer',
                         place: 'Instituto de Aeronáutica e Espaço (IAE)',
-                        period: 'Now',
-                        desc: 'I work on the liquid propulsion branch of the space propulsion subdivion at IAE, helping design and develop liquid rocket \
-                        motors'
-                    },{title: 'Internship',
+                        period: 'Present',
+                        desc: 'Part of the liquid propulsion division within the Space Propulsion Subdivision at \
+                        IAE, working on the design and development of liquid rocket engines.'
+                    },
+                    {title: 'Internship',
                         place: 'Centro Espacial ITA (CEI)',
                         period: '2024',
-                        desc: 'I designed boards on easyEDA for a weather ballon cubesat part of a project for a VLEO responsive plataform, financed by \
-                        Conselho Nacional de Pesquisa - CNPq.'
-                    },{title: 'Internship',
+                        desc: 'Designed PCBs using EasyEDA for a weather balloon CubeSat, as part of a VLEO-responsive \
+                        platform project funded by the National Research Council (CNPq).'
+                    },
+                    {title: 'Internship',
                         place: 'Instituto de Aeronáutica e Espaço (IAE)',
                         period: '2023',
-                        desc: 'I catalogued the workflows of various processes in the solid propulsion branch and learned a lot about V&V processes and \
-                        standards in quality control for solid rocket propellants.'
+                        desc: 'Documented workflows across the solid propulsion division and gained hands-on experience \
+                        with verification, validation, and quality control standards for solid rocket propellants.'
                     }
                 ]
             },
             {title: 'Skills',
                 items:[
-                    {title: 'Front-End development',
-                        place: 'Node.js/React',
+                    {title: 'Embedded Systems',
+                        place: '★★★★★',
                         period: '',
-                        desc: ''
-                    },{title: 'Back-End development',
-                        place: 'Node.js/Express',
-                        period: '',
-                        desc: ''
-                    },{title: 'General Coding',
-                        place: 'Python/C/C++/MATLAB',
-                        period: '',
-                        desc: ''
-                    },{title: 'Game development',
-                        place: 'Unity',
-                        period: '',
-                        desc: ''
-                    },{title: 'Video editing',
-                        place: 'Hitfilm Express',
-                        period: '',
-                        desc: ''
+                        desc: 'Design and programming of microcontroller-based systems, especially using STM32 and ESP32. \
+                        Experience includes custom PCB design, sensor integration, and firmware development in C/C++.'
                     },
+                    {title: 'Web Development',
+                        place: '★★★★',
+                        period: '',
+                        desc: 'Full-stack development with a focus on React (front-end) and Node.js/Express (back-end). \
+                        Built responsive apps, portfolios, and API integrations.'
+                    },
+                    {title: 'Scientific Programming and Data',
+                        place: '★★★★',
+                        period: '',
+                        desc: 'Experienced with Python for scripting, data processing (NumPy, Pandas), and MATLAB for \
+                        simulation and analysis tasks.'
+                    },
+                    {title: 'Game and Interactive Systems',
+                        place: '★★',
+                        period: '',
+                        desc: 'Prototype development and scripting in Unity (C#). Includes experience with physics-based \
+                        mechanics, events, and animations.'
+                    },
+                    {title: 'Multimedia and Design',
+                        place: '★★★',
+                        period: '',
+                        desc: 'Video editing with HitFilm Express and basic 3D modeling/animation with Blender. Used \
+                        primarily for project promotion and documentation.'
+                    }
                 ]
             },
             {title: 'Certifications',
@@ -498,7 +510,8 @@ export const langPropsResume = (lang) => ({
                     {title: 'Aerospace Geopolitics',
                         place: 'Brazilian Space Agency',
                         period: '2024',
-                        desc: '20-hour online course by AEB exploring the political landscape of space utilization, focusing on space access for developing countries and the strategic occupation of orbital positions.'
+                        desc: '20-hour online course by AEB exploring the political landscape of space utilization, focusing \
+                        on space access for developing countries and the strategic occupation of orbital positions.'
                     },
                     {title: 'Python Language Fundamentals for Data Analysis and Data Science',
                         place: 'Data Science Academy',
@@ -522,12 +535,12 @@ export const langPropsResume = (lang) => ({
                     {title: 'English',
                         place: 'Proficient',
                         period: '',
-                        desc: 'Can write, read and listen about complex topics in english, including technical conversations. Speaks with minimal difficulty.'
+                        desc: 'Can read, write, and understand complex technical subjects. Speaks with minimal difficulty.'
                     },
                     {title: 'Portuguese',
                         place: 'Fluent',
                         period: '',
-                        desc: 'Native language'
+                        desc: 'Native speaker.'
                     }
                 ]
             },
@@ -536,94 +549,140 @@ export const langPropsResume = (lang) => ({
                     {title: 'C',
                         place: 'Intermediate',
                         period: '',
-                        desc: 'Understands the language synthax and the standard libraries.'
-                    },{title: 'C++',
+                        desc: 'Understands the language syntax and standard libraries.'
+                    },
+                    {title: 'C++',
                         place: 'Advanced',
                         period: '',
-                        desc: 'Has a clear understanding of the language synthax. Frequently codes embeded firmware in this language.'
-                    },{title: 'EasyEDA',
+                        desc: 'Has a solid grasp of the language syntax. Frequently develops embedded firmware using it.'
+                    },
+                    {title: 'EasyEDA',
                         place: 'Advanced',
                         period: '',
-                        desc: 'Has designed 4 layers, SMD based boards on the tool.'
-                    },{title: 'KiCAD',
+                        desc: 'Has designed 4-layer, SMD-based boards using this tool.'
+                    },
+                    {title: 'KiCAD',
                         place: 'Intermediate',
                         period: '',
-                        desc: 'Has designed 2 layers, PTH based boards on the tool.'
-                    },{title: 'Python',
+                        desc: 'Has designed 2-layer, PTH-based boards using this tool.'
+                    },
+                    {title: 'Python',
                         place: 'Advanced',
                         period: '',
-                        desc: 'Has a clear understanding of the language synthax and common packages such as numpy and pandas. Frequently\
-                        codes apps and work routines in this language.'
-                    },{title: 'Javascript',
+                        desc: 'Has a strong command of the syntax and commonly used packages such as NumPy and pandas. \
+                        Frequently writes apps and scripts for work.'
+                    },
+                    {title: 'JavaScript',
                         place: 'Advanced',
                         period: '',
-                        desc: 'Has experience using Node.js libraries such as react and express.'
-                    },{title: 'MATLAB',
+                        desc: 'Experienced with Node.js and libraries like React and Express.'
+                    },
+                    {title: 'MATLAB',
                         place: 'Intermediate',
                         period: '',
-                        desc: 'Has a clear understanding of the language synthax and packages. Can also use tools such as Simulink.'
-                    },{title: 'CNC Milling Cutter',
+                        desc: 'Understands the syntax and built-in packages. Also proficient with tools like Simulink.'
+                    },
+                    {title: 'CNC Milling Cutter',
                         place: 'Basic',
                         period: '',
-                        desc: 'Understands G-code, base leveling map and has experience using engraving software.'
-                    },{title: '3D Printer',
+                        desc: 'Understands G-code, bed leveling maps, and has experience using engraving software.'
+                    },
+                    {title: '3D Printer',
                         place: 'Basic',
                         period: '',
-                        desc: 'Understands G-code, has printed multiple parts in PLA. Has experience using creality slicer.'
-                    },{title: 'Hitfilm Editor',
+                        desc: 'Understands G-code and has printed multiple PLA parts. Experienced with Creality Slicer.'
+                    },
+                    {title: 'HitFilm Editor',
                         place: 'Intermediate',
                         period: '',
-                        desc: 'Can create long composition shots, use keyframes and create complex effects.'
-                    },{title: 'Blender',
+                        desc: 'Can create long composition shots, use keyframes, and build complex effects.'
+                    },
+                    {title: 'Blender',
                         place: 'Basic',
                         period: '',
-                        desc: 'Can model simple shapes, shade simple materials and create object movement animations.'
-                    },{title: 'Unity',
+                        desc: 'Can model simple shapes, apply basic materials, and animate object movement.'
+                    },
+                    {title: 'Unity',
                         place: 'Intermediate',
                         period: '',
-                        desc: 'Can create complex scenarios, including animation, scripting and events.'
-                    },{title: 'PHP',
+                        desc: 'Can create complex scenes, including animation, scripting, and event systems.'
+                    },
+                    {title: 'PHP',
                         place: 'Basic',
                         period: '',
-                        desc: 'Can create simple website backends.'
+                        desc: 'Able to develop simple website backends.'
                     }
                 ]
             }
         ]
     }:{
-        title:'My Résumé',
-        subtitle:"Here's a detailed overview of my professional background, skills, and education. You can also download a PDF version below.",
-        downBut: 'Download PDF',
-        printBut: 'Print Résumé',
+        title:'Meu Currículo',
+        subtitle:"Aqui está uma visão geral da minha formação, habilidades e experiência. Você também pode baixar do meu currículo em PDF abaixo.",
+        downBut: 'Baixar PDF',
+        printBut: 'Imprimir Currículo',
         tabs: [
-            {title: 'Education',
+            {title: 'Educação',
                 items:[
-                    {title: 'Aerospace Engineering',
+                    {title: 'Engenharia Aeroespacial',
                         place: 'Instituto Tecnológico de Aeronáutica',
                         period: '2024',
-                        desc: 'aaaa'
+                        desc: 'Reconhecido como uma das instituições de engenharia mais prestigiadas do Brasil, o ITA é famoso \
+                        por ter o vestibular mais difícil do país.'
                     }
                 ]
             },
-            {title: 'Work Experience',
+            {title: 'Experiência Profissional',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
+                    {title: 'Engenheiro de Propulsão Líquida',
+                        place: 'Instituto de Aeronáutica e Espaço (IAE)',
+                        period: 'Atualmente',
+                        desc: 'Atua na divisão de propulsão líquida da Subdivisão de Propulsão Espacial do IAE, colaborando no \
+                        projeto e desenvolvimento de motores-foguete líquidos.'
+                    },
+                    {title: 'Estágio',
+                        place: 'Centro Espacial ITA (CEI)',
                         period: '2024',
-                        desc: 'aaaa'
+                        desc: 'Desenvolveu placas eletrônicas no EasyEDA para um CubeSat lançado por balão estratosférico, como \
+                        parte de um projeto de plataforma responsiva em órbita VLEO financiado pelo CNPq.'
+                    },
+                    {title: 'Estágio',
+                        place: 'Instituto de Aeronáutica e Espaço (IAE)',
+                        period: '2023',
+                        desc: 'Catalogou fluxos de trabalho da divisão de propulsão sólida e aprendeu sobre processos de \
+                        Verificação e Validação (V&V) e padrões de controle de qualidade para propelentes sólidos.'
                     }
                 ]
             },
-            {title: 'Skills',
+            {title: 'Habilidades',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
-                        period: '2024',
-                        desc: 'aaaa'
+                    {title: 'Sistemas Embarcados',
+                        place: '★★★★★',
+                        period: '',
+                        desc: 'Projeto e programação de sistemas baseados em microcontroladores, especialmente com STM32 e ESP32. Experiência inclui design de PCBs personalizadas, integração de sensores e desenvolvimento de firmware em C/C++.'
+                    },
+                    {title: 'Desenvolvimento Web',
+                        place: '★★★★',
+                        period: '',
+                        desc: 'Desenvolvimento full-stack com foco em React (front-end) e Node.js/Express (back-end). Criação de aplicações responsivas, portfólios e integrações com APIs.'
+                    },
+                    {title: 'Programação Científica e Dados',
+                        place: '★★★★',
+                        period: '',
+                        desc: 'Experiência com Python para automações, análise de dados (NumPy, Pandas) e MATLAB para simulações e processamento de sinais.'
+                    },
+                    {title: 'Desenvolvimento de Jogos e Sistemas Interativos',
+                        place: '★★',
+                        period: '',
+                        desc: 'Criação de protótipos e sistemas interativos no Unity com scripts em C#. Inclui mecânicas físicas, eventos e animações.'
+                    },
+                    {title: 'Multimídia e Design',
+                        place: '★★★',
+                        period: '',
+                        desc: 'Edição de vídeo com HitFilm Express e modelagem/animação básica em Blender. Utilizado principalmente para divulgação e documentação de projetos.'
                     }
                 ]
             },
-            {title: 'Certifications',
+            {title: 'Certificados',
                 items:[
                     {title: 'The complete full stack web development bootcamp',
                         place: 'Udemy',
@@ -654,21 +713,86 @@ export const langPropsResume = (lang) => ({
                     },
                 ]
             },
-            {title: 'Languages',
+            {title: 'Idiomas',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
-                        period: '2024',
-                        desc: 'aaaa'
+                    {title: 'Inglês',
+                        place: 'Proficiente',
+                        period: '',
+                        desc: 'Lê, escreve e compreende assuntos técnicos complexos com facilidade. Fala com pouca ou nenhuma dificuldade.'
+                    },
+                    {title: 'Português',
+                        place: 'Fluente',
+                        period: '',
+                        desc: 'Língua nativa.'
                     }
                 ]
             },
-            {title: 'Tools & Technologies',
+            {title: 'Ferramentas e Tecnológias',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
-                        period: '2024',
-                        desc: 'aaaa'
+                    {title: 'C',
+                        place: 'Intermediário',
+                        period: '',
+                        desc: 'Compreende a sintaxe da linguagem e as bibliotecas padrão.'
+                    },
+                    {title: 'C++',
+                        place: 'Avançado',
+                        period: '',
+                        desc: 'Possui domínio sólido da sintaxe da linguagem. Desenvolve frequentemente firmwares embarcados com ela.'
+                    },
+                    {title: 'EasyEDA',
+                        place: 'Avançado',
+                        period: '',
+                        desc: 'Projetou placas de 4 camadas com componentes SMD utilizando essa ferramenta.'
+                    },
+                    {title: 'KiCAD',
+                        place: 'Intermediário',
+                        period: '',
+                        desc: 'Projetou placas de 2 camadas com componentes PTH utilizando essa ferramenta.'
+                    },
+                    {title: 'Python',
+                        place: 'Avançado',
+                        period: '',
+                        desc: 'Tem domínio da sintaxe e de pacotes populares como NumPy e pandas. Cria rotinas e aplicações com frequência.'
+                    },
+                    {title: 'JavaScript',
+                        place: 'Avançado',
+                        period: '',
+                        desc: 'Tem experiência com Node.js e bibliotecas como React e Express.'
+                    },
+                    {title: 'MATLAB',
+                        place: 'Intermediário',
+                        period: '',
+                        desc: 'Compreende a sintaxe e os pacotes da linguagem. Também utiliza ferramentas como o Simulink.'
+                    },
+                    {title: 'Fresadora CNC',
+                        place: 'Básico',
+                        period: '',
+                        desc: 'Entende G-code, mapeamento de nivelamento da mesa e tem experiência com software de gravação.'
+                    },
+                    {title: 'Impressora 3D',
+                        place: 'Básico',
+                        period: '',
+                        desc: 'Entende G-code e já imprimiu diversas peças em PLA. Possui experiência com o Creality Slicer.'
+                    },
+                    {title: 'HitFilm Editor',
+                        place: 'Intermediário',
+                        period: '',
+                        desc: 'Capaz de criar composições longas, usar keyframes e montar efeitos complexos.'
+                    },
+                    {title: 'Blender',
+                        place: 'Básico',
+                        period: '',
+                        desc: 'Consegue modelar formas simples, aplicar materiais básicos e animar movimentos de objetos.'
+                    },
+                    {title: 'Unity',
+                        place: 'Intermediário',
+                        period: '',
+                        desc: 'Capaz de criar cenas complexas com animações, scripts e sistemas de eventos.'
+                    },
+                    {title: 'PHP',
+                        place: 'Básico',
+                        period: '',
+                        desc: 'Consegue desenvolver backends simples para sites.'
                     }
                 ]
             }
