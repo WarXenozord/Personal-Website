@@ -302,10 +302,10 @@ export const langPropsAboutMe = (lang) => ({
         an extension group focused on educational balloon-launched CubeSats. As ITACube, we returned to OBSat,\
         joined the NASA Space Apps Hackathon, and built our own CubeSat: CurieSat.\
         \n\n\
-        Outside of student groups, I interned at the space propulsion division of Instituto de Aeronáutica e Espaço (IAE)\
+        Outside of student groups, I interned at the space propulsion subdivision of Instituto de Aeronáutica e Espaço (IAE)\
         in 2023 — the institute behind the SONDA family, VSB-30, and the VLS. In 2024, I interned at Centro Espacial ITA,\
         which developed the ITASAT and SPORT CubeSats. I graduated in late 2024 and now work full-time in IAE’s\
-        space propulsion division, still learning and building every day.\
+        space propulsion subdivision, still learning and building every day.\
         \n\n\
         I don't just like to learn — I chase it. Every project is a chance to dive deeper, whether it's squeezing\
         performance out of an old magnetometer at high altitudes or debugging a React web app at 2 AM.\
@@ -371,10 +371,10 @@ export const langPropsAboutMe = (lang) => ({
         Como ITACube, voltamos à OBSat, participamos do NASA Space Apps Hackathon e construímos nosso próprio\
         satélite: o CurieSat.\
         \n\n\
-        Fora dos grupos de extensão, fiz estágio em 2023 na divisão de propulsão espacial do Instituto de Aeronáutica e Espaço (IAE)\
+        Fora dos grupos de extensão, fiz estágio em 2023 na subdivisão de propulsão espacial do Instituto de Aeronáutica e Espaço (IAE)\
         — o instituto responsável pelos foguetes SONDA, VSB-30 e VLS. Em 2024, estagiei no Centro Espacial ITA,\
         que desenvolveu os CubeSats ITASAT e SPORT. Me formei no final de 2024 e hoje trabalho no IAE, na mesma\
-        divisão de propulsão espacial, onde sigo aprendendo e desenvolvendo todos os dias.\
+        subdivisão de propulsão espacial, onde sigo aprendendo e desenvolvendo todos os dias.\
         \n\n\
         Eu não gosto apenas de aprender — eu persigo isso. Cada projeto é uma oportunidade de ir mais fundo,\
         seja extraindo desempenho de um magnetômetro antigo em grandes altitudes ou\
@@ -440,29 +440,81 @@ export const langPropsResume = (lang) => ({
             },
             {title: 'Work Experience',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
+                    {title: 'Liquid Propulsion Engineer',
+                        place: 'Instituto de Aeronáutica e Espaço (IAE)',
+                        period: 'Now',
+                        desc: 'I work on the liquid propulsion branch of the space propulsion subdivion at IAE, helping design and develop liquid rocket \
+                        motors'
+                    },{title: 'Internship',
+                        place: 'Centro Espacial ITA (CEI)',
                         period: '2024',
-                        desc: 'aaaa'
+                        desc: 'I designed boards on easyEDA for a weather ballon cubesat part of a project for a VLEO responsive plataform, financed by \
+                        Conselho Nacional de Pesquisa - CNPq.'
+                    },{title: 'Internship',
+                        place: 'Instituto de Aeronáutica e Espaço (IAE)',
+                        period: '2023',
+                        desc: 'I catalogued the workflows of various processes in the solid propulsion branch and learned a lot about V&V processes and \
+                        standards in quality control for solid rocket propellants.'
                     }
                 ]
             },
             {title: 'Skills',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
-                        period: '2024',
-                        desc: 'aaaa'
-                    }
+                    {title: 'Front-End development',
+                        place: 'Node.js/React',
+                        period: '',
+                        desc: ''
+                    },{title: 'Back-End development',
+                        place: 'Node.js/Express',
+                        period: '',
+                        desc: ''
+                    },{title: 'General Coding',
+                        place: 'Python/C/C++/MATLAB',
+                        period: '',
+                        desc: ''
+                    },{title: 'Game development',
+                        place: 'Unity',
+                        period: '',
+                        desc: ''
+                    },{title: 'Video editing',
+                        place: 'Hitfilm Express',
+                        period: '',
+                        desc: ''
+                    },
                 ]
             },
             {title: 'Certifications',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
+                    {title: 'The Complete Full-Stack Web Development Bootcamp',
+                        place: 'Udemy',
+                        period: '2025',
+                        desc: '61.5-hour course focused on building websites using various technologies, including Node.js and SQL.'
+                    },
+                    {title: 'Introduction to Nanosatellites',
+                        place: 'Brazilian Space Agency',
                         period: '2024',
-                        desc: 'aaaa'
-                    }
+                        desc: '30-hour online course by AEB covering nanosatellite technologies, specifically CubeSats.'
+                    },
+                    {title: 'Aerospace Geopolitics',
+                        place: 'Brazilian Space Agency',
+                        period: '2024',
+                        desc: '20-hour online course by AEB exploring the political landscape of space utilization, focusing on space access for developing countries and the strategic occupation of orbital positions.'
+                    },
+                    {title: 'Python Language Fundamentals for Data Analysis and Data Science',
+                        place: 'Data Science Academy',
+                        period: '2024',
+                        desc: '72-hour course focused on using Python to process large volumes of data, including applications in AI.'
+                    },
+                    {title: 'CodeIgniter/PHP Course',
+                        place: 'Udemy',
+                        period: '2021',
+                        desc: '6.5-hour course focused on the CodeIgniter framework and PHP for website backend development.'
+                    },
+                    {title: 'Responsive Website Development Course',
+                        place: 'Udemy',
+                        period: '2021',
+                        desc: '12.5-hour course covering the fundamentals of CSS, HTML, and JavaScript for front-end development.'
+                    },
                 ]
             },
             {title: 'Languages',
@@ -473,13 +525,13 @@ export const langPropsResume = (lang) => ({
                         desc: 'Can write, read and listen about complex topics in english, including technical conversations. Speaks with minimal difficulty.'
                     },
                     {title: 'Portuguese',
-                        place: 'Native',
+                        place: 'Fluent',
                         period: '',
-                        desc: 'My native language'
+                        desc: 'Native language'
                     }
                 ]
             },
-            {title: 'Tools & Technologies',
+            {title: 'Tools and Technologies',
                 items:[
                     {title: 'C',
                         place: 'Intermediate',
@@ -502,10 +554,38 @@ export const langPropsResume = (lang) => ({
                         period: '',
                         desc: 'Has a clear understanding of the language synthax and common packages such as numpy and pandas. Frequently\
                         codes apps and work routines in this language.'
-                    },{title: 'MATLAB',
+                    },{title: 'Javascript',
                         place: 'Advanced',
                         period: '',
+                        desc: 'Has experience using Node.js libraries such as react and express.'
+                    },{title: 'MATLAB',
+                        place: 'Intermediate',
+                        period: '',
                         desc: 'Has a clear understanding of the language synthax and packages. Can also use tools such as Simulink.'
+                    },{title: 'CNC Milling Cutter',
+                        place: 'Basic',
+                        period: '',
+                        desc: 'Understands G-code, base leveling map and has experience using engraving software.'
+                    },{title: '3D Printer',
+                        place: 'Basic',
+                        period: '',
+                        desc: 'Understands G-code, has printed multiple parts in PLA. Has experience using creality slicer.'
+                    },{title: 'Hitfilm Editor',
+                        place: 'Intermediate',
+                        period: '',
+                        desc: 'Can create long composition shots, use keyframes and create complex effects.'
+                    },{title: 'Blender',
+                        place: 'Basic',
+                        period: '',
+                        desc: 'Can model simple shapes, shade simple materials and create object movement animations.'
+                    },{title: 'Unity',
+                        place: 'Intermediate',
+                        period: '',
+                        desc: 'Can create complex scenarios, including animation, scripting and events.'
+                    },{title: 'PHP',
+                        place: 'Basic',
+                        period: '',
+                        desc: 'Can create simple website backends.'
                     }
                 ]
             }
@@ -545,11 +625,33 @@ export const langPropsResume = (lang) => ({
             },
             {title: 'Certifications',
                 items:[
-                    {title: 'Aerospace Engineering',
-                        place: 'Instituto Tecnológico de Aeronáutica',
+                    {title: 'The complete full stack web development bootcamp',
+                        place: 'Udemy',
+                        period: '2025',
+                        desc: 'Curso de 61.5 horas focado na criação de websites usando diferentes tecnologias incluindo node.js e SQL.'
+                    },{title: 'Introdução a Nanossatélites',
+                        place: 'Agência Espacial Brasileira',
                         period: '2024',
-                        desc: 'aaaa'
-                    }
+                        desc: 'Curso de 30 horas da AEB ministrado de forma online acerca de tecnológias de nanossatélites, em específico CubeSats.'
+                    },{title: 'Geopolítica Aeroespacial',
+                        place: 'Agência Espacial Brasileira',
+                        period: '2024',
+                        desc: 'Curso de 20 horas da AEB ministrado de forma online acerca do cenário politico da utilização do espaço, abordando \
+                        a questâo do acesso ao espaço dos países em desenvolvimento e ocupação de posições estratégicas no espaço.'
+                    },{title: 'Fundamentos de Linguagem Python para Análise de Dados e Data Science',
+                        place: 'Data Science Academy',
+                        period: '2024',
+                        desc: 'Curso de 72 horas focado no uso de python para processamento de grandes volumes de dados, incluindo para utilização.\
+                        em IA.'
+                    },{title: 'Curso de Codeigniter/PHP',
+                        place: 'Udemy',
+                        period: '2021',
+                        desc: 'Curso de 6.5 horas focado na framework codeigniter e linguagem PHP para criação de backend de websites.'
+                    },{title: 'Curso de desenvolvimento de Website Responsivo',
+                        place: 'Udemy',
+                        period: '2021',
+                        desc: 'Curso de 12.5 horas focado nos fundamentos de CSS,HTML e Javascript para front end.'
+                    },
                 ]
             },
             {title: 'Languages',
