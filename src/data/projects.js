@@ -1,5 +1,9 @@
 const projects = [{
         title: 'Geopredict',
+        subtitle: {
+            en: '',
+            pt: ''
+        },
         solo: false,
         star: false,
         description: {
@@ -15,6 +19,10 @@ const projects = [{
         },
     },{
         title: 'Test Bench',
+        subtitle: {
+            en: '',
+            pt: ''
+        },
         solo: false,
         star: true,
         description: {
@@ -30,6 +38,10 @@ const projects = [{
         },
     },{
         title: 'Smart Reunion Room',
+        subtitle: {
+            en: '',
+            pt: ''
+        },
         solo: false,
         star: false,
         description: {
@@ -45,6 +57,10 @@ const projects = [{
         },
     },{
         title: 'Casimiro',
+        subtitle: {
+            en: '',
+            pt: ''
+        },
         solo: false,
         star: false,
         description: {
@@ -60,6 +76,10 @@ const projects = [{
         },
     },{
         title: 'Tesla',
+        subtitle: {
+            en: '',
+            pt: ''
+        },
         solo: false,
         star: false,
         description: {
@@ -75,6 +95,10 @@ const projects = [{
         },
     },{
         title: 'CurieSat',
+        subtitle: {
+            en: 'An incredible work done at ITACube',
+            pt: 'Um incrível trabalho feito na ITACube'
+        },
         solo: false,
         star: true,
         description: {
@@ -90,7 +114,11 @@ const projects = [{
         },
     },{
         title: 'ANA',
-        solo: false,
+        subtitle: {
+            en: '',
+            pt: ''
+        },
+        solo: true,
         star: true,
         description: {
             en: "A tiny rocket avionics board, fully designed by me. It records altitude and can trigger a two-stage rocket recovery system. I also developed a lightweight Python client to configure the board via USB.",

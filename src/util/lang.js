@@ -799,3 +799,11 @@ export const langPropsResume = (lang) => ({
         ]
     })
 })
+
+export const langPropsProjectPage = (lang) => ({
+    ...(lang === 'en' ? {  
+        btn: '← Back to Portfolio',
+      }:{  
+        btn: '← Voltar ao Portfólio',
+        })
+})

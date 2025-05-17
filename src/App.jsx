@@ -10,7 +10,7 @@ import About from './pages/about/about.jsx'
 import Footer from './components/footer.jsx'
 import ViewPort from './components/viewport.jsx'
 import Resume from './pages/resume/resume.jsx'
-import ProjectPage from './pages/portifolio/projectPages/template.jsx'
+import ProjectPage from './pages/portifolio/projectPage.jsx'
 import {Sidebar, SidebarProvider} from './components/sidebar.jsx';
 
 import {ColorModeContext, useMode} from './util/theme.js'

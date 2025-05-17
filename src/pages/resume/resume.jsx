@@ -73,7 +73,7 @@ export default function Resume() {
                                         {item.period}
                                         </Typography>
                                     </Box>
-                                    <Typography variant="body2" mt={1} fontSize='1rem'>
+                                    <Typography variant="body2" mt={1} fontSize='1rem' textAlign='justify'>
                                         {item.desc}
                                     </Typography>
                                 </Paper>
