@@ -3,8 +3,10 @@ import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
 import { useNavigate } from 'react-router-dom';
 import { langPropsPortifolio } from '../../util/lang.js'
+import StarsIcon from '@mui/icons-material/Stars';
 
-export default function ProjectCard({ title, image, description = {}, tech = [], links = {}, lang }) {
+export default function ProjectCard({ title, image, description = {}, tech = []
+    , links = {}, star, solo, lang }) {
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
     const navigate = useNavigate()
@@ -28,6 +30,7 @@ export default function ProjectCard({ title, image, description = {}, tech = [],
     return (
         <Card 
             sx={{
+                position:'relative',
                 margin: '10px',
                 minWidth: 200,
                 maxWidth: 600,
@@ -47,8 +50,37 @@ export default function ProjectCard({ title, image, description = {}, tech = [],
                 onClick={() => {navigate(links.page)}}
                 sx={{cursor:'pointer'}}
             />
+            {star && <StarsIcon sx={{
+                position: 'absolute',
+                left: 'calc(100% - 40px)',
+                top: '6px',
+                fontSize: '2.2rem',
+                color: 'orange',
+                backgroundColor: 'white',
+                border: '2px solid black',
+                borderRadius:'50%'
+            }}/>}
+            {solo && <Box sx={{
+                position: 'absolute',
+                top: 10,
+                left: -50,
+                width: 160,
+                transform: 'rotate(-45deg)',
+                backgroundColor: 'primary.main',
+                border: 'solid 2px ' + (theme.palette.mode == 'dark' ? 
+                    colors.red[500] : colors.blue[500]),
+                color: colors.grey[900],
+                textAlign: 'center',
+                fontWeight: 'bold',
+                py: '2px',
+                boxShadow: 2,
+            }}>
+                Solo
+            </Box>}
             <CardContent sx={{ flexGrow: 1 }}>
-                <Typography variant="h6">{title}</Typography>
+                <Typography variant="h6" color={star ? 'orange':'text.primary'}
+                sx={star? {WebkitTextStroke: '0.25px black',}:{}}
+                >{title}</Typography>
                 <Typography variant="body2" color="text.secondary" mt={1}>
                     {description[lang]}
                 </Typography>
