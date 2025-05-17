@@ -115,7 +115,7 @@ export default function About() {
           <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
             <Avatar
               alt="Juan Libonatti"
-              src="/images/profilePic.jpg" // Replace with actual image path
+              src="/images/profilePic.webp"
               sx={{ width: 200, height: 200 }}
             />
           </Box>
