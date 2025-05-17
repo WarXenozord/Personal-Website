@@ -9,7 +9,7 @@ const projects = [{
         tech: ['Unity', 'C#', 'React'],
         image: '/images/1.webp',
         links: {
-            page: 'portifolio/geopredict',
+            page: 'geopredict',
             demo: null,
             repo: 'https://github.com/NarayaneRM/geopredict'
         },
@@ -24,7 +24,7 @@ const projects = [{
         tech: ['C++', 'ESP32', 'Python', 'FreeCAD'],
         image: '/images/2.webp',
         links: {
-            page: 'portifolio/testbench',
+            page: 'testbench',
             demo: null,
             repo: null,
         },
@@ -39,7 +39,7 @@ const projects = [{
         tech: ['C++', 'ESP32', 'React', 'MongoDB'],
         image: '/images/3.webp',
         links: {
-            page: 'portifolio/srr',
+            page: 'srr',
             demo: null,
             repo: 'https://github.com/WarXenozord/Smart-Reunion-Room',
         },
@@ -54,7 +54,7 @@ const projects = [{
         tech: ['C++', 'ESP32', 'STM32', 'Python', 'Raspberry Pi', 'EasyEDA'],
         image: '/images/4.webp',
         links: {
-            page: 'portifolio/casimiro',
+            page: 'casimiro',
             demo: null,
             repo: null,
         },
@@ -69,7 +69,7 @@ const projects = [{
         tech: ['C++', 'STM32', 'EasyEDA'],
         image: '/images/6.webp',
         links: {
-            page: 'portifolio/tesla',
+            page: 'tesla',
             demo: null,
             repo: null,
         },
@@ -84,7 +84,7 @@ const projects = [{
         tech: ['C++', 'ESP32', 'KiCAD'],
         image: '/images/7.webp',
         links: {
-            page: 'portifolio/CurieSat',
+            page: 'CurieSat',
             demo: null,
             repo: null,
         },
@@ -99,7 +99,7 @@ const projects = [{
         tech: ['C++', 'STM32', 'Python','EasyEDA'],
         image: '/images/8.webp',
         links: {
-            page: 'portifolio/ANA',
+            page: 'ANA',
             demo: null,
             repo: null,
         },

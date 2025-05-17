@@ -37,7 +37,7 @@ const createButton = (name, IconTag, url=null) => {
   if(!url){
     const proj = projects.find(project => project.title === name);
     if(proj)
-      url = proj.links.page;
+      url = 'portifolio/' + proj.links.page;
     else
       url = '/error';
   } 

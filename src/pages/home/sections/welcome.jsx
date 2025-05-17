@@ -226,7 +226,7 @@ function Welcome(){
                                         }}
                                     >
                                         <Link
-                                        onClick = {() => {navigate(proj.links.page)}}
+                                        onClick = {() => {navigate('portifolio/'+proj.links.page)}}
                                         underline="none"
                                         sx={{
                                             cursor: 'pointer',
