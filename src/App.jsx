@@ -11,6 +11,7 @@ import Footer from './components/footer.jsx'
 import ViewPort from './components/viewport.jsx'
 import Resume from './pages/resume/resume.jsx'
 import ProjectPage from './pages/portifolio/projectPage.jsx'
+import ErrorPage from './pages/error/error.jsx'
 import {Sidebar, SidebarProvider} from './components/sidebar.jsx';
 
 import {ColorModeContext, useMode} from './util/theme.js'
@@ -39,6 +40,7 @@ function App() {
                   <Route path = "/about" element={<About />}/>
                   <Route path = "/portifolio/:project" element={<ProjectPage />}/>
                   <Route path = "/resume" element={<Resume />}/>
+                  <Route path="*" element={<ErrorPage />} />
                 </Routes>
                 <Footer />
               </ViewPort>
