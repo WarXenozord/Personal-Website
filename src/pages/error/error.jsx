@@ -1,7 +1,7 @@
 import { Box, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const ErrorPage = () => {
+export default function ErrorPage() {
   const navigate = useNavigate();
 
   return (
@@ -31,5 +31,3 @@ const ErrorPage = () => {
     </Box>
   );
 };
-
-export default ErrorPage;

@@ -24,9 +24,7 @@ export default function ProjectPage() {
           setComponent(() => module.default);
         } catch (err) {
           console.error(`Failed to load project: ${project}`, err);
-          setComponent(() => () => (
-            <Typography color="error">Project "{project}" not found.</Typography>
-          ));
+          navigate('/error')
         }
       };
 
