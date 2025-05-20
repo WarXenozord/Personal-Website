@@ -1,8 +1,13 @@
 import { Box, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { useTheme } from '@mui/material/styles'
+import { tokens } from '../../util/theme.js'
+import ErrorIcon from '@mui/icons-material/Error';
 
-export default function ErrorPage() {
+export default function ErrorPage({code, title, desc}) {
   const navigate = useNavigate();
+  const theme = useTheme()
+  const colors = tokens(theme.palette.mode)
 
   return (
     <Box
@@ -16,16 +21,21 @@ export default function ErrorPage() {
         p: 4,
       }}
     >
-      <Typography variant="h2" gutterBottom>
-        404
+      <ErrorIcon sx={{fontSize: '8rem'}}/>
+      <Typography variant="h2">
+        {code}
       </Typography>
-      <Typography variant="h5" gutterBottom>
-        Page not found
+      <Typography variant="h3" gutterBottom>
+        {title}
       </Typography>
-      <Typography variant="body1" sx={{ mb: 3 }}>
-        The page you're looking for doesn't exist or has been moved.
+      <Typography variant="body2" sx={{ mb: 3 }}>
+        {desc}
       </Typography>
-      <Button variant="contained" onClick={() => navigate('/')}>
+      <Button variant="contained" sx={{
+        color:'white',
+        backgroundColor: colors.blue[500]
+      }} 
+      onClick={() => navigate('/')}>
         Go to Home
       </Button>
     </Box>

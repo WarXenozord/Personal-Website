@@ -40,7 +40,10 @@ function App() {
                   <Route path = "/about" element={<About />}/>
                   <Route path = "/portifolio/:project" element={<ProjectPage />}/>
                   <Route path = "/resume" element={<Resume />}/>
-                  <Route path="*" element={<ErrorPage />} />
+                  <Route path="*" element={<ErrorPage
+                    code='404' title='Page not found'
+                    desc="The page you're looking for doesn't exist or has been moved." 
+                  />} />
                 </Routes>
                 <Footer />
               </ViewPort>
