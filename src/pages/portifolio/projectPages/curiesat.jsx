@@ -1,7 +1,6 @@
 import { Box, Typography, Grid, Link } from "@mui/material";
 
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
@@ -96,6 +95,18 @@ const projectLProps = (lang, c) => ({
             c={c} href="https://www.linkedin.com/in/paulo-vinicius-ribeiro-silva-9a758a249/">Paulo Vinicius</A>, and <A 
             c={c} href="https://www.linkedin.com/in/joliver-kozlowski/">Joliver Koslowski</A>. They all did an outstanding job, 
             and their combined efforts are what made CurieSat what it is today.
+            <br/><br/>
+            I also co-authored some published papers about this plataform, check them out: <A 
+            c={c} href="https://www.confea.org.br/midias/uploads-imce/contecc%202024/
+            ELE/ARQUITETURA_DE_SOFTWARE_EMBARCADO_E_ENLACE_PARA_UM_CUBESAT_DE_
+            LAN%C3%87AMENTO_VIA_BAL%C3%83O_ESTRATOSF%C3%89RICO.pdf">Arquitetura de Software Embarcado 
+            de um Cubesat de Coleta de Dados de Radiação Ionizante Atmosférica</A>, <A 
+            c={c} href="https://www.confea.org.br/midias/uploads-imce/contecc%202024/
+            ELE/PROJETO_DE_HARDWARE_DE_UM_CUBESAT_PARA_LAN%C3%87AMENTO_VIA_
+            BAL%C3%83O_ESTRATOSF%C3%89RICO.pdf">Projeto de Hardware e Isolamento de um Cubesat para Lançamento
+            via Balão Estratosférico</A>, <A 
+            c={c} href="https://sevenpublicacoes.com.br/editora/article/view/5516"> Stratospheric balloon platform 
+            for experiments at altitudes up to 40 km.</A>
         </>),
       }:{  
         introTitle: 'Bem-vindo ao CurieSat',
@@ -168,6 +179,18 @@ const projectLProps = (lang, c) => ({
             c={c} href="https://www.linkedin.com/in/paulo-vinicius-ribeiro-silva-9a758a249/">Paulo Vinicius</A>, and <A 
             c={c} href="https://www.linkedin.com/in/joliver-kozlowski/">Joliver Koslowski</A>. Todos fizeram um trabalho 
             incrível, e os esforços combinados deles deram vida ao nosso CurieSat como ele é hoje.
+            <br/><br/>
+            Eu também participei de alguns artigos publicados sobre essa plataforma: <A 
+            c={c} href="https://www.confea.org.br/midias/uploads-imce/contecc%202024/
+            ELE/ARQUITETURA_DE_SOFTWARE_EMBARCADO_E_ENLACE_PARA_UM_CUBESAT_DE_
+            LAN%C3%87AMENTO_VIA_BAL%C3%83O_ESTRATOSF%C3%89RICO.pdf">Arquitetura de Software Embarcado 
+            de um Cubesat de Coleta de Dados de Radiação Ionizante Atmosférica</A>, <A 
+            c={c} href="https://www.confea.org.br/midias/uploads-imce/contecc%202024/
+            ELE/PROJETO_DE_HARDWARE_DE_UM_CUBESAT_PARA_LAN%C3%87AMENTO_VIA_
+            BAL%C3%83O_ESTRATOSF%C3%89RICO.pdf">Projeto de Hardware e Isolamento de um Cubesat para Lançamento
+            via Balão Estratosférico</A>, <A 
+            c={c} href="https://sevenpublicacoes.com.br/editora/article/view/5516"> Stratospheric balloon platform 
+            for experiments at altitudes up to 40 km.</A>
         </>),
     })
 })
@@ -306,7 +329,7 @@ export default function CuriesatPage() {
                 {lProps.aftermatch}
             </Typography>
 
-            <Typography variant='body2' textAlign='justify' width='60%'>
+            <Typography variant='body2' textAlign='justify' width='70%'>
                 {lProps.end}
             </Typography>
         </Box>
