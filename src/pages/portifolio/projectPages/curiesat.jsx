@@ -7,23 +7,8 @@ import { tokens } from '../../../util/theme.js'
 import { LanguageContext } from '../../../util/lang.js'
 import projects from "../../../data/projects.js";
 
+import {A} from "../../../util/shortlink.jsx"
 import PicHeader from "./sections/picHeader.jsx";
-
-const A = (props) => (
-  <Link
-    {...props}
-    target="_blank"
-    sx={{
-      color: props.c.grey[900],
-      fontWeight: 'bold',
-      textDecoration: 'none',
-      '&:hover': {
-        color: props.c.red[500],
-      },
-      ...props.sx, // Allow overrides
-    }}
-  />
-);
 
 const projectLProps = (lang, c) => ({
     ...(lang === 'en' ? {  
