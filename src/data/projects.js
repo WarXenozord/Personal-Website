@@ -20,8 +20,8 @@ const projects = [{
     },{
         title: 'Test Bench',
         subtitle: {
-            en: '',
-            pt: ''
+            en: 'For educational rockets',
+            pt: 'Para foguetes educativos'
         },
         solo: false,
         star: true,

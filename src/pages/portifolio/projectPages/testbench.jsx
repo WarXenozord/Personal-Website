@@ -16,7 +16,8 @@ const projectLProps = (lang, c) => ({
         intro: (<>
             This project was a portable test bench designed to measure the thrust curve 
             of small rocket motors with thrust below 200 N. It was primarily used to test 
-            the mini-rocket engines from ITA Rocket Design during new member training, 
+            the mini-rocket engines from <A c={c} href="https://www.linkedin.com/company/ita-rocket-design/
+            ">ITA Rocket Design</A> during new member training, 
             helping assess motor performance and gather critical data for flight prediction.
             <br/><br/>
             The bench frame was built using 2020 aluminum V-slot bars, assembled with bolts 
@@ -35,8 +36,8 @@ const projectLProps = (lang, c) => ({
             in rocketry. With that in mind, we decided to make our project open and accessible, hoping it could serve as a useful 
             resource for others working on similar propulsion systems or educational rocketry initiatives.
             <br/><br/>
-            In this context, I coauthored, together with Raphael Fernandes de Oliveira, the paper 
-            <A c={c} href={"https://www.confea.org.br/midias/uploads-imce/contecc%202024/MEC/" +
+            In this context, I coauthored, together with Raphael Fernandes de Oliveira, the paper <A
+            c={c} href={"https://www.confea.org.br/midias/uploads-imce/contecc%202024/MEC/" +
             "BANCADA_PORT%C3%81TIL_E_DE_BAIXO_CUSTO_PARA_ENSAIO_DE_PEQUENOS_MOTORES-FOGUETE.pdf"}>
             Bancada Portátil e de Baixo Custo para Ensaio de Pequenos Motores-Foguete</A>, which was among the 24 papers selected 
             for oral presentation at the 2024 edition of <A c={c} href="https://www.soea.org.br/">SOEA</A>, during the 79th edition 
@@ -75,8 +76,8 @@ const projectLProps = (lang, c) => ({
             a intenção de que ele pudesse servir como uma ferramenta útil para quem trabalha com sistemas 
             de propulsão semelhantes ou participa de iniciativas educacionais na área.
             <br/><br/>
-            Nesse sentido, escrevi, juntamente com Raphael Fernandes de Oliveira, o artigo 
-            <A c={c} href={"https://www.confea.org.br/midias/uploads-imce/contecc%202024/MEC/" +
+            Nesse sentido, escrevi, juntamente com Raphael Fernandes de Oliveira, o artigo <A 
+            c={c} href={"https://www.confea.org.br/midias/uploads-imce/contecc%202024/MEC/" +
             "BANCADA_PORT%C3%81TIL_E_DE_BAIXO_CUSTO_PARA_ENSAIO_DE_PEQUENOS_MOTORES-FOGUETE.pdf"}>
             Bancada Portátil e de Baixo Custo para Ensaio de Pequenos Motores-Foguete</A>, que foi 
             um dos 24 trabalhos selecionados para apresentação oral no Contecc 2024, durante a 79ª 

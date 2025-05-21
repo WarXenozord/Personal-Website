@@ -289,24 +289,6 @@ export const langPropsAboutMe = (lang) => ({
         I built a solid toolkit in embedded systems, PCB design, and programming (Python, C/C++),\
         and even played around with Unity and 3D printing for side projects.\
         \n\n\
-        I joined ITA Rocket Design in 2020 as a member of the avionics team, working on sounding\
-        rockets that flew up to 3 km. We designed the boards that collected in-flight data via radio link.\
-        I loved it — so much that I became avionics lead in 2021, then director in 2022, and president in 2023.\
-        Highlights include winning awards at the Latin America Space Challenge (2022 and 2023), and launching\
-        one of our rockets from the Centro de Lançamento da Barreira do Inferno, CLBI.\
-        \n\n\
-        My interest in electronics led me to try another kind of aerospace system — satellites.\
-        I joined a team for the first Olimpíada Brasileira de Satélites (OBSat), a student competition\
-        to build and launch CubeSats via weather balloons. We won an educational CubeSat kit and learned\
-        a ton in the process. That experience inspired me and two teammates to co-found ITACube in 2023 —\
-        an extension group focused on educational balloon-launched CubeSats. As ITACube, we returned to OBSat,\
-        joined the NASA Space Apps Hackathon, and built our own CubeSat: CurieSat.\
-        \n\n\
-        Outside of student groups, I interned at the space propulsion subdivision of Instituto de Aeronáutica e Espaço (IAE)\
-        in 2023 — the institute behind the SONDA family, VSB-30, and the VLS. In 2024, I interned at Centro Espacial ITA,\
-        which developed the ITASAT and SPORT CubeSats. I graduated in late 2024 and now work full-time in IAE’s\
-        space propulsion subdivision, still learning and building every day.\
-        \n\n\
         I don't just like to learn — I chase it. Every project is a chance to dive deeper, whether it's squeezing\
         performance out of an old magnetometer at high altitudes or debugging a React web app at 2 AM.\
         I’ve learned a lot from doing things the hard way, and even more from working alongside brilliant teammates.\
@@ -357,28 +339,10 @@ export const langPropsAboutMe = (lang) => ({
         desenvolvi uma base sólida em sistemas embarcados, design de PCBs e programação (Python, C/C++),\
         além de brincar com Unity e impressão 3D em projetos paralelos.\
         \n\n\
-        Entrei para o ITA Rocket Design em 2020 como membro da equipe de aviônica, trabalhando em foguetes\
-        que chegavam até 3 km de altitude. Projetamos placas para coletar dados de voo em tempo real via rádio.\
-        Curti tanto a experiência que virei líder de aviônica em 2021, diretor em 2022 e presidente em 2023.\
-        Destaques incluem os prêmios conquistados nas edições de 2022 e 2023 do Latin America Space Challenge,\
-        e o lançamento de um dos nossos foguetes a partir do Centro de Lançamento da Barreira do Inferno.\
-        \n\n\
-        Meu interesse por eletrônica me levou a explorar outro tipo de sistema aeroespacial — satélites.\
-        Participei da primeira Olimpíada Brasileira de Satélites (OBSat), uma competição estudantil para construir\
-        CubeSats lançados por balões. Ganhamos um kit educacional e aprendemos muito no processo.\
-        A experiência foi tão boa que eu e dois colegas fundamos a ITACube em 2023 —\
-        um grupo de extensão voltado ao desenvolvimento de CubeSats educacionais lançados por balão.\
-        Como ITACube, voltamos à OBSat, participamos do NASA Space Apps Hackathon e construímos nosso próprio\
-        satélite: o CurieSat.\
-        \n\n\
-        Fora dos grupos de extensão, fiz estágio em 2023 na subdivisão de propulsão espacial do Instituto de Aeronáutica e Espaço (IAE)\
-        — o instituto responsável pelos foguetes SONDA, VSB-30 e VLS. Em 2024, estagiei no Centro Espacial ITA,\
-        que desenvolveu os CubeSats ITASAT e SPORT. Me formei no final de 2024 e hoje trabalho no IAE, na mesma\
-        subdivisão de propulsão espacial, onde sigo aprendendo e desenvolvendo todos os dias.\
-        \n\n\
-        Eu não gosto apenas de aprender — eu persigo isso. Cada projeto é uma oportunidade de ir mais fundo,\
-        seja extraindo desempenho de um magnetômetro antigo em grandes altitudes ou\
-        depurando um webapp em React às 2 da manhã. Aprendi muito errando — e ainda mais colaborando com pessoas brilhantes.\
+        Eu não gosto apenas de aprender — eu persigo o conhecimento. Cada projeto é uma oportunidade de ir mais fundo,\
+        seja extraindo dados de um magnetômetro para voar em grandes altitudes ou\
+        debugando um webapp em React às 2 da manhã. Aprendi muito errando — e ainda mais colaborando com o conhecimento \
+        de pessoas brilhantes.\
         \n\n\
         Fora do laboratório e do terminal, gosto muito de jogos estratégicos, como XCOM, Kerbal Space Program\
         e Stellaris (mas por favor, não me incentive a jogar o último — eu simplesmente não paro quando começo).\
