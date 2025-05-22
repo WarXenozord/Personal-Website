@@ -1,6 +1,6 @@
 import { Box, Typography, Chip } from "@mui/material";
   
-export default function ProjectPage({title, subtitle, tech=[], cover}) {
+export default function PicHeader({title, subtitle, tech=[], cover}) {
     return(
     <Box sx={{
       borderRadius: '40px',
