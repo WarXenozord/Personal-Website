@@ -77,7 +77,7 @@ const projects = [{
     },{
         title: 'Tesla',
         subtitle: {
-            en: '',
+            en: 'Nikola',
             pt: ''
         },
         solo: false,
@@ -121,7 +121,7 @@ const projects = [{
         solo: true,
         star: true,
         description: {
-            en: "A tiny rocket avionics board, fully designed by me. It records altitude and can trigger a two-stage rocket recovery system. I also developed a lightweight Python client to configure the board via USB.",
+            en: "A tiny rocket avionics board. It records altitude and can trigger a two-stage rocket recovery system. I also developed a lightweight Python client to configure the board via USB.",
             pt: 'Uma pequena placa de aviônica para foguetes. Ela registra a altitude e pode acionar uma recuperação em dois estágios. Também desenvolvi um app em Python para configurar a placa via USB.',
         },
         tech: ['C++', 'STM32', 'Python','EasyEDA'],
@@ -129,6 +129,44 @@ const projects = [{
         links: {
             page: 'ANA',
             demo: null,
+            repo: null,
+        },
+    },{
+        title: 'Kepler',
+        subtitle: {
+            en: "CurieSat's little Brother",
+            pt: 'O irmão menor do CurieSat'
+        },
+        solo: false,
+        star: false,
+        description: {
+            en: "CurieSat's little brother — a compact CanSat offering the same capabilities as its larger sibling, all packed into a much smaller form factor. It's currently in the final stages of assembly at ITACube.",
+            pt: 'O irmão mais novo do CurieSat - um Cansat com as mesmas capacidades do seu projeto irmão mas com um tamanho muito menor. Atualmente está em seus estágios finais de montagem na ITACube. ',
+        },
+        tech: ['C++', 'STM32', 'EasyEDA'],
+        image: '/images/10-2.webp',
+        links: {
+            page: 'kepler',
+            demo: null,
+            repo: null,
+        },
+    },{
+        title: 'C.C.C.C.',
+        subtitle: {
+            en: 'Crime or Clean, Can I Come In?',
+            pt: 'Crime or Clean, Can I Come In?'
+        },
+        solo: false,
+        star: false,
+        description: {
+            en: "A quirky arcade game where you clean hotel rooms while uncovering bizarre crimes. Created in Unity during the 72-hour Ludum Dare game jam.",
+            pt: 'Um pequeno jogo sobre limpar quartos enquanto investiga crimes em um hotel muito estranho. Feito em Unity durante a game jam de 72h ludum daree.',
+        },
+        tech: ['C#', 'Unity'],
+        image: '/images/9-2.webp',
+        links: {
+            page: 'cccc',
+            demo: 'https://trevo27.itch.io/clean-or-crime',
             repo: null,
         },
     }
