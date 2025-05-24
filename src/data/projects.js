@@ -187,8 +187,10 @@ const projects = [
     solo: false,
     star: false,
     description: {
-      en: "ITA Rocket Design's project.",
-      pt: ".",
+      en: "A sounding rocket developed by ITA Rocket Design, reaching an apogee of approximately 3 km and powered by a composite solid propellant. \
+      I contributed to the development of the rocket’s avionics system.",
+      pt: "Foguete de sondagem desenvolvido pela ITA Rocket Design, com apogeu de aproximadamente 3 km e propelente sólido composto. Contribuí para \
+      o desenvolvimento do sistema de aviônica do foguete.",
     },
     tech: ["KiCAD", "C++"],
     image: "/images/11-3.webp",
