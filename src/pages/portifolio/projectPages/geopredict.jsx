@@ -55,7 +55,7 @@ const projectLProps = (lang, c) => ({
     })
 })
 
-export default function SRRPage() {
+export default function GeopredictPage() {
     const { lang } = useContext(LanguageContext)
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)

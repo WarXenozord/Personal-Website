@@ -62,8 +62,8 @@ const projects = [
   {
     title: "Casimiro",
     subtitle: {
-      en: "",
-      pt: "",
+      en: "A Modular 2U CubeSat",
+      pt: "Um CubeSat 2U Modular",
     },
     solo: false,
     star: false,
