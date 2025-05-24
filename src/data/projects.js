@@ -178,6 +178,25 @@ const projects = [
       demo: "https://trevo27.itch.io/clean-or-crime",
       repo: null,
     },
+  }, {
+    title: "Montenegro II",
+    subtitle: {
+      en: "Sounding Rocket",
+      pt: "Sounding Rocket",
+    },
+    solo: false,
+    star: false,
+    description: {
+      en: "ITA Rocket Design's project.",
+      pt: ".",
+    },
+    tech: ["KiCAD", "C++"],
+    image: "/images/11-3.webp",
+    links: {
+      page: "montenegro",
+      demo: null,
+      repo: null,
+    },
   },
 ];
 

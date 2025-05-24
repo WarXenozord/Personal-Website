@@ -46,7 +46,7 @@ const projectLProps = (lang, c) => ({
     })
 })
 
-export default function CuriesatPage() {
+export default function TeslaPage() {
     const { lang } = useContext(LanguageContext)
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
