@@ -42,8 +42,8 @@ const projects = [
   {
     title: "Smart Reunion Room",
     subtitle: {
-      en: "",
-      pt: "",
+      en: "An IOT project for monitoring room usage.",
+      pt: "Um projeto IOT para monitorar o uso de salas.",
     },
     solo: false,
     star: false,
@@ -52,7 +52,7 @@ const projects = [
       pt: "Solução com dispositivo IoT e aplicativo web para rastrear e reagir à presença humana em salas de reunião. Meu projeto final da disciplina de CE-289 no ITA.",
     },
     tech: ["C++", "ESP32", "React", "MongoDB"],
-    image: "/images/3.webp",
+    image: "/images/3-2.webp",
     links: {
       page: "srr",
       demo: null,
