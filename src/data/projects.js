@@ -2,8 +2,8 @@ const projects = [
   {
     title: "Geopredict",
     subtitle: {
-      en: "",
-      pt: "",
+      en: "An Easy Way to Access Space Data",
+      pt: "Dados de Satélites ao seu Alcance",
     },
     solo: false,
     star: false,

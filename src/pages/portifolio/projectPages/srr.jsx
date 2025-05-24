@@ -12,7 +12,7 @@ import NormalHeader from "./sections/normalHeader.jsx";
 
 const projectLProps = (lang, c) => ({
     ...(lang === 'en' ? {
-        mainTitle: 'Getting data about your rooms.',
+        mainTitle: 'Getting data about your rooms',
         main: (<>
             Smart Reunion Room — or SRR for short — was a project developed by me, <A c={c}
                 href="https://www.linkedin.com/in/leonardo-trevilato-0816bb1a5/">Leonardo Trevilato</A>, and <A c={c}
@@ -42,7 +42,7 @@ const projectLProps = (lang, c) => ({
             firmware is available on GitHub <A c={c} href="https://github.com/WarXenozord/Smart-Reunion-Room">here</A>.
         </>),
     } : {
-        mainTitle: 'Obtendo dados das suas salas.',
+        mainTitle: 'Obtendo dados das suas salas',
         main: (<>
             Smart Reunion Room — ou SRR — foi um projeto desenvolvido por mim, <A c={c} 
             href="https://www.linkedin.com/in/leonardo-trevilato-0816bb1a5/">Leonardo Trevilato</A>, e por <A c={c} 
