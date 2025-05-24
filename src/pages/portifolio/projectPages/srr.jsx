@@ -94,7 +94,7 @@ export default function SRRPage() {
             <Grid size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
                 alignContent='center'>
                 <Box component='img'
-                    alt='motor burning at bench'
+                    alt='Smart reunion room Hub'
                     src='/images/3-4.webp'
                     width='100%'
                     sx={{

@@ -65,7 +65,7 @@ export default function TeslaPage() {
             <Grid size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
                 alignContent='center'>
                 <Box component='img'
-                    alt='motor burning at bench'
+                    alt='Tesla board design'
                     src='/images/6.webp'
                     width={`${(100 / (1883 / 1584 + 750 / 781) * 750 / 781).toPrecision(4)}%`}
                     sx={{
@@ -76,7 +76,7 @@ export default function TeslaPage() {
                     }}
                 />
                 <Box component='img'
-                    alt='test bench'
+                    alt='PCB 3d rendered image'
                     src='/images/6-2.webp'
                     width={`${(100 / (1883 / 1584 + 750 / 781) * 1883 / 1584).toPrecision(4)}%`}
                     sx={{

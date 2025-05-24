@@ -75,7 +75,7 @@ export default function MontenegroPage() {
             <Grid size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
                 alignContent='center'>
                 <Box component='img'
-                    alt='motor burning at bench'
+                    alt='Montenegro II at a table'
                     src='/images/11-2.webp'
                     width={`${(100 / (5180 / 3888 + 1) * 5180 / 3888).toPrecision(4)}%`}
                     sx={{
@@ -86,7 +86,7 @@ export default function MontenegroPage() {
                     }}
                 />
                 <Box component='img'
-                    alt='test bench'
+                    alt='Montenegro II flight at LASC'
                     src='/images/11.webp'
                     width={`${(100 / (5180 / 3888 + 1) * 1).toPrecision(4)}%`}
                     sx={{

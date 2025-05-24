@@ -77,7 +77,7 @@ export default function KeplerPage() {
             <Grid size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
                 alignContent='center'>
                 <Box component='img'
-                    alt='motor burning at bench'
+                    alt='Geiger PCB'
                     src='/images/10.webp'
                     width={`${(100 / (1462 / 1404 + 1600 / 1552) * 1600 / 1552).toPrecision(4)}%`}
                     sx={{
@@ -88,7 +88,7 @@ export default function KeplerPage() {
                     }}
                 />
                 <Box component='img'
-                    alt='test bench'
+                    alt='GPS PCB'
                     src='/images/10-2.webp'
                     width={`${(100 / (1462 / 1404 + 1600 / 1552) * 1462 / 1404).toPrecision(4)}%`}
                     sx={{

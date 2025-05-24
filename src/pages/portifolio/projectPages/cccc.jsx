@@ -66,7 +66,7 @@ export default function CCCCPage() {
             <Grid size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
                 alignContent='center'>
                 <Box component='img'
-                    alt='motor burning at bench'
+                    alt='CCCC at unity'
                     src='/images/9-3.webp'
                     width='100%'
                     sx={{
