@@ -15,7 +15,8 @@ export default function PicHeader({title, subtitle, tech=[], cover}) {
       justifyContent: 'center',
       "& > h1,h2":{
         WebkitTextStroke: '1.5px black',
-        color:'white'
+        color:'white',
+        borderRadius: 2,
       }
     }}>
       <Typography variant="h1" >{title}</Typography>

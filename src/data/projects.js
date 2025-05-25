@@ -122,8 +122,8 @@ const projects = [
   {
     title: "ANA",
     subtitle: {
-      en: "",
-      pt: "",
+      en: "Avionics for Small Rockets",
+      pt: "Aviônica para Pequenos Foguetes",
     },
     solo: true,
     star: true,
@@ -132,7 +132,7 @@ const projects = [
       pt: "Uma pequena placa de aviônica para foguetes. Ela registra a altitude e pode acionar uma recuperação em dois estágios. Também desenvolvi um app em Python para configurar a placa via USB.",
     },
     tech: ["C++", "STM32", "Python", "EasyEDA"],
-    image: "/images/8.webp",
+    image: "/images/8-2.webp",
     links: {
       page: "ANA",
       demo: null,
