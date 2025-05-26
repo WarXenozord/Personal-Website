@@ -10,7 +10,8 @@ import {
 import { useContext } from "react"
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsAboutMe} from '../../util/lang.js'
+import { LanguageContext } from '../../util/lang.js'
+import { langPropsAboutMe } from '../../data/langProps.js'
 
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';

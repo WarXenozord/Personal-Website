@@ -4,7 +4,8 @@ import { Card, Link, CardMedia, Box, Typography, Button} from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
-import { LanguageContext, langPropsHome} from '../../../util/lang.js'
+import { LanguageContext } from '../../../util/lang.js'
+import { langPropsHome } from '../../../data/langProps.js'
 import { SidebarContext } from '../../../components/sidebar.jsx';
 import { layoutStyles } from '../../../util/styles.js'
 

@@ -3,7 +3,8 @@ import { Box, Typography, Button } from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
-import { LanguageContext, langPropsCapabilities} from '../../../util/lang.js'
+import { LanguageContext }  from '../../../util/lang.js'
+import { langPropsCapabilities } from '../../../data/langProps.js'
 
 import CodeIcon from '@mui/icons-material/Code';
 import MemoryIcon from '@mui/icons-material/Memory';

@@ -4,7 +4,8 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../util/theme.js'
-import { LanguageContext, langPropsSidebar } from '../util/lang.js'
+import { LanguageContext } from '../util/lang.js'
+import { langPropsSidebar  } from '../data/langProps.js'
 import projects from '../data/projects.js'
 
 import { createContext, useContext, useState } from 'react';

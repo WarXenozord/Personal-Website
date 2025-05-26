@@ -2,7 +2,7 @@ import { Card, CardMedia, CardContent, Typography, Box, Button } from '@mui/mate
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
 import { useNavigate } from 'react-router-dom';
-import { langPropsPortifolio } from '../../util/lang.js'
+import { langPropsPortifolio } from '../../data/langProps.js'
 import StarsIcon from '@mui/icons-material/Stars';
 
 export default function ProjectCard({ title, image, description = {}, tech = []

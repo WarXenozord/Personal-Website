@@ -6,7 +6,8 @@ import ProjectCard from "./projectCard.jsx"
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsPortifolio} from '../../util/lang.js'
+import { LanguageContext } from '../../util/lang.js'
+import { langPropsPortifolio } from '../../data/langProps.js'
 
 import projects from '../../data/projects.js'
 

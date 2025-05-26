@@ -3,7 +3,8 @@ import { Box, Typography, Button, TextField } from '@mui/material'
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
-import { LanguageContext, langPropsContact} from '../../../util/lang.js'
+import { LanguageContext } from '../../../util/lang.js'
+import { langPropsContact } from '../../../data/langProps.js'
 
 function Contact(){ 
 

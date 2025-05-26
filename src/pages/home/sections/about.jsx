@@ -4,7 +4,9 @@ import { useNavigate } from 'react-router-dom'
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../../util/theme.js'
-import { LanguageContext, langPropsAbout} from '../../../util/lang.js'
+import { LanguageContext } from '../../../util/lang.js'
+import { langPropsAbout } from '../../../data/langProps.js'
+
 
 function About(){
     //---Buttons state---//

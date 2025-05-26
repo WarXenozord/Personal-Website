@@ -10,7 +10,8 @@ import PrintIcon from '@mui/icons-material/Print';
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsResume} from '../../util/lang.js'
+import { LanguageContext } from '../../util/lang.js'
+import { langPropsResume } from '../../data/langProps.js'
 
 export default function Resume() {
     const {lang} = useContext(LanguageContext)

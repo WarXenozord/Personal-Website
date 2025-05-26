@@ -5,7 +5,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 import { useTheme } from '@mui/material/styles'
 import { tokens } from '../../util/theme.js'
-import { LanguageContext, langPropsProjectPage} from '../../util/lang.js'
+import { LanguageContext } from '../../util/lang.js'
+import { langPropsProjectPage } from '../../data/langProps.js'
 
 export default function ProjectPage() {
     const {lang} = useContext(LanguageContext)

@@ -7,7 +7,8 @@ import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { ColorModeContext, tokens } from '../util/theme.js'
-import { LanguageContext, langPropsHeader } from '../util/lang.js'
+import { LanguageContext } from '../util/lang.js'
+import { langPropsHeader } from '../data/langProps.js'
 import { SidebarContext } from './sidebar.jsx'
 
 import { IconButton, Button, Box, List, Tooltip, ListItem, 
