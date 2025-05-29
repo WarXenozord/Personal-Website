@@ -21,13 +21,20 @@ function Contact() {
 
     //---Form JSON---//
     const [form, setForm] = useState({ name: '', email: '', message: '' });
+    const [status, setStatus] = useState(null); // null | 'success' | 'error'
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
+    const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
     const handleSubmit = async (e) => {
         e.preventDefault(); // stop native submit
+        if (!validateEmail(form.email)) {
+            setStatus('error');
+            alert('Please enter a valid email');
+            return;
+        }
         try {
             const res = await fetch('/api/contact', {
                 method: 'POST',
@@ -37,11 +44,15 @@ function Contact() {
 
             if (!res.ok) throw new Error('Submission failed');
 
+            setStatus('success');
             // success handling
             console.log('Success');
         } catch (err) {
+            setStatus('error');
             console.error(err);
         }
+
+        setTimeout(() => setStatus(null), 3000);
     };
 
     return (
@@ -63,11 +74,11 @@ function Contact() {
                     width: { xs: '90%', sm: '80%', md: '70%', lg: '50%' },
                     margin: '0 auto',
                 }}
-                noValidate
                 autoComplete="off"
             >
                 <TextField
                     name="name"
+                    required
                     placeholder={lProps.name}
                     value={form.name}
                     onChange={handleChange}
@@ -77,6 +88,8 @@ function Contact() {
                 />
                 <TextField
                     name="email"
+                    type="email"
+                    required
                     placeholder="Email"
                     value={form.email}
                     onChange={handleChange}
@@ -86,6 +99,7 @@ function Contact() {
                 />
                 <TextField
                     name="message"
+                    required
                     placeholder={lProps.message}
                     value={form.message}
                     onChange={handleChange}
@@ -95,6 +109,17 @@ function Contact() {
                     rows={11}
                     sx={inputSx}
                 />
+                {status && (
+                    <Typography
+                        align="center"
+                        sx={{
+                            color: status === 'success' ? 'green' : 'red',
+                            fontSize: '1.1rem',
+                        }}
+                    >
+                        {status === 'success' ? 'Message sent successfully!' : 'Failed to send message.'}
+                    </Typography>
+                )}
                 <Button
                     variant="contained"
                     type="submit"
