@@ -40,7 +40,7 @@ const useScrollToSection = () => {
 };
 
 function Header(){
-    const { open, toggleSidebar } = useContext(SidebarContext);
+    const { toggleSidebar } = useContext(SidebarContext);
 
     const scrollToSection = useScrollToSection()
     const navigate = useNavigate();

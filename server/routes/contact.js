@@ -24,9 +24,9 @@ router.post("/contact", contactLimiter, async (req, res) => {
         user: process.env.EMAIL,
         pass: process.env.APP_PASSWORD,
       },
-      tls: {
-        rejectUnauthorized: false,
-      },
+      //tls: {
+      //  rejectUnauthorized: false,
+      //},
     });
 
     await transporter.sendMail({

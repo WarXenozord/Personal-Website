@@ -115,7 +115,7 @@ export function Sidebar() {
         <Fade in={open} timeout={800}>
         <Box sx={{display: open ? 'flex':'none', flexDirection:'column'}}>
           <List sx={listProps}>
-            {basicButtons.map((key, url) => (
+            {basicButtons.map((key) => (
               <ListItem disablePadding key={key.name}
               component={RouterLink} to={key.url}>
                 {key.icon}
@@ -138,7 +138,7 @@ export function Sidebar() {
             Top Projects
           </Typography>
           <List sx={listProps}>
-            {projButtons.map((key, url) => (
+            {projButtons.map((key) => (
               <ListItem disablePadding key={key.name}
               component={RouterLink} to={key.url}>
                 {key.icon}

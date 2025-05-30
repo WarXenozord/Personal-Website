@@ -1,6 +1,6 @@
-import { Box, Button, CircularProgress, Typography, } from "@mui/material";
+import { Box, Button, CircularProgress } from "@mui/material";
 
-import { useContext, useEffect, useState, Suspense, lazy  } from 'react';
+import { useContext, useEffect, useState, Suspense  } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import { useTheme } from '@mui/material/styles'
@@ -30,7 +30,7 @@ export default function ProjectPage() {
       };
 
       loadComponent();
-    }, [project]);
+    }, [project, navigate]);
 
 
     return (

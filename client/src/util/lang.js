@@ -19,7 +19,7 @@ export const useLang = () =>{
                 document.documentElement.lang = lang;
              },
         }),
-        []
+        [lang]
     );
 
     return [langMode,lang]
