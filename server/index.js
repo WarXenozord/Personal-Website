@@ -2,22 +2,29 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import contactRoute from './routes/contact.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const distPath = path.join(__dirname, '..', 'client', 'dist');
 
 // Middleware
-app.use(cors()); // allow requests from Vite dev server or deployed frontend
-app.use(express.json()); // parse JSON body
+app.use(cors());
+app.use(express.json()); 
 
 // Routes
 app.use('/api', contactRoute);
 
-// Health check (optional)
-app.get('/', (req, res) => {
-  res.send('Backend is up');
+// Serve static files from Vite build
+app.use(express.static(distPath));
+
+// Serve index.html for any unknown route (for SPA support)
+app.get(/(.*)/, (req, res) => {
+  res.sendFile(path.join(distPath, 'index.html'));
 });
 
 // Start server

@@ -4,7 +4,7 @@ import rateLimit from 'express-rate-limit';
 
 const router = express.Router();
 const contactLimiter = rateLimit({
-  windowMs: 60 * 1000 * 5, // 10 min
+  windowMs: 60 * 1000 * 10, // 10 min
   max: 2,
   message: { error: 'Too many submissions, please wait 10 minutes before sending another message.' },
 });
