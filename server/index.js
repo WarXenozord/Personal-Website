@@ -1,26 +1,26 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import cors from 'cors';
+import contactRoute from './routes/contact.js';
+
+dotenv.config();
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
-app.use(cors());         
-app.use(express.json());   
+// Middleware
+app.use(cors()); // allow requests from Vite dev server or deployed frontend
+app.use(express.json()); // parse JSON body
 
-app.post('/api/contact', (req, res) => {
-  const { name, email, message } = req.body;
+// Routes
+app.use('/api', contactRoute);
 
-  if (!name || !email || !message) {
-    return res.status(400).json({ error: 'All fields are required.' });
-  }
-
-  console.log('Contact form submitted:', { name, email, message });
-
-  // TODO: send email, save to DB, etc.
-
-  res.json({ success: true, message: 'Message received.' });
+// Health check (optional)
+app.get('/', (req, res) => {
+  res.send('Backend is up');
 });
 
+// Start server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server listening on port ${PORT}`);
 });

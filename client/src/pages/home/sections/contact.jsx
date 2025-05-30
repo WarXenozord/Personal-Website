@@ -33,6 +33,7 @@ function Contact() {
         if (!validateEmail(form.email)) {
             setStatus('error');
             alert('Please enter a valid email');
+            setTimeout(() => setStatus(null), 3000);
             return;
         }
         try {
@@ -109,6 +110,7 @@ function Contact() {
                     rows={11}
                     sx={inputSx}
                 />
+                <input type="text" name="honeypot" style={{ display: 'none' }} />
                 {status && (
                     <Typography
                         align="center"
