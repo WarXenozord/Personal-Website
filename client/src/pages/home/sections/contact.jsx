@@ -43,14 +43,23 @@ function Contact() {
                 body: JSON.stringify(form),
             });
 
+            if (res.status === 429) {
+                console.log('Too many requests. Please try again later.');
+                throw new Error('429');
+            }
+
             if (!res.ok) throw new Error('Submission failed');
 
             setStatus('success');
-            // success handling
-            console.log('Success');
         } catch (err) {
-            setStatus('error');
-            console.error(err);
+            if(err.message == '429'){
+                setStatus('wait');
+                console.error(err);
+            }
+            else {
+                setStatus('error');
+                console.error(err);
+            }
         }
 
         setTimeout(() => setStatus(null), 3000);
@@ -119,7 +128,9 @@ function Contact() {
                             fontSize: '1.1rem',
                         }}
                     >
-                        {status === 'success' ? 'Message sent successfully!' : 'Failed to send message.'}
+                        {status === 'success' ? 'Message sent successfully!' : 
+                        status === 'wait' ? 'Too many requests, please wait.':
+                        'Failed to send message.'}
                     </Typography>
                 )}
                 <Button
