@@ -1,0 +1,12 @@
+{
+  "name": "personal-website",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "build": "npm --workspace client run build",
+    "start": "npm --workspace server run start",
+    "setup": "npm run install:all && npm run build && npm run start"
+  }
+}

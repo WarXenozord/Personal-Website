@@ -6,7 +6,8 @@ const router = express.Router();
 const contactLimiter = rateLimit({
   windowMs: 60 * 1000 * 10, // 10 min
   max: 2,
-  message: { error: 'Too many submissions, please wait 10 minutes before sending another message.' },
+  message: { error: 'Too many submissions, please wait \
+    10 minutes before sending another message.' },
 });
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -48,9 +49,9 @@ router.post("/contact", contactLimiter, async (req, res) => {
 
   try {
     if(isProd){
-
+      await sendWithSES({ name, email, message })
     }else{
-      await sendWithGoogle ({ name, email, message })
+      await sendWithGoogle({ name, email, message })
     }
     res.status(200).json({ success: true });
   } catch (err) {
