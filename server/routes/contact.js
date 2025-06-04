@@ -1,3 +1,4 @@
+import 'dotenv/config'; // Let's try to understand why this is needed someday
 import express from "express";
 import nodemailer from "nodemailer";
 import rateLimit from 'express-rate-limit';

@@ -1,11 +1,12 @@
-import express from 'express';
 import dotenv from 'dotenv';
+dotenv.config();
+
+import express from 'express';
 import cors from 'cors';
-import contactRoute from './routes/contact.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-dotenv.config();
+import contactRoute from './routes/contact.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
