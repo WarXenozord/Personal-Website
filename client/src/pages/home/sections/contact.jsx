@@ -70,6 +70,7 @@ function Contact() {
             id='contact'
             height='max(72vh, 600px)'>
             <Typography variant='h2'
+                fontSize={{xs: '1.4rem', sm:'2.5rem'}}
                 textAlign='center'
                 m='25px 0 4vh 0'>
                 {lProps.title}

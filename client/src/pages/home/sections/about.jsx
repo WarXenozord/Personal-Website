@@ -79,7 +79,10 @@ function About(){
                 alignItems: 'center',
                 paddingTop: '5px'
         }}>
-            <Box width={txtWidth} justifyItems='center'>
+            <Box width={txtWidth} 
+            display='flex' 
+            flexDirection='column' 
+            alignItems='center'>
                     <Typography variant='h4'>
                         {lProps.aboutTitle}
                     </Typography>
@@ -94,7 +97,10 @@ function About(){
                         {lProps.aboutButton}
                     </Button>
             </Box>
-            <Box width={txtWidth} justifyItems='center'>
+            <Box width={txtWidth}  
+            display='flex'      
+            flexDirection='column' 
+            alignItems='center'>
                     <Box display='flex' justifyContent='center'>
                         <Box justifyItems='center'>
                             {field === 'Competences' ? (

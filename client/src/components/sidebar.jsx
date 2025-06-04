@@ -135,7 +135,7 @@ export function Sidebar() {
             fontWeight: 'bolder',
             color: colors.grey[400],
           }}>
-            Top Projects
+            {lProps.toplist}
           </Typography>
           <List sx={listProps}>
             {projButtons.map((key) => (

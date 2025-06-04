@@ -160,6 +160,7 @@ function Welcome(){
                 <Typography variant='h1' m='10px 0 0 0' 
                 color='#ffffff' 
                 sx={{
+                    fontSize: {xs: '4rem', sm: '6rem'},
                     WebkitTextStroke: '0.5px black',
                 }}>
                     Juan Libonatti
@@ -167,6 +168,7 @@ function Welcome(){
                 <Typography variant='h2' m='10px 0 50px 0' 
                 color={colors.red[500]} 
                 sx={{
+                    fontSize: {xs: '2rem', sm: '2.5rem'},
                     WebkitTextStroke: '0.5px black',
                 }}>
                     {lProps.intro[1]}

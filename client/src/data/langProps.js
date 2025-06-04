@@ -226,11 +226,13 @@ export const langPropsSidebar = (lang) => ({
         about: 'About',
         resume: 'Resume',
         portifolio: 'Portifolio',
+        toplist: 'Top Projects'
       }:{  
         home: 'Início',
         about: 'Sobre',
         resume: 'Currículo',
         portifolio: "Portifólio",
+        toplist: 'Top Projetos'
         })
 })
 
