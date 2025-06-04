@@ -1,5 +1,9 @@
 import dotenv from 'dotenv';
-dotenv.config();
+const envPath = process.env.NODE_ENV === 'production'
+  ? '/etc/myapp/.env'
+  : './.env';
+
+dotenv.config({ path: envPath });
 
 import express from 'express';
 import cors from 'cors';
