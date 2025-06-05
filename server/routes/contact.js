@@ -1,7 +1,9 @@
 import 'dotenv/config'; // Let's try to understand why this is needed someday
 import express from "express";
-import nodemailer from "nodemailer";
 import rateLimit from 'express-rate-limit';
+
+import { sendWithGoogle } from '../components/googleMailer.js';
+import { sendWithSES } from '../components/sesMailer.js';
 
 const router = express.Router();
 const contactLimiter = rateLimit({
@@ -11,34 +13,6 @@ const contactLimiter = rateLimit({
     10 minutes before sending another message.' },
 });
 const isProd = process.env.NODE_ENV === 'production';
-
-const sendWithGoogle = async ({ name, email, message }) => {
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_APP_PASSWORD,
-    },      
-    tls: {
-      rejectUnauthorized: false,
-    },
-  });
-
-  return transporter.sendMail({
-      from: `"Website Contact" <no-reply@juanlibonatti.com>`,
-      to: process.env.GMAIL_USER,
-      subject: "New Contact Form Submission",
-      text: `
-        Name: ${name}
-        Email: ${email}
-        Message: ${message}
-      `,
-    });
-};
-
-const sendWithSES = async ({ name, email, message }) => {
-  console.log("to be done")
-};
 
 router.post("/contact", contactLimiter, async (req, res) => {
   const { name, email, message, honeypot } = req.body;
