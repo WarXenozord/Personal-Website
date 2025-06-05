@@ -3,7 +3,7 @@ import { Box, Typography, Chip } from "@mui/material";
 export default function NormalHeader({title, subtitle, tech=[], tagColors}) {
     return(
         <Box sx={{
-            height:'180px',
+            height:{xs:'auto',sm:'auto', md:'180px'},
             textAlign:'center',
             display: 'flex',
             flexDirection: 'column',
@@ -13,7 +13,8 @@ export default function NormalHeader({title, subtitle, tech=[], tagColors}) {
                 color:'white'
             }
         }}>
-            <Typography variant="h1">{title}</Typography>
+            <Typography variant="h1" 
+            fontSize={{xs:'4rem',sm:'5rem',md:'6rem'}}>{title}</Typography>
             <Typography variant="h2">{subtitle}</Typography>
             <Box mt='20px'>
                 {tech.map((value, idx) => (
