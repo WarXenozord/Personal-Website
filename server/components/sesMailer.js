@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
-import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
+import { SESClient } from '@aws-sdk/client-ses';
+import { SendRawEmailCommand } from '@aws-sdk/client-ses';
 
-// Create AWS SDK v3 SES client
 const ses = new SESClient({
   region: process.env.SES_REGION,
   credentials: {
@@ -11,19 +11,23 @@ const ses = new SESClient({
 });
 
 export const sendWithSES = async ({ name, email, message }) => {
-// Create nodemailer transport using AWS SDK v3
-const transporter = nodemailer.createTransport({
-  SES: { ses, aws: { SendEmailCommand } },
-});
+  const transporter = nodemailer.createTransport({
+    SES: { 
+      ses, 
+      aws: {
+        SendRawEmailCommand
+      }
+    },
+  });
 
   return transporter.sendMail({
     from: `"Website Contact" <no-reply@${process.env.DOMAIN}>`,
     to: process.env.CONTACT_RECEIVER,
     subject: "New Contact Form Submission",
     text: `
-        Name: ${name}
-        Email: ${email}
-        Message: ${message}
+      Name: ${name}
+      Email: ${email}
+      Message: ${message}
     `,
   });
 };

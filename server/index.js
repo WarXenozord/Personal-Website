@@ -17,6 +17,10 @@ const PORT = process.env.PORT || 3001;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distPath = path.join(__dirname, '..', 'client', 'dist');
 
+//trust reverse proxy
+if(process.env.NODE_ENV === 'production')
+  app.set('trust proxy', true);
+
 // Middleware
 app.use(cors());
 app.use(express.json()); 
