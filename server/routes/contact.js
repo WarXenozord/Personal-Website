@@ -6,11 +6,15 @@ import { sendWithGoogle } from '../components/googleMailer.js';
 import { sendWithSES } from '../components/sesMailer.js';
 
 const router = express.Router();
+
+const rateLimitWindow = parseInt(process.env.CONTACT_FORM_RATE_LIMIT_WINDOW
+  || '600', 10);
+const max_reqs = parseInt(process.env.CONTACT_FORM_MAX || '2', 10);
 const contactLimiter = rateLimit({
-  windowMs: 60 * 1000 * 10, // 10 min
-  max: 2,
-  message: { error: 'Too many submissions, please wait \
-    10 minutes before sending another message.' },
+  windowMs: rateLimitWindow * 1000,
+  max: max_reqs,
+  message: { error: 'Too many submissions, please try \
+    again later.' },
 });
 const isProd = process.env.NODE_ENV === 'production';
 
