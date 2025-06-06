@@ -314,7 +314,7 @@ export default function CuriesatPage() {
                 {lProps.aftermatch}
             </Typography>
 
-            <Typography variant='body2' textAlign='justify' width='70%'>
+            <Typography variant='body2' textAlign='justify' width={{xs: '90%', sm: '80%',md:'70%'}}>
                 {lProps.end}
             </Typography>
         </Box>

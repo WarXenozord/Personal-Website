@@ -14,7 +14,7 @@ const projectLProps = (lang, c) => ({
     ...(lang === 'en' ? {
         mainTitle: 'Check Out What the Satellites Saw',
         main: (<>
-            Geopredict is an educational web app developed by <A c={c} href="https://br.linkedin.com/in/francisco-eduardo-fontenele-6aab9020a">Narayane 
+            Geopredict is an educational web app developed by <A c={c} href="https://br.linkedin.com/in/narayanerm">Narayane 
             Ribeiro Medeiros</A>, <A c={c} href="https://br.linkedin.com/in/francisco-eduardo-fontenele-6aab9020a">Francisco Eduardo Fontenele
             </A>, and me during a three-day hackathon. The platform provides fast and intuitive access to satellite data from several government 
             agencies, along with an educational simulation designed to teach strategies for reducing human carbon emissions. The project was 
@@ -33,7 +33,7 @@ const projectLProps = (lang, c) => ({
     } : {
         mainTitle: 'Veja o que os Satélites Viram',
         main: (<>
-            Geopredict é um aplicativo web educacional desenvolvido por <A c={c} href="https://br.linkedin.com/in/francisco-eduardo-fontenele-6aab9020a">
+            Geopredict é um aplicativo web educacional desenvolvido por <A c={c} href="https://br.linkedin.com/in/narayanerm">
             Narayane Ribeiro Medeiros</A>, <A c={c} href="https://br.linkedin.com/in/francisco-eduardo-fontenele-6aab9020a">Francisco Eduardo Fontenele</A> 
             e por mim durante uma maratona de programação de três dias. A plataforma permite acesso rápido e intuitivo a dados de satélite de diversas 
             agências governamentais, além de oferecer uma simulação educativa voltada para o ensino de estratégias de redução das emissões de carbono
