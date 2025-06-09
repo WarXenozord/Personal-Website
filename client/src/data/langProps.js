@@ -83,7 +83,7 @@ export const langPropsAbout = (lang) => ({
         aboutTitle: "Sobre mim",
         aboutText: "\
         Olá! Eu sou Juan Libonatti, brasileiro, engenheiro aeroespacial \
-        e desenvolvedor, além apaixonado por projetos de engenharia. \
+        e desenvolvedor, além de apaixonado por projetos de engenharia. \
         Não se deixe enganar pelo foco do meu diploma — gosto tanto de trabalhar com código e \
         eletrônica quanto com foguetes e ferramentas.\
         \n\n\
