@@ -1,6 +1,15 @@
-# Images
+# Images and Videos
 
-All images under `public/images` directory are licensed under CC-BY 4.0. 
+Except where otherwise noted, all files in `public/images` and `public/images`  are licensed under the Creative Commons Attribution 4.0 
+International License (CC BY 4.0).
+
+The following files are subject to their own licensing and are **not** subject to the CC BY 4.0 license:
+
+| File Name                         | License                |
+|-----------------------------------|------------------------|
+| `darkVid.mp4`, `darkVid.webm`     | Pexels (Amit Batra)    |
+| `lightVid.mp4`,`lightVid.webm`    | Public Domain (NASA)   |
+
 
 # Logos
 
@@ -10,7 +19,7 @@ Any other logos are copyrighted to their respective parties.
 
 # Other Files
 
-All files not previously mentioned and not in the public domain are licensed under the MIT License.
+All files not previously mentioned are licensed under the MIT License.
 
 # MIT License
 
