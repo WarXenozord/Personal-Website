@@ -33,7 +33,7 @@ jobs:
           sleep 10
 
           echo "Checking server response..."
-          curl -f http://localhost:3000 || (echo "Server not responding" && kill $SERVER_PID && exit 1)
+          curl -f http://localhost:3001 || (echo "Server not responding" && kill $SERVER_PID && exit 1)
 
           echo "Killing server process"
           kill $SERVER_PID
