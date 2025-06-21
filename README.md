@@ -1,7 +1,7 @@
 # 🌐 Personal Website
 
 This is my full-stack personal website built with **React + Vite (frontend)** and **Node.js + Express (backend)**.
-You can check out the live version on [www.juanlibonatti.com](www.juanlibonatti.com).
+You can check out the live version on [www.juanlibonatti.com](https://www.juanlibonatti.com).
 
 ## Tech Stack
 
