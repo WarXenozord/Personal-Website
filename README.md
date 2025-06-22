@@ -7,7 +7,7 @@ You can check out the live version on [www.juanlibonatti.com](https://www.juanli
 
 - **Frontend**: React, Vite  
 - **Backend**: Node.js, Express  
-- **Other**: AWS SES
+- **Other**: AWS SES, AWS SSM
 
 ## Project Structure
  - **/client**: Vite + React frontend
@@ -33,29 +33,22 @@ nano .env
 
 ### 3. Run the App
 
-To run the client on development mode use:
+To run only the client on development mode use:
 ```bash
 cd client
 npm run dev
 ```
 
-To run the server on depelopment mode use:
+To run the whole app use:
 ```bash
-npm run build
-cd server
-npm run dev
-```
-
-To run the site for production:
-```bash
-npm run setup
+npm run start
 ```
 
 ## Deployment
 This app is deployed on an AWS EC2 instance, with:
 
 - Domain Management: handled via Route 53 (custom domain and DNS routing).
-
+- Auto-deploy: use Amazon SSM and github actions for deploying the lastest push to master.
 - Email Services: uses Amazon SES for transactional email (contact form).
 
 ## License
