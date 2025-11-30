@@ -48,7 +48,7 @@ const projects = [
     solo: false,
     star: false,
     description: {
-      en: "An IoT device and web app solution for tracking and responding to human presence in conference rooms. Completed as part of the CE-289 course in my undergraduate studies at ITA.",
+      en: "An IoT device and web app solution for tracking and responding to human presence in conference rooms. Project for CE-289 course in my studies at ITA.",
       pt: "Solução com dispositivo IoT e aplicativo web para rastrear e reagir à presença humana em salas de reunião. Meu projeto final da disciplina de CE-289 no ITA.",
     },
     tech: ["C++", "ESP32", "React", "MongoDB"],
@@ -198,6 +198,25 @@ const projects = [
       page: "montenegro",
       demo: null,
       repo: null,
+    },
+  },  {
+    title: "My AWS Mine Server",
+    subtitle: {
+      en: "AWS Hosted Minecraft Server App",
+      pt: "App de Servidor de Minecraft na AWS",
+    },
+    solo: true,
+    star: false,
+    description: {
+      en: "A Minecraft server that I created to host on AWS. Actually, there are two apps on two servers: one for user login and the other with the server itself.",
+      pt: "Um servidor de minecraft que criei para hostear na AWS. Na verdade são dois apps em dois servidores, um para login do usuário e outro com o servidor em si.",
+    },
+    tech: ["Express", "Java", "React", "AWS"],
+    image: "/images/12.webp",
+    links: {
+      page: "mineserver",
+      demo: null,
+      repo: "https://github.com/WarXenozord/MineServerMainApp",
     },
   },
 ];

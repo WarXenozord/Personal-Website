@@ -47,7 +47,7 @@ const projectLProps = (lang, c) => ({
             At the moment, I’m still finalizing the firmware and desktop client in preparation for a finalized ANA v1.0 — stay tuned!
         </>),
     } : {
-        introTitle: 'Pequenos motores, grande aprendizado',
+        introTitle: 'Eu me cansei de importar eles',
         intro: (<>
             Aerospacial Nanoscaled Avionics – ou ANA – é uma placa de aviônica tudo-em-um para pequenos foguetes, capaz de rastrear a trajetória do veículo,
             ativar um sistema de recuperação em dois estágios e ler dados de sensores I2C de terceiros. Meu principal objetivo ao desenvolver esta placa foi criar
@@ -57,7 +57,7 @@ const projectLProps = (lang, c) => ({
             para ser totalmente otimizada para operações com foguetes. Ela conta com um interruptor de energia com travamento, ativado por um pino RBF,
             armazenamento redundante de dados em memória flash e cartão SD, além de um buzzer para facilitar a identificação de estados e alertas pelo usuário.
         </>),
-        presTitle: 'Apresentado no Contecc',
+        presTitle: 'Feita em versões',
         pres: (<>
             A ANA é baseada em um microcontrolador STM32 e conta com um barômetro BMP380, slot para cartão SD, porta USB, terminais de bloco,
             vários MOSFETs e circuitos auxiliares como cristais, capacitores e um regulador de tensão. Minha ideia era criar uma placa pequena
