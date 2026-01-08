@@ -18,7 +18,7 @@ You can check out the live version on [www.juanlibonatti.com](https://www.juanli
 ### 1. Clone the Repo and Install
 
 ```bash
-git clone https://github.com/your-username/personal-website.git
+git clone https://github.com/WarXenozord/personal-website.git
 cd Personal-Website
 npm install
 ```
